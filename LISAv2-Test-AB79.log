@@ -1,0 +1,121 @@
+02/03/2020 13:15:31 : [INFO ] ==> Run test setup script if defined.
+02/03/2020 13:15:31 : [DEBUG] Set $fdisk > fdisk for REDHAT
+02/03/2020 13:15:31 : [INFO ] ==> Check the target machine kernel log.
+02/03/2020 13:15:31 : [INFO ] Collecting LISAv2-OneVM-walatest-AB79-20200203050933-role-0 VM Kernel Initial Logs ...
+02/03/2020 13:15:31 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-05-08-23-7964/STORAGE-HOT-ADD-DISK-SERIAL/runtest.sh to Unix format...
+02/03/2020 13:15:31 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-05-08-23-7964\STORAGE-HOT-ADD-DISK-SERIAL\runtest.sh to azureuser @ 52.167.162.253 : 22 using password authentication
+02/03/2020 13:15:38 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 13:15:38 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S dmesg > ./InitialBootLogs.txt"
+02/03/2020 13:15:43 : [DEBUG] dmesg > ./InitialBootLogs.txt executed successfully in 4.29 seconds.
+02/03/2020 13:15:43 : [DEBUG] Downloading ./InitialBootLogs.txt from azureuser @ 52.167.162.253 : 22 to E:\yuxisun\LISAv2\TestResults\2020-03-02-05-08-23-7964\STORAGE-HOT-ADD-DISK-SERIAL\LISAv2-OneVM-walatest-AB79-20200203050933-role-0 using password authentication
+02/03/2020 13:15:50 : [DEBUG] Download command returned exit code 0
+02/03/2020 13:15:50 : [DEBUG] Download successful after 1 attempt
+02/03/2020 13:15:50 : [INFO ] LISAv2-OneVM-walatest-AB79-20200203050933-role-0: Initial kernel log, InitialBootLogs.txt, collected successfully.
+02/03/2020 13:15:50 : [INFO ] Checking for call traces in kernel logs..
+02/03/2020 13:15:50 : [ERROR] [    0.000000] Call Trace:
+02/03/2020 13:15:50 : [INFO ] ==> Run test script on the target machine.
+02/03/2020 13:15:50 : [DEBUG] DiskSize=30 added to constants.sh file
+02/03/2020 13:15:50 : [DEBUG] DiskSku=Premium_LRS added to constants.sh file
+02/03/2020 13:15:50 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/constants.sh to Unix format...
+02/03/2020 13:15:50 : [DEBUG] Uploading E:\yuxisun\LISAv2\constants.sh to azureuser @ 52.167.162.253 : 22 using password authentication
+02/03/2020 13:15:56 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 13:15:56 : [INFO ] Constants file uploaded to: LISAv2-OneVM-walatest-AB79-20200203050933-role-0
+02/03/2020 13:15:56 : [INFO ] Test script: DiskHotAddRemove-Serial.ps1 started.
+02/03/2020 13:15:57 : [INFO ] E:\yuxisun\LISAv2\Testscripts\Windows\DiskHotAddRemove-Serial.ps1 -TestParams ;DiskSize=30;DiskSku=Premium_LRS -AllVmData @{ServiceName=; ResourceGroupName=LISAv2-OneVM-walatest-AB79-20200203050933; Location=eastus2; RoleName=LISAv2-OneVM-walatest-AB79-20200203050933-role-0; PublicIP=52.167.162.253; PublicIPv6=; InternalIP=10.0.0.4; SecondInternalIP=; URL=ica21418v4.eastus2.cloudapp.azure.com; URLv6=; Status=Succeeded; InstanceSize=Standard_DS1_v2; VMGeneration=1; SSHPort=22} -TestProvider AzureProvider -CurrentTestData System.Xml.XmlElement
+02/03/2020 13:16:00 : [INFO ] Serial Addition and Removal of Data Disks
+02/03/2020 13:17:20 : [INFO ] 1 - Successfully attached an empty data disk of size 30 GB to VM
+02/03/2020 13:17:20 : [INFO ] Verifying if data disk is added to the VM: Running fdisk on remote VM
+02/03/2020 13:17:20 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-05-08-23-7964/STORAGE-HOT-ADD-DISK-SERIAL/runtest.sh to Unix format...
+02/03/2020 13:17:20 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-05-08-23-7964\STORAGE-HOT-ADD-DISK-SERIAL\runtest.sh to azureuser @ 52.167.162.253 : 22 using password authentication
+02/03/2020 13:17:26 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 13:17:26 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 13:17:32 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 5.27 seconds.
+02/03/2020 13:17:32 : [INFO ] 1 data disk is successfully attached to the VM: Disk /dev/sdc: 30 GiB, 32212254720 bytes, 62914560 sectors
+02/03/2020 13:17:32 : [INFO ] Data disk added to the VM is successfully verified inside VM
+02/03/2020 13:17:32 : [INFO ] Removing the Data Disks from the VM
+02/03/2020 13:18:10 : [INFO ] Successfully removed the data disk from the VM
+02/03/2020 13:18:10 : [INFO ] Verifying if data disk is removed from the VM: Running fdisk on remote VM
+02/03/2020 13:18:10 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 13:18:19 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 9.04 seconds.
+02/03/2020 13:18:19 : [INFO ] Successfully verified that data disk is removed from the VM
+02/03/2020 13:19:06 : [INFO ] 2 - Successfully attached an empty data disk of size 30 GB to VM
+02/03/2020 13:19:06 : [INFO ] Verifying if data disk is added to the VM: Running fdisk on remote VM
+02/03/2020 13:19:06 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 13:19:11 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 4.65 seconds.
+02/03/2020 13:19:11 : [INFO ] 1 data disk is successfully attached to the VM: Disk /dev/sdc: 30 GiB, 32212254720 bytes, 62914560 sectors
+02/03/2020 13:19:11 : [INFO ] Data disk added to the VM is successfully verified inside VM
+02/03/2020 13:19:11 : [INFO ] Removing the Data Disks from the VM
+02/03/2020 13:19:53 : [INFO ] Successfully removed the data disk from the VM
+02/03/2020 13:19:53 : [INFO ] Verifying if data disk is removed from the VM: Running fdisk on remote VM
+02/03/2020 13:19:53 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 13:19:58 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 4.35 seconds.
+02/03/2020 13:19:58 : [INFO ] Successfully verified that data disk is removed from the VM
+02/03/2020 13:21:14 : [INFO ] 3 - Successfully attached an empty data disk of size 30 GB to VM
+02/03/2020 13:21:14 : [INFO ] Verifying if data disk is added to the VM: Running fdisk on remote VM
+02/03/2020 13:21:14 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 13:21:18 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 4.36 seconds.
+02/03/2020 13:21:18 : [INFO ] 1 data disk is successfully attached to the VM: Disk /dev/sdc: 30 GiB, 32212254720 bytes, 62914560 sectors
+02/03/2020 13:21:18 : [INFO ] Data disk added to the VM is successfully verified inside VM
+02/03/2020 13:21:18 : [INFO ] Removing the Data Disks from the VM
+02/03/2020 13:22:28 : [INFO ] Successfully removed the data disk from the VM
+02/03/2020 13:22:28 : [INFO ] Verifying if data disk is removed from the VM: Running fdisk on remote VM
+02/03/2020 13:22:28 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 13:22:33 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 5.6 seconds.
+02/03/2020 13:22:33 : [INFO ] Successfully verified that data disk is removed from the VM
+02/03/2020 13:23:23 : [INFO ] 4 - Successfully attached an empty data disk of size 30 GB to VM
+02/03/2020 13:23:23 : [INFO ] Verifying if data disk is added to the VM: Running fdisk on remote VM
+02/03/2020 13:23:23 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 13:23:48 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 25.18 seconds.
+02/03/2020 13:23:48 : [INFO ] 1 data disk is successfully attached to the VM: Disk /dev/sdc: 30 GiB, 32212254720 bytes, 62914560 sectors
+02/03/2020 13:23:48 : [INFO ] Data disk added to the VM is successfully verified inside VM
+02/03/2020 13:23:48 : [INFO ] Removing the Data Disks from the VM
+02/03/2020 13:24:25 : [INFO ] Successfully removed the data disk from the VM
+02/03/2020 13:24:25 : [INFO ] Verifying if data disk is removed from the VM: Running fdisk on remote VM
+02/03/2020 13:24:25 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 13:24:30 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 4.37 seconds.
+02/03/2020 13:24:30 : [INFO ] Successfully verified that data disk is removed from the VM
+02/03/2020 13:24:30 : [INFO ] Successfully added and removed 4 number of data disks
+02/03/2020 13:24:30 : [INFO ] ==> Upload test results to database.
+02/03/2020 13:24:30 : [INFO ] ==> Check if the test target machines are still running.
+02/03/2020 13:24:30 : [INFO ] Trying to connect to deployed VMs.
+02/03/2020 13:24:30 : [INFO ] Connecting to 52.167.162.253 : 22 succeeded.
+02/03/2020 13:24:30 : [INFO ] The SSH ports for all VMs are open.
+02/03/2020 13:24:30 : [INFO ] Collecting LISAv2-OneVM-walatest-AB79-20200203050933-role-0 VM Kernel Final Logs ...
+02/03/2020 13:24:30 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-05-08-23-7964/STORAGE-HOT-ADD-DISK-SERIAL/runtest.sh to Unix format...
+02/03/2020 13:24:30 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-05-08-23-7964\STORAGE-HOT-ADD-DISK-SERIAL\runtest.sh to azureuser @ 52.167.162.253 : 22 using password authentication
+02/03/2020 13:24:36 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 13:24:36 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S dmesg > ./FinalBootLogs.txt"
+02/03/2020 13:24:41 : [DEBUG] dmesg > ./FinalBootLogs.txt executed successfully in 4.22 seconds.
+02/03/2020 13:24:41 : [DEBUG] Downloading ./FinalBootLogs.txt from azureuser @ 52.167.162.253 : 22 to E:\yuxisun\LISAv2\TestResults\2020-03-02-05-08-23-7964\STORAGE-HOT-ADD-DISK-SERIAL\LISAv2-OneVM-walatest-AB79-20200203050933-role-0 using password authentication
+02/03/2020 13:24:50 : [DEBUG] Download command returned exit code 0
+02/03/2020 13:24:50 : [DEBUG] Download successful after 1 attempt
+02/03/2020 13:24:50 : [INFO ] LISAv2-OneVM-walatest-AB79-20200203050933-role-0: Final kernel log, FinalBootLogs.txt, collected successfully.
+02/03/2020 13:24:50 : [INFO ] Checking for call traces in kernel logs..
+02/03/2020 13:24:50 : [ERROR] [    0.000000] Call Trace:
+02/03/2020 13:24:50 : [INFO ] LISAv2-OneVM-walatest-AB79-20200203050933-role-0: Final Kernel logs collected and compared successfully
+02/03/2020 13:24:50 : [INFO ] Preserving the Resource Group(s) LISAv2-OneVM-walatest-AB79-20200203050933. Setting tags : calltrace = yes
+02/03/2020 13:24:50 : [INFO ] Setting LISAv2-OneVM-walatest-AB79-20200203050933 tag : calltrace = yes
+02/03/2020 13:24:58 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/CollectLogFile.sh to Unix format...
+02/03/2020 13:24:58 : [DEBUG] Uploading .\Testscripts\Linux\CollectLogFile.sh to azureuser @ 52.167.162.253 : 22 using password authentication
+02/03/2020 13:25:05 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 13:25:05 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-05-08-23-7964/STORAGE-HOT-ADD-DISK-SERIAL/runtest.sh to Unix format...
+02/03/2020 13:25:05 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-05-08-23-7964\STORAGE-HOT-ADD-DISK-SERIAL\runtest.sh to azureuser @ 52.167.162.253 : 22 using password authentication
+02/03/2020 13:25:11 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 13:25:11 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S bash CollectLogFile.sh -hostname LISAv2-OneVM-walatest-AB79-20200203050933-role-0"
+02/03/2020 13:25:16 : [DEBUG] bash CollectLogFile.sh -hostname LISAv2-OneVM-walatest-AB79-20200203050933-role-0 executed successfully in 4.34 seconds.
+02/03/2020 13:25:16 : [DEBUG] Downloading LISAv2-OneVM-walatest-AB79-20200203050933-role-0-*.txt from azureuser @ 52.167.162.253 : 22 to E:\yuxisun\LISAv2\TestResults\2020-03-02-05-08-23-7964\STORAGE-HOT-ADD-DISK-SERIAL using password authentication
+02/03/2020 13:25:31 : [DEBUG] Download command returned exit code 0
+02/03/2020 13:25:31 : [DEBUG] Download successful after 1 attempt
+02/03/2020 13:25:31 : [INFO ] ==> Run test cleanup script if defined.
+02/03/2020 13:25:31 : [INFO ] Start to do cleanup for case STORAGE-HOT-ADD-DISK-SERIAL
+02/03/2020 13:25:31 : [INFO ] Removing all files logs from IP : 52.167.162.253 PORT : 22
+02/03/2020 13:25:31 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-05-08-23-7964/STORAGE-HOT-ADD-DISK-SERIAL/runtest.sh to Unix format...
+02/03/2020 13:25:31 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-05-08-23-7964\STORAGE-HOT-ADD-DISK-SERIAL\runtest.sh to azureuser @ 52.167.162.253 : 22 using password authentication
+02/03/2020 13:25:38 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 13:25:38 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.162.253 "echo ****** | sudo -S rm -rf *"
+02/03/2020 13:25:42 : [DEBUG] rm -rf * executed successfully in 4.29 seconds.
+02/03/2020 13:25:42 : [INFO ] All files removed from current user azureuser home folder successfully. VM IP : 52.167.162.253 PORT : 22
+02/03/2020 13:25:42 : [INFO ] CURRENT - PASS    - 1
+02/03/2020 13:25:42 : [INFO ] CURRENT - SKIPPED - 0
+02/03/2020 13:25:42 : [INFO ] CURRENT - FAIL    - 0
+02/03/2020 13:25:42 : [INFO ] CURRENT - ABORTED - 0

@@ -1,0 +1,99 @@
+02/03/2020 09:34:35 : [INFO ] ==> Run test setup script if defined.
+02/03/2020 09:34:35 : [DEBUG] Set $fdisk > fdisk for REDHAT
+02/03/2020 09:34:35 : [INFO ] ==> Check the target machine kernel log.
+02/03/2020 09:34:35 : [INFO ] Collecting LISAv2-OneVM-walatest-XV57-20200203012937-role-0 VM Kernel Initial Logs ...
+02/03/2020 09:34:35 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-01-27-40-4679/STORAGE-HOT-ADD-DISK-PARALLEL/runtest.sh to Unix format...
+02/03/2020 09:34:35 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-01-27-40-4679\STORAGE-HOT-ADD-DISK-PARALLEL\runtest.sh to azureuser @ 20.190.232.195 : 22 using password authentication
+02/03/2020 09:34:41 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 09:34:41 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@20.190.232.195 "echo ****** | sudo -S dmesg > ./InitialBootLogs.txt"
+02/03/2020 09:34:46 : [DEBUG] dmesg > ./InitialBootLogs.txt executed successfully in 4.33 seconds.
+02/03/2020 09:34:46 : [DEBUG] Downloading ./InitialBootLogs.txt from azureuser @ 20.190.232.195 : 22 to E:\yuxisun\LISAv2\TestResults\2020-03-02-01-27-40-4679\STORAGE-HOT-ADD-DISK-PARALLEL\LISAv2-OneVM-walatest-XV57-20200203012937-role-0 using password authentication
+02/03/2020 09:34:52 : [DEBUG] Download command returned exit code 0
+02/03/2020 09:34:52 : [DEBUG] Download successful after 1 attempt
+02/03/2020 09:34:52 : [INFO ] LISAv2-OneVM-walatest-XV57-20200203012937-role-0: Initial kernel log, InitialBootLogs.txt, collected successfully.
+02/03/2020 09:34:52 : [INFO ] Checking for call traces in kernel logs..
+02/03/2020 09:34:52 : [ERROR] [    0.000000] Call Trace:
+02/03/2020 09:34:52 : [INFO ] ==> Run test script on the target machine.
+02/03/2020 09:34:52 : [DEBUG] DiskSize=30 added to constants.sh file
+02/03/2020 09:34:52 : [DEBUG] DiskSku=Standard_LRS added to constants.sh file
+02/03/2020 09:34:53 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/constants.sh to Unix format...
+02/03/2020 09:34:53 : [DEBUG] Uploading E:\yuxisun\LISAv2\constants.sh to azureuser @ 20.190.232.195 : 22 using password authentication
+02/03/2020 09:34:59 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 09:34:59 : [INFO ] Constants file uploaded to: LISAv2-OneVM-walatest-XV57-20200203012937-role-0
+02/03/2020 09:34:59 : [INFO ] Test script: DiskHotAddRemove-Parallel.ps1 started.
+02/03/2020 09:34:59 : [INFO ] E:\yuxisun\LISAv2\Testscripts\Windows\DiskHotAddRemove-Parallel.ps1 -TestParams ;DiskSize=30;DiskSku=Standard_LRS -AllVmData @{ServiceName=; ResourceGroupName=LISAv2-OneVM-walatest-XV57-20200203012937; Location=eastus2; RoleName=LISAv2-OneVM-walatest-XV57-20200203012937-role-0; PublicIP=20.190.232.195; PublicIPv6=; InternalIP=10.0.0.4; SecondInternalIP=; URL=ica36663v4.eastus2.cloudapp.azure.com; URLv6=; Status=Succeeded; InstanceSize=Standard_D1_v2; VMGeneration=1; SSHPort=22} -TestProvider AzureProvider -CurrentTestData System.Xml.XmlElement
+02/03/2020 09:35:03 : [INFO ] Parallel Addition of Data Disks to the VM 
+02/03/2020 09:35:15 : [INFO ] 1 - Successfully create an empty data disks of size 30 GB
+02/03/2020 09:35:26 : [INFO ] 2 - Successfully create an empty data disks of size 30 GB
+02/03/2020 09:35:35 : [INFO ] 3 - Successfully create an empty data disks of size 30 GB
+02/03/2020 09:35:45 : [INFO ] 4 - Successfully create an empty data disks of size 30 GB
+02/03/2020 09:35:45 : [INFO ] Number of data disks added to the VM 4
+02/03/2020 09:36:53 : [INFO ] Successfully attached 4 empty data disks of size 30 GB to VM
+02/03/2020 09:36:53 : [INFO ] Verifying if data disks are added to the VM - running fdisk on remote VM
+02/03/2020 09:36:53 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-01-27-40-4679/STORAGE-HOT-ADD-DISK-PARALLEL/runtest.sh to Unix format...
+02/03/2020 09:36:53 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-01-27-40-4679\STORAGE-HOT-ADD-DISK-PARALLEL\runtest.sh to azureuser @ 20.190.232.195 : 22 using password authentication
+02/03/2020 09:36:59 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 09:36:59 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@20.190.232.195 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 09:37:04 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 4.71 seconds.
+02/03/2020 09:37:04 : [INFO ] 1 data disk is successfully attached the VM: Disk /dev/sdc: 30 GiB, 32212254720 bytes, 62914560 sectors
+02/03/2020 09:37:04 : [INFO ] 2 data disk is successfully attached the VM: Disk /dev/sdd: 30 GiB, 32212254720 bytes, 62914560 sectors
+02/03/2020 09:37:04 : [INFO ] 3 data disk is successfully attached the VM: Disk /dev/sde: 30 GiB, 32212254720 bytes, 62914560 sectors
+02/03/2020 09:37:04 : [INFO ] 4 data disk is successfully attached the VM: Disk /dev/sdf: 30 GiB, 32212254720 bytes, 62914560 sectors
+02/03/2020 09:37:04 : [INFO ] Number of data disks verified inside VM 4
+02/03/2020 09:37:04 : [INFO ] Data disks added to the VM are successfully verified inside VM
+02/03/2020 09:37:04 : [INFO ] Parallel Removal of Data Disks from the VM
+02/03/2020 09:37:42 : [INFO ] Successfully removed the data disk from the VM
+02/03/2020 09:37:42 : [INFO ] Verifying if data disks are removed from the VM: Running fdisk on remote VM
+02/03/2020 09:37:42 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@20.190.232.195 "echo ****** | sudo -S /sbin/fdisk -l | grep /dev/sd"
+02/03/2020 09:37:47 : [DEBUG] /sbin/fdisk -l | grep /dev/sd executed successfully in 4.65 seconds.
+02/03/2020 09:37:47 : [INFO ] Successfully verified that all data disks are removed from the VM
+02/03/2020 09:37:47 : [INFO ] ==> Upload test results to database.
+02/03/2020 09:37:47 : [INFO ] ==> Check if the test target machines are still running.
+02/03/2020 09:37:47 : [INFO ] Trying to connect to deployed VMs.
+02/03/2020 09:37:47 : [INFO ] Connecting to 20.190.232.195 : 22 succeeded.
+02/03/2020 09:37:47 : [INFO ] The SSH ports for all VMs are open.
+02/03/2020 09:37:47 : [INFO ] Collecting LISAv2-OneVM-walatest-XV57-20200203012937-role-0 VM Kernel Final Logs ...
+02/03/2020 09:37:47 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-01-27-40-4679/STORAGE-HOT-ADD-DISK-PARALLEL/runtest.sh to Unix format...
+02/03/2020 09:37:47 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-01-27-40-4679\STORAGE-HOT-ADD-DISK-PARALLEL\runtest.sh to azureuser @ 20.190.232.195 : 22 using password authentication
+02/03/2020 09:37:54 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 09:37:54 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@20.190.232.195 "echo ****** | sudo -S dmesg > ./FinalBootLogs.txt"
+02/03/2020 09:37:58 : [DEBUG] dmesg > ./FinalBootLogs.txt executed successfully in 4.44 seconds.
+02/03/2020 09:37:58 : [DEBUG] Downloading ./FinalBootLogs.txt from azureuser @ 20.190.232.195 : 22 to E:\yuxisun\LISAv2\TestResults\2020-03-02-01-27-40-4679\STORAGE-HOT-ADD-DISK-PARALLEL\LISAv2-OneVM-walatest-XV57-20200203012937-role-0 using password authentication
+02/03/2020 09:38:06 : [DEBUG] Download command returned exit code 0
+02/03/2020 09:38:06 : [DEBUG] Download successful after 1 attempt
+02/03/2020 09:38:06 : [INFO ] LISAv2-OneVM-walatest-XV57-20200203012937-role-0: Final kernel log, FinalBootLogs.txt, collected successfully.
+02/03/2020 09:38:06 : [INFO ] Checking for call traces in kernel logs..
+02/03/2020 09:38:06 : [ERROR] [    0.000000] Call Trace:
+02/03/2020 09:38:06 : [WARN ] Following fail/error/warning messages were added in the logs during execution of test:
+02/03/2020 09:38:06 : [WARN ] [  297.016053] sd 5:0:0:3: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+02/03/2020 09:38:06 : [WARN ] [  297.735006] sd 5:0:0:2: [sdd] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+02/03/2020 09:38:06 : [WARN ] [  298.013007] sd 5:0:0:1: [sde] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+02/03/2020 09:38:06 : [WARN ] [  298.415004] sd 5:0:0:0: [sdf] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+02/03/2020 09:38:06 : [WARN ] Found 4 fail/error/warning messages in the logs during execution.
+02/03/2020 09:38:06 : [INFO ] LISAv2-OneVM-walatest-XV57-20200203012937-role-0: Final Kernel logs collected and compared successfully
+02/03/2020 09:38:06 : [INFO ] Preserving the Resource Group(s) LISAv2-OneVM-walatest-XV57-20200203012937. Setting tags : calltrace = yes
+02/03/2020 09:38:06 : [INFO ] Setting LISAv2-OneVM-walatest-XV57-20200203012937 tag : calltrace = yes
+02/03/2020 09:38:13 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/CollectLogFile.sh to Unix format...
+02/03/2020 09:38:13 : [DEBUG] Uploading .\Testscripts\Linux\CollectLogFile.sh to azureuser @ 20.190.232.195 : 22 using password authentication
+02/03/2020 09:38:19 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 09:38:19 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-01-27-40-4679/STORAGE-HOT-ADD-DISK-PARALLEL/runtest.sh to Unix format...
+02/03/2020 09:38:19 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-01-27-40-4679\STORAGE-HOT-ADD-DISK-PARALLEL\runtest.sh to azureuser @ 20.190.232.195 : 22 using password authentication
+02/03/2020 09:38:27 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 09:38:27 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@20.190.232.195 "echo ****** | sudo -S bash CollectLogFile.sh -hostname LISAv2-OneVM-walatest-XV57-20200203012937-role-0"
+02/03/2020 09:38:36 : [DEBUG] bash CollectLogFile.sh -hostname LISAv2-OneVM-walatest-XV57-20200203012937-role-0 executed successfully in 8.13 seconds.
+02/03/2020 09:38:36 : [DEBUG] Downloading LISAv2-OneVM-walatest-XV57-20200203012937-role-0-*.txt from azureuser @ 20.190.232.195 : 22 to E:\yuxisun\LISAv2\TestResults\2020-03-02-01-27-40-4679\STORAGE-HOT-ADD-DISK-PARALLEL using password authentication
+02/03/2020 09:38:52 : [DEBUG] Download command returned exit code 0
+02/03/2020 09:38:52 : [DEBUG] Download successful after 1 attempt
+02/03/2020 09:38:52 : [INFO ] ==> Run test cleanup script if defined.
+02/03/2020 09:38:52 : [INFO ] Start to do cleanup for case STORAGE-HOT-ADD-DISK-PARALLEL
+02/03/2020 09:38:52 : [INFO ] Removing all files logs from IP : 20.190.232.195 PORT : 22
+02/03/2020 09:38:52 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-03-02-01-27-40-4679/STORAGE-HOT-ADD-DISK-PARALLEL/runtest.sh to Unix format...
+02/03/2020 09:38:52 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-03-02-01-27-40-4679\STORAGE-HOT-ADD-DISK-PARALLEL\runtest.sh to azureuser @ 20.190.232.195 : 22 using password authentication
+02/03/2020 09:38:59 : [DEBUG] Upload successful after 1 attempt
+02/03/2020 09:38:59 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@20.190.232.195 "echo ****** | sudo -S rm -rf *"
+02/03/2020 09:39:04 : [DEBUG] rm -rf * executed successfully in 5.71 seconds.
+02/03/2020 09:39:04 : [INFO ] All files removed from current user azureuser home folder successfully. VM IP : 20.190.232.195 PORT : 22
+02/03/2020 09:39:04 : [INFO ] CURRENT - PASS    - 1
+02/03/2020 09:39:04 : [INFO ] CURRENT - SKIPPED - 0
+02/03/2020 09:39:04 : [INFO ] CURRENT - FAIL    - 0
+02/03/2020 09:39:04 : [INFO ] CURRENT - ABORTED - 0
