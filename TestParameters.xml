@@ -1,0 +1,62 @@
+<TestParameters>
+  <!-- [Required] -->
+  <TestPlatform>Azure</TestPlatform>
+  <!-- [Required] for Azure. -->
+  <TestLocation>eastus2</TestLocation>
+  <RGIdentifier>walaautol2181</RGIdentifier>
+  <ARMImageName>
+  </ARMImageName>
+  <StorageAccount>walaautol2</StorageAccount>
+  <!-- [Required] for Two Hosts HyperV -->
+  <DestinationOsVHDPath>
+  </DestinationOsVHDPath>
+  <!-- [Required] Common for HyperV and Azure. -->
+  <OsVHD>https://walaautol2.blob.core.windows.net/vhds/RHEL-7.8-20200208.n.0.vhd</OsVHD>
+  <TestCategory>Functional</TestCategory>
+  <TestArea>
+  </TestArea>
+  <TestTag>
+  </TestTag>
+  <TestNames>STORAGE-HOT-ADD-DISK-PARALLEL</TestNames>
+  <!-- [Optional] Parameters for Image preparation before running tests. -->
+  <CustomKernel>
+  </CustomKernel>
+  <CustomLIS>
+  </CustomLIS>
+  <!-- [Optional] Enable kernel code coverage. -->
+  <EnableCodeCoverage>
+  </EnableCodeCoverage>
+  <!-- [Optional] Parameters for changing framework behavior. -->
+  <ExcludeTests>
+  </ExcludeTests>
+  <TestIterations>
+  </TestIterations>
+  <XMLSecretFile>
+  </XMLSecretFile>
+  <EnableTelemetry>
+  </EnableTelemetry>
+  <UseExistingRG>
+  </UseExistingRG>
+  <!-- [Optional] Parameters for setting TiPCluster, TipSessionId, DiskType=Managed/Unmanaged, Networking=SRIOV/Synthetic.
+            format is -CustomParameters "TiPCluster=ClusterId;TipSessionId=SessionId;DiskType=Managed;Networking=SRIOV"
+    -->
+  <CustomParameters>
+  </CustomParameters>
+  <!-- [Optional] Parameters for Overriding VM Configuration. -->
+  <CustomTestParameters>DATA_DISK_SKU=Standard_LRS</CustomTestParameters>
+  <OverrideVMSize>Standard_A5</OverrideVMSize>
+  <OverrideHyperVDiskMode>
+  </OverrideHyperVDiskMode>
+  <ResourceCleanup>Delete</ResourceCleanup>
+  <DeployVMPerEachTest>
+  </DeployVMPerEachTest>
+  <VMGeneration>
+  </VMGeneration>
+  <!-- [Optional] Database details. -->
+  <ResultDBTable>
+  </ResultDBTable>
+  <ResultDBTestTag>
+  </ResultDBTestTag>
+  <!-- [Optional] Exit LISAv2 with zero exit code, irrespective of test failures. -->
+  <ExitWithZero>$true</ExitWithZero>
+</TestParameters>
