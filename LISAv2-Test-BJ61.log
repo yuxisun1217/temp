@@ -1,0 +1,218 @@
+04/26/2020 08:05:11 : [INFO ] Import test parameters from provided XML file .\TestParameters.xml ...
+04/26/2020 08:05:11 : [INFO ] Setting parameter: TestPlatform = Azure
+04/26/2020 08:05:11 : [INFO ] Setting parameter: TestLocation = eastus2
+04/26/2020 08:05:11 : [INFO ] Setting parameter: RGIdentifier = walaautodev
+04/26/2020 08:05:11 : [INFO ] Setting parameter: StorageAccount = walaautol2
+04/26/2020 08:05:11 : [INFO ] Setting parameter: OsVHD = https://walaautol2.blob.core.windows.net/vhds/RHEL-8.2.0-updates-20200423.0.vhd
+04/26/2020 08:05:11 : [INFO ] Setting parameter: TestCategory = Functional
+04/26/2020 08:05:11 : [INFO ] Setting parameter: TestNames = VERIFY-RESTART-INTERFACE-RELOAD-NETVSC,ETHTOOL-GET-FEATURES,ETHTOOL-GET-SET-RINGBUFFER,ETHTOOL-GET-SET-TCP-HASHLEVELS,ETHTOOL-GET-SET-UDP-HASHLEVELS,ETHTOOL-GET-SET-GRO-LRO,ETHTOOL-GET-SET-CHANNEL,ETHTOOL-GET-SET-MSG-LEVEL,ETHTOOL-GET-SET-RSS-HASH-KEY,ETHTOOL-GET-SET-LINK-KSETTING,ETHTOOL-GET-MISC-INFO,ETHTOOL-GET-STATISTICS,NETWORK-ADD-MAX-SYNTHETIC-NICS-DURING-PROVISION,NETWORK-ADD-MAX-SYNTHETIC-NICS-AFTER-PROVISION,NET-IFUP-IFDOWN,NET-SET-STATIC-MAC,SRIOV-VERIFY-LSPCI,SRIOV-VERIFY-SINGLE-VF-CONNECTION,SRIOV-VERIFY-MAX-VF-CONNECTION,SRIOV-ADD-MAX-NICS-DURING-PROVISION,SRIOV-ADD-MAX-NICS-AFTER-PROVISION,SRIOV-DISABLE-ENABLE-AN,SRIOV-INTERRUPTS-CHANGE,SRIOV-DISABLEVF-ON-GUEST,SRIOV-RELOAD-MODULE,SRIOV-DISABLE-ENABLE-PCI,VERIFY-DISK-WITH-NOBARRIER,STORAGE-HOT-ADD-DISK-SERIAL,STORAGE-HOT-ADD-DISK-PARALLEL,VERIFY-DEPLOYMENT-PROVISION,VERIFY-DEPLOYMENT-PROVISION-EPHEMERAL-MANAGED-DISK,VERIFY-DEPLOYMENT-PROVISION-SRIOV,VERIFY-LINUX-CONFIGURATION,LIS-MODULES-CHECK,VERIFY-LIS-MODULES-VERSION,VERIFY-BOOT-ERROR-WARNINGS,TIME-CLOCKSOURCE,TIME-CLOCKEVENT-UP,TIME-CLOCKEVENT-SMP,INITRD-MODULES-CHECK,CPU-VERIFY-ONLINE,RELOAD-MODULES-SMP,LSVMBUS,VMBUS_VERIFY_INTERRUPTS,VMBUS_VERIFY_HEARTBEAT_PROPERTIES,KDUMP-CRASH-SMP,KDUMP-CRASH-DIFFERENT-VCPU,VM-HOT-RESIZE,L3-CACHE-CHECK,VERIFY-LINUX-DISK-SETUP
+04/26/2020 08:05:11 : [INFO ] Setting parameter: ResourceCleanup = Keep
+04/26/2020 08:05:11 : [INFO ] Setting parameter: ExitWithZero = $true
+04/26/2020 08:05:11 : [INFO ] Setting parameter: ParametersFile = .\TestParameters.xml
+04/26/2020 08:05:11 : [INFO ] Overwriting parameter OsVHD value: https://walaautol2.blob.core.windows.net/vhds/RHEL-8.2.0-updates-20200423.0.vhd -> https://walaautol2.blob.core.windows.net/vhds/RHEL-8.2.0-updates-20200423.0.vhd
+04/26/2020 08:05:11 : [INFO ] Overwriting parameter TestNames value: VERIFY-RESTART-INTERFACE-RELOAD-NETVSC,ETHTOOL-GET-FEATURES,ETHTOOL-GET-SET-RINGBUFFER,ETHTOOL-GET-SET-TCP-HASHLEVELS,ETHTOOL-GET-SET-UDP-HASHLEVELS,ETHTOOL-GET-SET-GRO-LRO,ETHTOOL-GET-SET-CHANNEL,ETHTOOL-GET-SET-MSG-LEVEL,ETHTOOL-GET-SET-RSS-HASH-KEY,ETHTOOL-GET-SET-LINK-KSETTING,ETHTOOL-GET-MISC-INFO,ETHTOOL-GET-STATISTICS,NETWORK-ADD-MAX-SYNTHETIC-NICS-DURING-PROVISION,NETWORK-ADD-MAX-SYNTHETIC-NICS-AFTER-PROVISION,NET-IFUP-IFDOWN,NET-SET-STATIC-MAC,SRIOV-VERIFY-LSPCI,SRIOV-VERIFY-SINGLE-VF-CONNECTION,SRIOV-VERIFY-MAX-VF-CONNECTION,SRIOV-ADD-MAX-NICS-DURING-PROVISION,SRIOV-ADD-MAX-NICS-AFTER-PROVISION,SRIOV-DISABLE-ENABLE-AN,SRIOV-INTERRUPTS-CHANGE,SRIOV-DISABLEVF-ON-GUEST,SRIOV-RELOAD-MODULE,SRIOV-DISABLE-ENABLE-PCI,VERIFY-DISK-WITH-NOBARRIER,STORAGE-HOT-ADD-DISK-SERIAL,STORAGE-HOT-ADD-DISK-PARALLEL,VERIFY-DEPLOYMENT-PROVISION,VERIFY-DEPLOYMENT-PROVISION-EPHEMERAL-MANAGED-DISK,VERIFY-DEPLOYMENT-PROVISION-SRIOV,VERIFY-LINUX-CONFIGURATION,LIS-MODULES-CHECK,VERIFY-LIS-MODULES-VERSION,VERIFY-BOOT-ERROR-WARNINGS,TIME-CLOCKSOURCE,TIME-CLOCKEVENT-UP,TIME-CLOCKEVENT-SMP,INITRD-MODULES-CHECK,CPU-VERIFY-ONLINE,RELOAD-MODULES-SMP,LSVMBUS,VMBUS_VERIFY_INTERRUPTS,VMBUS_VERIFY_HEARTBEAT_PROPERTIES,KDUMP-CRASH-SMP,KDUMP-CRASH-DIFFERENT-VCPU,VM-HOT-RESIZE,L3-CACHE-CHECK,VERIFY-LINUX-DISK-SETUP -> PCI-DEVICE-DISABLE-ENABLE-SRIOV-NVME
+04/26/2020 08:05:11 : [INFO ] Setting parameter: TestIterations = 1
+04/26/2020 08:05:11 : [INFO ] Setting parameter: XMLSecretFile = .\secret.xml
+04/26/2020 08:05:11 : [INFO ] Overwriting parameter ResourceCleanup value: Keep -> Keep
+04/26/2020 08:05:11 : [INFO ] Test parameters for Azure have been validated successfully. Continue running the test.
+04/26/2020 08:05:11 : [INFO ] Refreshed Blob Storage Location information, https://yujiangsriovdisks.blob.core.windows.net/yujiang
+04/26/2020 08:05:11 : [INFO ] Updated Test Case xml files.
+04/26/2020 08:05:11 : [INFO ] Updated E:\yuxisun\LISAv2\XML\RegionAndStorageAccounts.xml from secrets file.
+04/26/2020 08:05:11 : [INFO ] Using provided secrets file: .\secret.xml
+04/26/2020 08:05:11 : [INFO ] .\secret.xml found.
+04/26/2020 08:05:12 : [INFO ] ------------------------------------------------------------------
+04/26/2020 08:05:12 : [WARN ] No Azure authentication methods were available in Secret File.
+04/26/2020 08:05:12 : [WARN ] No Azure authentication context files detected in E:\yuxisun\LISAv2.
+04/26/2020 08:05:12 : [INFO ] Checking if Current Azure powershell session is authenticated...
+04/26/2020 08:05:15 : [INFO ] Current Azure powershell session is authenticated by yuxisun@redhat.com.
+04/26/2020 08:05:18 : [INFO ] Current Subscription : 27523af7-xxxx-xxxx-xxxx-070881f968e8.
+04/26/2020 08:05:18 : [INFO ] ------------------------------------------------------------------
+04/26/2020 08:05:20 : [INFO ] Selecting custom storage account : walaautol2 as per your test region.
+04/26/2020 08:05:20 : [INFO ] ------------------------------------------------------------------
+04/26/2020 08:05:24 : [INFO ] SubscriptionName       : BorisB-External-Partner
+04/26/2020 08:05:24 : [INFO ] SubscriptionId         : 27523af7-xxxx-xxxx-xxxx-070881f968e8
+04/26/2020 08:05:24 : [INFO ] User                   : yuxisun@redhat.com
+04/26/2020 08:05:24 : [INFO ] ServiceEndpoint        : https://management.core.windows.net/
+04/26/2020 08:05:24 : [INFO ] CurrentStorageAccount  : walaautol2
+04/26/2020 08:05:24 : [INFO ] ------------------------------------------------------------------
+04/26/2020 08:05:24 : [INFO ] Setting global variables
+04/26/2020 08:05:24 : [INFO ] Validating XML Files from E:\yuxisun\LISAv2 folder recursively...
+04/26/2020 08:05:26 : [INFO ] Collected test: PCI-DEVICE-DISABLE-ENABLE-SRIOV-NVME from E:\yuxisun\LISAv2\XML\TestCases\FunctionalTests.xml
+04/26/2020 08:05:26 : [INFO ] 1 Test Cases have been collected
+04/26/2020 08:05:26 : [INFO ] Prepare test image if required ...
+04/26/2020 08:05:33 : [INFO ] New Base VHD name - https://walaautol2.blob.core.windows.net/vhds/RHEL-8.2.0-updates-20200423.0.vhd
+04/26/2020 08:05:33 : [INFO ] Prepare test log structure and start testing now ...
+04/26/2020 08:05:33 : [INFO ] (1/1) testing started: PCI-DEVICE-DISABLE-ENABLE-SRIOV-NVME
+04/26/2020 08:05:33 : [INFO ] Deploy target machine for test if required ...
+04/26/2020 08:05:33 : [INFO ] Current test setup: OneVM8NIC
+04/26/2020 08:05:33 : [INFO ] Checking the subscription usage...
+04/26/2020 08:05:33 : [INFO ] Getting Azure 'ComputeSKU' details...
+04/26/2020 08:06:02 : [INFO ] Estimating VM #1 usage.
+04/26/2020 08:06:04 : [INFO ]   Current Regional Cores usage : 218 cores. Requested:80. Estimated usage=298. Max Allowed cores:944/944
+04/26/2020 08:06:05 : [INFO ]   Current standardLSv2Family usage : 160 cores. Requested:80. Estimated usage=240. Max Allowed cores:300/300
+04/26/2020 08:06:06 : [INFO ] Current 'Resource Group' usage:147. Requested:1. Estimated usage:148. Maximum allowed:980/980.
+04/26/2020 08:06:08 : [INFO ] Current 'Storage Account' usage:11. Requested:0. Estimated usage:11. Maximum allowed:250/250.
+04/26/2020 08:06:09 : [INFO ] Current 'Public IP' usage:8. Requested:1. Estimated usage:9. Maximum allowed:1000/1000.
+04/26/2020 08:06:09 : [INFO ] Current 'Virtual Network' usage:13. Requested:1. Estimated usage:14. Maximum allowed:1000/1000.
+04/26/2020 08:06:09 : [INFO ] Current 'Network Security Group' usage:6. Requested:1. Estimated usage:7. Maximum allowed:5000/5000.
+04/26/2020 08:06:09 : [INFO ] Current 'Load Balancer' usage:2. Requested:1. Estimated usage:3. Maximum allowed:1000/1000.
+04/26/2020 08:06:09 : [INFO ] Estimated subscription usage is under allowed limits.
+04/26/2020 08:06:09 : [INFO ] Creating Resource Group : LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609.
+04/26/2020 08:06:09 : [INFO ] Verifying that Resource group name is not in use.
+04/26/2020 08:06:09 : [INFO ] Try to delete resource group LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609...
+04/26/2020 08:06:09 : [INFO ] Checking if LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 exists...
+04/26/2020 08:06:11 : [INFO ] LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 does not exists.
+04/26/2020 08:06:11 : [INFO ] Using location : eastus2
+04/26/2020 08:06:14 : [INFO ] Resource Group LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 created.
+04/26/2020 08:06:14 : [INFO ] Setting LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 tag : BuildUser = yuxisun
+04/26/2020 08:06:19 : [INFO ] Setting LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 tag : BuildURL = NA
+04/26/2020 08:06:25 : [INFO ] Setting LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 tag : TestName = PCI-DEVICE-DISABLE-ENABLE-SRIOV-NVME
+04/26/2020 08:06:32 : [INFO ] Setting LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 tag : BuildMachine = HYPERV\YUXISUN-WIN10
+04/26/2020 08:06:37 : [INFO ] Setting LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 tag : CreationTime = 2020/04/26 08:06:37
+04/26/2020 08:06:43 : [INFO ] test platform is : Azure
+04/26/2020 08:06:43 : [INFO ] [Attempt 1/999] : Getting Existing Storage account information...
+04/26/2020 08:06:46 : [INFO ] Generating Template : C:\Users\yuxisun\AppData\Local\Temp\LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609.json
+04/26/2020 08:06:46 : [INFO ] Using API VERSION : 2018-04-01
+04/26/2020 08:06:46 : [INFO ] Added Variables..
+04/26/2020 08:06:47 : [INFO ] Added availabilitySet AvailabilitySet..
+04/26/2020 08:06:47 : [INFO ] Added Public IP Address PublicIPv4-35408..
+04/26/2020 08:06:47 : [INFO ] Added Custom image 'LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-Image' from 'RHEL-8.2.0-updates-20200423.0.vhd'..
+04/26/2020 08:06:48 : [INFO ] Added Default Subnet to VirtualNetwork..
+04/26/2020 08:06:48 : [INFO ]   Added ExtraSubnet-1 to VirtualNetwork..
+04/26/2020 08:06:48 : [INFO ]   Added ExtraSubnet-2 to VirtualNetwork..
+04/26/2020 08:06:48 : [INFO ]   Added ExtraSubnet-3 to VirtualNetwork..
+04/26/2020 08:06:48 : [INFO ]   Added ExtraSubnet-4 to VirtualNetwork..
+04/26/2020 08:06:48 : [INFO ]   Added ExtraSubnet-5 to VirtualNetwork..
+04/26/2020 08:06:48 : [INFO ]   Added ExtraSubnet-6 to VirtualNetwork..
+04/26/2020 08:06:48 : [INFO ]   Added ExtraSubnet-7 to VirtualNetwork..
+04/26/2020 08:06:48 : [INFO ] Added Virtual Network VirtualNetwork..
+04/26/2020 08:06:48 : [INFO ] Adding Load Balancer ...
+04/26/2020 08:06:49 : [INFO ] Added inboundNatRule Name:LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0-SSH frontendPort:22 backendPort:22 Protocol:tcp.
+04/26/2020 08:06:49 : [INFO ] Added Load Balancer.
+04/26/2020 08:06:49 : [INFO ] Adding Network Interface Card PrimaryNIC-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0
+04/26/2020 08:06:49 : [INFO ] Enabled inboundNatRule Name:LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0-SSH frontendPort:22 backendPort:22 Protocol:tcp to PrimaryNIC-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:06:49 : [INFO ] Enabled Accelerated Networking.
+04/26/2020 08:06:49 : [INFO ] Added NIC PrimaryNIC-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0..
+04/26/2020 08:06:50 : [INFO ]   ExtraNetworkCard-1-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0 is part of subnet - ExtraSubnet-1
+04/26/2020 08:06:50 : [INFO ]   Enabled Accelerated Networking for ExtraNetworkCard-1-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:06:50 : [INFO ]   ExtraNetworkCard-2-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0 is part of subnet - ExtraSubnet-2
+04/26/2020 08:06:50 : [INFO ]   Enabled Accelerated Networking for ExtraNetworkCard-2-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:06:50 : [INFO ]   ExtraNetworkCard-3-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0 is part of subnet - ExtraSubnet-3
+04/26/2020 08:06:50 : [INFO ]   Enabled Accelerated Networking for ExtraNetworkCard-3-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:06:50 : [INFO ]   ExtraNetworkCard-4-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0 is part of subnet - ExtraSubnet-4
+04/26/2020 08:06:51 : [INFO ]   Enabled Accelerated Networking for ExtraNetworkCard-4-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:06:51 : [INFO ]   ExtraNetworkCard-5-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0 is part of subnet - ExtraSubnet-5
+04/26/2020 08:06:51 : [INFO ]   Enabled Accelerated Networking for ExtraNetworkCard-5-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:06:51 : [INFO ]   ExtraNetworkCard-6-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0 is part of subnet - ExtraSubnet-6
+04/26/2020 08:06:51 : [INFO ]   Enabled Accelerated Networking for ExtraNetworkCard-6-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:06:52 : [INFO ]   ExtraNetworkCard-7-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0 is part of subnet - ExtraSubnet-7
+04/26/2020 08:06:52 : [INFO ]   Enabled Accelerated Networking for ExtraNetworkCard-7-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:06:52 : [INFO ] Adding Virtual Machine LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0
+04/26/2020 08:06:52 : [INFO ] >>> Using VHD : RHEL-8.2.0-updates-20200423.0.vhd (Converted to Managed Image)
+04/26/2020 08:06:52 : [INFO ] Added Managed-Persistent OS disk : LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0-OSDisk
+04/26/2020 08:06:52 : [INFO ] Added Virtual Machine LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0
+04/26/2020 08:06:52 : [INFO ] Attached Network Interface Card "ExtraNetworkCard-1-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0" to Virtual Machine "LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0".
+04/26/2020 08:06:52 : [INFO ] Attached Network Interface Card "ExtraNetworkCard-2-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0" to Virtual Machine "LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0".
+04/26/2020 08:06:52 : [INFO ] Attached Network Interface Card "ExtraNetworkCard-3-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0" to Virtual Machine "LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0".
+04/26/2020 08:06:53 : [INFO ] Attached Network Interface Card "ExtraNetworkCard-4-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0" to Virtual Machine "LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0".
+04/26/2020 08:06:53 : [INFO ] Attached Network Interface Card "ExtraNetworkCard-5-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0" to Virtual Machine "LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0".
+04/26/2020 08:06:53 : [INFO ] Attached Network Interface Card "ExtraNetworkCard-6-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0" to Virtual Machine "LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0".
+04/26/2020 08:06:53 : [INFO ] Attached Network Interface Card "ExtraNetworkCard-7-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0" to Virtual Machine "LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0".
+04/26/2020 08:06:53 : [INFO ] Attached Network Interface Card "PrimaryNIC-LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0" to Virtual Machine "LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0".
+04/26/2020 08:06:53 : [INFO ] Template generated successfully.
+04/26/2020 08:06:53 : [INFO ] Testing Deployment using C:\Users\yuxisun\AppData\Local\Temp\LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609.json ...
+04/26/2020 08:06:59 : [INFO ] Creating Deployment using C:\Users\yuxisun\AppData\Local\Temp\LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609.json ...
+04/26/2020 08:10:59 : [INFO ] Resource Group Deployment created.
+04/26/2020 08:11:00 : [INFO ] Collecting LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 data..
+04/26/2020 08:11:00 : [INFO ] 	Microsoft.Network/publicIPAddresses data collection in progress..
+04/26/2020 08:11:01 : [INFO ] 	Microsoft.Compute/virtualMachines data collection in progress..
+04/26/2020 08:11:02 : [INFO ] 	Microsoft.Network/networkInterfaces data collection in progress..
+04/26/2020 08:11:04 : [INFO ] 	Microsoft.Network/loadBalancers data collection in progress..
+04/26/2020 08:11:12 : [INFO ] Collected LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609 data!
+04/26/2020 08:11:12 : [INFO ] Trying to connect to deployed VMs.
+04/26/2020 08:11:12 : [INFO ] Connecting to 52.247.114.219 : 22 succeeded.
+04/26/2020 08:11:12 : [INFO ] The SSH ports for all VMs are open.
+04/26/2020 08:11:12 : [INFO ] Skipping boot data telemetry collection.
+04/26/2020 08:11:12 : [INFO ] Check if execution folder /home/azureuser exists or not, if not, create one.
+04/26/2020 08:11:17 : [DEBUG] Execution folder /home/azureuser exists.
+04/26/2020 08:11:17 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-26-04-01-05-11-4949/runtest.sh to Unix format...
+04/26/2020 08:11:17 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949\runtest.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:11:24 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:11:24 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.247.114.219 "uname -r"
+04/26/2020 08:11:28 : [DEBUG] uname -r executed successfully in 4.39 seconds.
+04/26/2020 08:11:28 : [INFO ] Initial Kernel Version: 4.18.0-193.el8.x86_64
+04/26/2020 08:11:28 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/DetectLinuxDistro.sh to Unix format...
+04/26/2020 08:11:28 : [DEBUG] Uploading .\Testscripts\Linux\DetectLinuxDistro.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:11:34 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:11:34 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-26-04-01-05-11-4949/runtest.sh to Unix format...
+04/26/2020 08:11:34 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949\runtest.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:11:41 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:11:41 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.247.114.219 "echo ****** | sudo -S chmod +x *.sh"
+04/26/2020 08:11:45 : [DEBUG] chmod +x *.sh executed successfully in 4.19 seconds.
+04/26/2020 08:11:45 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-26-04-01-05-11-4949/runtest.sh to Unix format...
+04/26/2020 08:11:45 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949\runtest.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:11:52 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:11:52 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.247.114.219 "echo ****** | sudo -S bash ./DetectLinuxDistro.sh"
+04/26/2020 08:11:56 : [DEBUG] bash ./DetectLinuxDistro.sh executed successfully in 4.43 seconds.
+04/26/2020 08:11:56 : [DEBUG] Set $fdisk > fdisk for REDHAT
+04/26/2020 08:11:56 : [INFO ] Linux distro detected: REDHAT
+04/26/2020 08:11:56 : [INFO ] Install package pciutils to use lspci command.
+04/26/2020 08:11:56 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/utils.sh to Unix format...
+04/26/2020 08:11:56 : [DEBUG] Uploading .\Testscripts\Linux\utils.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:12:03 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:12:03 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-26-04-01-05-11-4949/runtest.sh to Unix format...
+04/26/2020 08:12:03 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949\runtest.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:12:09 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:12:09 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.247.114.219 "echo ****** | sudo -S which lspci || (. ./utils.sh && install_package pciutils)"
+04/26/2020 08:12:14 : [DEBUG] which lspci || (. ./utils.sh && install_package pciutils) executed successfully in 4.61 seconds.
+04/26/2020 08:12:14 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-26-04-01-05-11-4949/runtest.sh to Unix format...
+04/26/2020 08:12:14 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949\runtest.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:12:20 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:12:20 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.247.114.219 "echo ****** | sudo -S lspci"
+04/26/2020 08:12:25 : [DEBUG] lspci executed successfully in 4.62 seconds.
+04/26/2020 08:12:25 : [INFO ] [Attempt 1/50] Mellanox Adapter detected in LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:12:25 : [INFO ] Mellanox Adapter detected in LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0.
+04/26/2020 08:12:25 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/ConfigureSRIOV.sh to Unix format...
+04/26/2020 08:12:25 : [DEBUG] Uploading .\Testscripts\Linux\ConfigureSRIOV.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:12:31 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:12:31 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-26-04-01-05-11-4949/runtest.sh to Unix format...
+04/26/2020 08:12:31 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949\runtest.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:12:38 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:13:25 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.247.114.219 "echo ****** | sudo -S chmod +x *.sh"
+04/26/2020 08:13:31 : [DEBUG] chmod +x *.sh executed successfully in 6.56 seconds.
+04/26/2020 08:13:31 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-26-04-01-05-11-4949/runtest.sh to Unix format...
+04/26/2020 08:13:31 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949\runtest.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:13:39 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:13:40 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.247.114.219 "echo ****** | sudo -S /home/azureuser/ConfigureSRIOV.sh"
+04/26/2020 08:13:44 : [DEBUG] /home/azureuser/ConfigureSRIOV.sh executed successfully in 4.31 seconds.
+04/26/2020 08:13:44 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-26-04-01-05-11-4949/runtest.sh to Unix format...
+04/26/2020 08:13:44 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949\runtest.sh to azureuser @ 52.247.114.219 : 22 using password authentication
+04/26/2020 08:13:50 : [DEBUG] Upload successful after 1 attempt
+04/26/2020 08:13:50 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.247.114.219 "echo ****** | sudo -S dmesg"
+04/26/2020 08:13:56 : [DEBUG] dmesg executed successfully in 5.18 seconds.
+04/26/2020 08:13:56 : [INFO ] Data path already switched to VF in LISAv2-OneVM8NIC-walaautodev-BJ61-20200426010609-role-0
+04/26/2020 08:13:56 : [INFO ] Run test case against the target machine ...
+04/26/2020 08:20:21 : [INFO ] Cleanup test environment if required ...
+04/26/2020 08:20:21 : [INFO ] Test BJ61 finished
+04/26/2020 08:20:21 : [INFO ] 
+[LISAv2 Test Results Summary]
+Test Run On           : 04/26/2020 08:05:33
+VHD Under Test        : https://walaautol2.blob.core.windows.net/vhds/RHEL-8.2.0-updates-20200423.0.vhd
+Test Category         : Functional
+Initial Kernel Version: 4.18.0-193.el8.x86_64
+Final Kernel Version  : 4.18.0-193.el8.x86_64
+Total Test Cases      : 1 (1 Passed, 0 Failed, 0 Aborted, 0 Skipped)
+Total Time (dd:hh:mm) : 0:0:14
+
+   ID TestArea             TestCaseName                                                                TestResult TestDuration(in minutes) 
+-------------------------------------------------------------------------------------------------------------------------------------------
+    1 CORE                 PCI-DEVICE-DISABLE-ENABLE-SRIOV-NVME                                              PASS                 6.41 
+
+
+Logs can be found at E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949
+
+
+04/26/2020 08:20:21 : [DEBUG] Creating 'E:\yuxisun\LISAv2\Azure-BJ61-TestLogs.zip' from 'E:\yuxisun\LISAv2\TestResults\2020-26-04-01-05-11-4949'
+04/26/2020 08:20:21 : [DEBUG] E:\yuxisun\LISAv2\Azure-BJ61-TestLogs.zip created successfully.
+04/26/2020 08:20:21 : [INFO ] Analyzing test results ...
+04/26/2020 08:20:21 : [INFO ] LISAv2 exit code: 0
