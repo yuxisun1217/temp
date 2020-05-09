@@ -1,0 +1,1851 @@
+May  9 21:21:30 localhost kernel: Command line: BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-193.el8.x86_64 root=UUID=14fe6e47-67ec-4806-b44b-815251485e39 ro console=tty1 console=ttyS0 earlyprintk=ttyS0 rootdelay=300 crashkernel=auto
+May  9 21:21:30 localhost kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+May  9 21:21:30 localhost kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+May  9 21:21:30 localhost kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+May  9 21:21:30 localhost kernel: x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+May  9 21:21:30 localhost kernel: x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+May  9 21:21:30 localhost kernel: x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+May  9 21:21:30 localhost kernel: x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+May  9 21:21:30 localhost kernel: x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+May  9 21:21:30 localhost kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+May  9 21:21:30 localhost kernel: x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+May  9 21:21:30 localhost kernel: x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+May  9 21:21:30 localhost kernel: x86/fpu: xstate_offset[5]:  960, xstate_sizes[5]:   64
+May  9 21:21:30 localhost kernel: x86/fpu: xstate_offset[6]: 1024, xstate_sizes[6]:  512
+May  9 21:21:30 localhost kernel: x86/fpu: xstate_offset[7]: 1536, xstate_sizes[7]: 1024
+May  9 21:21:30 localhost kernel: x86/fpu: Enabled xstate features 0xff, context size is 2560 bytes, using 'compacted' format.
+May  9 21:21:30 localhost kernel: BIOS-provided physical RAM map:
+May  9 21:21:30 localhost kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+May  9 21:21:30 localhost kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+May  9 21:21:30 localhost kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+May  9 21:21:30 localhost kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003ffeffff] usable
+May  9 21:21:30 localhost kernel: BIOS-e820: [mem 0x000000003fff0000-0x000000003fffefff] ACPI data
+May  9 21:21:30 localhost kernel: BIOS-e820: [mem 0x000000003ffff000-0x000000003fffffff] ACPI NVS
+May  9 21:21:30 localhost kernel: BIOS-e820: [mem 0x0000000100000000-0x000000019fffffff] usable
+May  9 21:21:30 localhost kernel: printk: bootconsole [earlyser0] enabled
+May  9 21:21:30 localhost kernel: NX (Execute Disable) protection: active
+May  9 21:21:30 localhost kernel: SMBIOS 2.3 present.
+May  9 21:21:30 localhost kernel: DMI: Microsoft Corporation Virtual Machine/Virtual Machine, BIOS 090007  06/02/2017
+May  9 21:21:30 localhost kernel: Hypervisor detected: Microsoft Hyper-V
+May  9 21:21:30 localhost kernel: Hyper-V: features 0x2e7f, hints 0x40c2c
+May  9 21:21:30 localhost kernel: Hyper-V Host Build:14393-10.0-0-0.305
+May  9 21:21:30 localhost kernel: Hyper-V: LAPIC Timer Frequency: 0x30d40
+May  9 21:21:30 localhost kernel: tsc: Marking TSC unstable due to running on Hyper-V
+May  9 21:21:30 localhost kernel: Hyper-V: Using hypercall for remote TLB flush
+May  9 21:21:30 localhost kernel: tsc: Detected 2095.111 MHz processor
+May  9 21:21:30 localhost kernel: last_pfn = 0x1a0000 max_arch_pfn = 0x400000000
+May  9 21:21:30 localhost kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+May  9 21:21:30 localhost kernel: last_pfn = 0x3fff0 max_arch_pfn = 0x400000000
+May  9 21:21:30 localhost kernel: found SMP MP-table at [mem 0x000ff780-0x000ff78f]
+May  9 21:21:30 localhost kernel: kexec: Reserving the low 1M of memory for crashkernel
+May  9 21:21:30 localhost kernel: Using GB pages for direct mapping
+May  9 21:21:30 localhost kernel: RAMDISK: [mem 0x3520e000-0x368fefff]
+May  9 21:21:30 localhost kernel: ACPI: Early table checksum verification disabled
+May  9 21:21:30 localhost kernel: ACPI: RSDP 0x00000000000F5BF0 000014 (v00 ACPIAM)
+May  9 21:21:30 localhost kernel: ACPI: RSDT 0x000000003FFF0000 000040 (v01 VRTUAL MICROSFT 06001702 MSFT 00000097)
+May  9 21:21:30 localhost kernel: ACPI: FACP 0x000000003FFF0200 000081 (v02 VRTUAL MICROSFT 06001702 MSFT 00000097)
+May  9 21:21:30 localhost kernel: ACPI: DSDT 0x000000003FFF1D24 003CBE (v01 MSFTVM MSFTVM02 00000002 INTL 02002026)
+May  9 21:21:30 localhost kernel: ACPI: FACS 0x000000003FFFF000 000040
+May  9 21:21:30 localhost kernel: ACPI: WAET 0x000000003FFF1A80 000028 (v01 VRTUAL MICROSFT 06001702 MSFT 00000097)
+May  9 21:21:30 localhost kernel: ACPI: SLIC 0x000000003FFF1AC0 000176 (v01 VRTUAL MICROSFT 06001702 MSFT 00000097)
+May  9 21:21:30 localhost kernel: ACPI: OEM0 0x000000003FFF1CC0 000064 (v01 VRTUAL MICROSFT 06001702 MSFT 00000097)
+May  9 21:21:30 localhost kernel: ACPI: SRAT 0x000000003FFF0800 000130 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+May  9 21:21:30 localhost kernel: ACPI: APIC 0x000000003FFF0300 000452 (v01 VRTUAL MICROSFT 06001702 MSFT 00000097)
+May  9 21:21:30 localhost kernel: ACPI: OEMB 0x000000003FFFF040 000064 (v01 VRTUAL MICROSFT 06001702 MSFT 00000097)
+May  9 21:21:30 localhost kernel: SRAT: PXM 0 -> APIC 0x00 -> Node 0
+May  9 21:21:30 localhost kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x3fffffff] hotplug
+May  9 21:21:30 localhost kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000-0x19fffffff] hotplug
+May  9 21:21:30 localhost kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x1a0200000-0xfdfffffff] hotplug
+May  9 21:21:30 localhost kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x1000000000-0xffffffffff] hotplug
+May  9 21:21:30 localhost kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x10000200000-0x1ffffffffff] hotplug
+May  9 21:21:30 localhost kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x20000200000-0x3ffffffffff] hotplug
+May  9 21:21:30 localhost kernel: NUMA: Node 0 [mem 0x00000000-0x3fffffff] + [mem 0x100000000-0x19fffffff] -> [mem 0x00000000-0x19fffffff]
+May  9 21:21:30 localhost kernel: NODE_DATA(0) allocated [mem 0x19ffd6000-0x19fffffff]
+May  9 21:21:30 localhost kernel: Using crashkernel=auto, the size chosen is a best effort estimation.
+May  9 21:21:30 localhost kernel: Reserving 160MB of memory at 688MB for crashkernel (System RAM: 3583MB)
+May  9 21:21:30 localhost kernel: Zone ranges:
+May  9 21:21:30 localhost kernel:  DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+May  9 21:21:30 localhost kernel:  DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+May  9 21:21:30 localhost kernel:  Normal   [mem 0x0000000100000000-0x000000019fffffff]
+May  9 21:21:30 localhost kernel:  Device   empty
+May  9 21:21:30 localhost kernel: Movable zone start for each node
+May  9 21:21:30 localhost kernel: Early memory node ranges
+May  9 21:21:30 localhost kernel:  node   0: [mem 0x0000000000001000-0x000000000009efff]
+May  9 21:21:30 localhost kernel:  node   0: [mem 0x0000000000100000-0x000000003ffeffff]
+May  9 21:21:30 localhost kernel:  node   0: [mem 0x0000000100000000-0x000000019fffffff]
+May  9 21:21:30 localhost kernel: Zeroed struct page in unavailable ranges: 114 pages
+May  9 21:21:30 localhost kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000019fffffff]
+May  9 21:21:30 localhost kernel: ACPI: PM-Timer IO Port: 0x408
+May  9 21:21:30 localhost kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+May  9 21:21:30 localhost kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+May  9 21:21:30 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+May  9 21:21:30 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+May  9 21:21:30 localhost kernel: Using ACPI (MADT) for SMP configuration information
+May  9 21:21:30 localhost kernel: smpboot: Allowing 128 CPUs, 127 hotplug CPUs
+May  9 21:21:30 localhost kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+May  9 21:21:30 localhost kernel: PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+May  9 21:21:30 localhost kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+May  9 21:21:30 localhost kernel: PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+May  9 21:21:30 localhost kernel: PM: Registered nosave memory: [mem 0x3fff0000-0x3fffefff]
+May  9 21:21:30 localhost kernel: PM: Registered nosave memory: [mem 0x3ffff000-0x3fffffff]
+May  9 21:21:30 localhost kernel: PM: Registered nosave memory: [mem 0x40000000-0xffffffff]
+May  9 21:21:30 localhost kernel: [mem 0x40000000-0xffffffff] available for PCI devices
+May  9 21:21:30 localhost kernel: Booting paravirtualized kernel on bare hardware
+May  9 21:21:30 localhost kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+May  9 21:21:30 localhost kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:128 nr_cpu_ids:128 nr_node_ids:1
+May  9 21:21:30 localhost kernel: percpu: Embedded 53 pages/cpu s180224 r8192 d28672 u262144
+May  9 21:21:30 localhost kernel: Hyper-V: PV spinlocks enabled
+May  9 21:21:30 localhost kernel: PV qspinlock hash table entries: 512 (order: 1, 8192 bytes)
+May  9 21:21:30 localhost kernel: Built 1 zonelists, mobility grouping on.  Total pages: 902896
+May  9 21:21:30 localhost kernel: Policy zone: Normal
+May  9 21:21:30 localhost kernel: Kernel command line: BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-193.el8.x86_64 root=UUID=14fe6e47-67ec-4806-b44b-815251485e39 ro console=tty1 console=ttyS0 earlyprintk=ttyS0 rootdelay=300 crashkernel=auto
+May  9 21:21:30 localhost kernel: Specific versions of hardware are certified with Red Hat Enterprise Linux 8. Please see the list of hardware certified with Red Hat Enterprise Linux 8 at https://access.redhat.com/ecosystem.
+May  9 21:21:30 localhost kernel: Memory: 925692K/3669560K available (12292K kernel code, 2151K rwdata, 3848K rodata, 2404K init, 6476K bss, 373708K reserved, 0K cma-reserved)
+May  9 21:21:30 localhost kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=128, Nodes=1
+May  9 21:21:30 localhost kernel: Kernel/User page tables isolation: enabled
+May  9 21:21:30 localhost kernel: ftrace: allocating 36334 entries in 142 pages
+May  9 21:21:30 localhost kernel: rcu: Hierarchical RCU implementation.
+May  9 21:21:30 localhost kernel: rcu: #011RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=128.
+May  9 21:21:30 localhost kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+May  9 21:21:30 localhost kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=128
+May  9 21:21:30 localhost kernel: NR_IRQS: 524544, nr_irqs: 1448, preallocated irqs: 16
+May  9 21:21:30 localhost kernel: random: get_random_bytes called from start_kernel+0x36b/0x55b with crng_init=0
+May  9 21:21:30 localhost kernel: Console: colour VGA+ 80x25
+May  9 21:21:30 localhost kernel: printk: console [tty1] enabled
+May  9 21:21:30 localhost kernel: printk: console [ttyS0] enabled
+May  9 21:21:30 localhost kernel: printk: bootconsole [earlyser0] disabled
+May  9 21:21:30 localhost kernel: ACPI: Core revision 20190703
+May  9 21:21:30 localhost kernel: APIC: Switch to symmetric I/O mode setup
+May  9 21:21:30 localhost kernel: Switched APIC routing to physical flat.
+May  9 21:21:30 localhost kernel: Hyper-V: Using IPI hypercalls
+May  9 21:21:30 localhost kernel: Hyper-V: Using MSR based APIC access
+May  9 21:21:30 localhost kernel: clocksource: hyperv_clocksource_tsc_page: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+May  9 21:21:30 localhost kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+May  9 21:21:30 localhost kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4190.22 BogoMIPS (lpj=2095111)
+May  9 21:21:30 localhost kernel: pid_max: default: 131072 minimum: 1024
+May  9 21:21:30 localhost kernel: Security Framework initialized
+May  9 21:21:30 localhost kernel: Yama: becoming mindful.
+May  9 21:21:30 localhost kernel: SELinux:  Initializing.
+May  9 21:21:30 localhost kernel: Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+May  9 21:21:30 localhost kernel: Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+May  9 21:21:30 localhost kernel: Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+May  9 21:21:30 localhost kernel: Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+May  9 21:21:30 localhost kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+May  9 21:21:30 localhost kernel: Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+May  9 21:21:30 localhost kernel: FEATURE SPEC_CTRL Not Present
+May  9 21:21:30 localhost kernel: FEATURE IBPB_SUPPORT Not Present
+May  9 21:21:30 localhost kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+May  9 21:21:30 localhost kernel: Spectre V2 : Mitigation: Full generic retpoline
+May  9 21:21:30 localhost kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+May  9 21:21:30 localhost kernel: Speculative Store Bypass: Vulnerable
+May  9 21:21:30 localhost kernel: TAA: Vulnerable: Clear CPU buffers attempted, no microcode
+May  9 21:21:30 localhost kernel: MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+May  9 21:21:30 localhost kernel: smpboot: CPU0: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz (family: 0x6, model: 0x55, stepping: 0x4)
+May  9 21:21:30 localhost kernel: Performance Events: unsupported p6 CPU model 85 no PMU driver, software events only.
+May  9 21:21:30 localhost kernel: rcu: Hierarchical SRCU implementation.
+May  9 21:21:30 localhost kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+May  9 21:21:30 localhost kernel: smp: Bringing up secondary CPUs ...
+May  9 21:21:30 localhost kernel: smp: Brought up 1 node, 1 CPU
+May  9 21:21:30 localhost kernel: smpboot: Max logical packages: 128
+May  9 21:21:30 localhost kernel: smpboot: Total of 1 processors activated (4190.22 BogoMIPS)
+May  9 21:21:30 localhost kernel: node 0 initialised, 592540 pages in 1ms
+May  9 21:21:30 localhost kernel: devtmpfs: initialized
+May  9 21:21:30 localhost kernel: x86/mm: Memory block size: 128MB
+May  9 21:21:30 localhost kernel: PM: Registering ACPI NVS region [mem 0x3ffff000-0x3fffffff] (4096 bytes)
+May  9 21:21:30 localhost kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+May  9 21:21:30 localhost kernel: futex hash table entries: 32768 (order: 9, 2097152 bytes)
+May  9 21:21:30 localhost kernel: pinctrl core: initialized pinctrl subsystem
+May  9 21:21:30 localhost kernel: NET: Registered protocol family 16
+May  9 21:21:30 localhost kernel: audit: initializing netlink subsys (disabled)
+May  9 21:21:30 localhost kernel: cpuidle: using governor menu
+May  9 21:21:30 localhost kernel: ACPI: bus type PCI registered
+May  9 21:21:30 localhost kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+May  9 21:21:30 localhost kernel: PCI: Using configuration type 1 for base access
+May  9 21:21:30 localhost kernel: audit: type=2000 audit(1589030486.160:1): state=initialized audit_enabled=0 res=1
+May  9 21:21:30 localhost kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+May  9 21:21:30 localhost kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+May  9 21:21:30 localhost kernel: cryptd: max_cpu_qlen set to 1000
+May  9 21:21:30 localhost kernel: ACPI: Added _OSI(Module Device)
+May  9 21:21:30 localhost kernel: ACPI: Added _OSI(Processor Device)
+May  9 21:21:30 localhost kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+May  9 21:21:30 localhost kernel: ACPI: Added _OSI(Processor Aggregator Device)
+May  9 21:21:30 localhost kernel: ACPI: Added _OSI(Linux-Dell-Video)
+May  9 21:21:30 localhost kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+May  9 21:21:30 localhost kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+May  9 21:21:30 localhost kernel: ACPI: 1 ACPI AML tables successfully acquired and loaded
+May  9 21:21:30 localhost kernel: ACPI: Interpreter enabled
+May  9 21:21:30 localhost kernel: ACPI: (supports S0 S5)
+May  9 21:21:30 localhost kernel: ACPI: Using IOAPIC for interrupt routing
+May  9 21:21:30 localhost kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+May  9 21:21:30 localhost kernel: ACPI: Enabled 1 GPEs in block 00 to 0F
+May  9 21:21:30 localhost kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+May  9 21:21:30 localhost kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+May  9 21:21:30 localhost kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+May  9 21:21:30 localhost kernel: PCI host bridge to bus 0000:00
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: root bus resource [mem 0xfe0000000-0xfffffffff window]
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: root bus resource [mem 0x40000000-0xfffbffff window]
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+May  9 21:21:30 localhost kernel: pci 0000:00:00.0: [8086:7192] type 00 class 0x060000
+May  9 21:21:30 localhost kernel: pci 0000:00:07.0: [8086:7110] type 00 class 0x060100
+May  9 21:21:30 localhost kernel: pci 0000:00:07.1: [8086:7111] type 00 class 0x010180
+May  9 21:21:30 localhost kernel: pci 0000:00:07.1: reg 0x20: [io  0xffa0-0xffaf]
+May  9 21:21:30 localhost kernel: pci 0000:00:07.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+May  9 21:21:30 localhost kernel: pci 0000:00:07.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+May  9 21:21:30 localhost kernel: pci 0000:00:07.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+May  9 21:21:30 localhost kernel: pci 0000:00:07.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+May  9 21:21:30 localhost kernel: pci 0000:00:07.3: [8086:7113] type 00 class 0x068000
+May  9 21:21:30 localhost kernel: * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,#012* this clock source is slow. Consider trying other clock sources
+May  9 21:21:30 localhost kernel: pci 0000:00:07.3: quirk: [io  0x0400-0x043f] claimed by PIIX4 ACPI
+May  9 21:21:30 localhost kernel: pci 0000:00:08.0: [1414:5353] type 00 class 0x030000
+May  9 21:21:30 localhost kernel: pci 0000:00:08.0: reg 0x10: [mem 0xf8000000-0xfbffffff]
+May  9 21:21:30 localhost kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 7 9 10 *11 12 14 15)
+May  9 21:21:30 localhost kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 7 9 10 11 12 14 15) *0, disabled.
+May  9 21:21:30 localhost kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 7 9 10 11 12 14 15) *0, disabled.
+May  9 21:21:30 localhost kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 7 9 10 11 12 14 15) *0, disabled.
+May  9 21:21:30 localhost kernel: iommu: Default domain type: Passthrough 
+May  9 21:21:30 localhost kernel: pci 0000:00:08.0: vgaarb: setting as boot VGA device
+May  9 21:21:30 localhost kernel: pci 0000:00:08.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+May  9 21:21:30 localhost kernel: pci 0000:00:08.0: vgaarb: bridge control possible
+May  9 21:21:30 localhost kernel: vgaarb: loaded
+May  9 21:21:30 localhost kernel: SCSI subsystem initialized
+May  9 21:21:30 localhost kernel: ACPI: bus type USB registered
+May  9 21:21:30 localhost kernel: usbcore: registered new interface driver usbfs
+May  9 21:21:30 localhost kernel: usbcore: registered new interface driver hub
+May  9 21:21:30 localhost kernel: usbcore: registered new device driver usb
+May  9 21:21:30 localhost kernel: pps_core: LinuxPPS API ver. 1 registered
+May  9 21:21:30 localhost kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+May  9 21:21:30 localhost kernel: PTP clock support registered
+May  9 21:21:30 localhost kernel: EDAC MC: Ver: 3.0.0
+May  9 21:21:30 localhost kernel: PCI: Using ACPI for IRQ routing
+May  9 21:21:30 localhost kernel: NetLabel: Initializing
+May  9 21:21:30 localhost kernel: NetLabel:  domain hash size = 128
+May  9 21:21:30 localhost kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+May  9 21:21:30 localhost kernel: NetLabel:  unlabeled traffic allowed by default
+May  9 21:21:30 localhost kernel: clocksource: Switched to clocksource hyperv_clocksource_tsc_page
+May  9 21:21:30 localhost kernel: VFS: Disk quotas dquot_6.6.0
+May  9 21:21:30 localhost kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+May  9 21:21:30 localhost kernel: pnp: PnP ACPI init
+May  9 21:21:30 localhost kernel: system 00:06: [io  0x01e0-0x01ef] has been reserved
+May  9 21:21:30 localhost kernel: system 00:06: [io  0x0160-0x016f] has been reserved
+May  9 21:21:30 localhost kernel: system 00:06: [io  0x0278-0x027f] has been reserved
+May  9 21:21:30 localhost kernel: system 00:06: [io  0x0378-0x037f] has been reserved
+May  9 21:21:30 localhost kernel: system 00:06: [io  0x0678-0x067f] has been reserved
+May  9 21:21:30 localhost kernel: system 00:06: [io  0x0778-0x077f] has been reserved
+May  9 21:21:30 localhost kernel: system 00:06: [io  0x04d0-0x04d1] has been reserved
+May  9 21:21:30 localhost kernel: system 00:07: [io  0x0400-0x043f] has been reserved
+May  9 21:21:30 localhost kernel: system 00:07: [io  0x0370-0x0371] has been reserved
+May  9 21:21:30 localhost kernel: system 00:07: [io  0x0440-0x044f] has been reserved
+May  9 21:21:30 localhost kernel: system 00:07: [mem 0xfec00000-0xfec00fff] could not be reserved
+May  9 21:21:30 localhost kernel: system 00:07: [mem 0xfee00000-0xfee00fff] has been reserved
+May  9 21:21:30 localhost kernel: system 00:08: [mem 0x00000000-0x0009ffff] could not be reserved
+May  9 21:21:30 localhost kernel: system 00:08: [mem 0x000c0000-0x000dffff] could not be reserved
+May  9 21:21:30 localhost kernel: system 00:08: [mem 0x000e0000-0x000fffff] could not be reserved
+May  9 21:21:30 localhost kernel: system 00:08: [mem 0x00100000-0x3fffffff] could not be reserved
+May  9 21:21:30 localhost kernel: system 00:08: [mem 0xfffc0000-0xffffffff] has been reserved
+May  9 21:21:30 localhost kernel: pnp: PnP ACPI: found 9 devices
+May  9 21:21:30 localhost kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: resource 4 [mem 0xfe0000000-0xfffffffff window]
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: resource 5 [io  0x0000-0x0cf7 window]
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: resource 6 [io  0x0d00-0xffff window]
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: resource 7 [mem 0x000a0000-0x000bffff window]
+May  9 21:21:30 localhost kernel: pci_bus 0000:00: resource 8 [mem 0x40000000-0xfffbffff window]
+May  9 21:21:30 localhost kernel: NET: Registered protocol family 2
+May  9 21:21:30 localhost kernel: tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes)
+May  9 21:21:30 localhost kernel: TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+May  9 21:21:30 localhost kernel: TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+May  9 21:21:30 localhost kernel: TCP: Hash tables configured (established 32768 bind 32768)
+May  9 21:21:30 localhost kernel: UDP hash table entries: 2048 (order: 4, 65536 bytes)
+May  9 21:21:30 localhost kernel: UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+May  9 21:21:30 localhost kernel: NET: Registered protocol family 1
+May  9 21:21:30 localhost kernel: NET: Registered protocol family 44
+May  9 21:21:30 localhost kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+May  9 21:21:30 localhost kernel: pci 0000:00:08.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+May  9 21:21:30 localhost kernel: PCI: CLS 0 bytes, default 64
+May  9 21:21:30 localhost kernel: Unpacking initramfs...
+May  9 21:21:30 localhost kernel: Freeing initrd memory: 23492K
+May  9 21:21:30 localhost kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+May  9 21:21:30 localhost kernel: software IO TLB: mapped [mem 0x3bff0000-0x3fff0000] (64MB)
+May  9 21:21:30 localhost kernel: Initialise system trusted keyrings
+May  9 21:21:30 localhost kernel: Key type blacklist registered
+May  9 21:21:30 localhost kernel: workingset: timestamp_bits=36 max_order=20 bucket_order=0
+May  9 21:21:30 localhost kernel: zbud: loaded
+May  9 21:21:30 localhost kernel: pstore: using deflate compression
+May  9 21:21:30 localhost kernel: Platform Keyring initialized
+May  9 21:21:30 localhost kernel: NET: Registered protocol family 38
+May  9 21:21:30 localhost kernel: Key type asymmetric registered
+May  9 21:21:30 localhost kernel: Asymmetric key parser 'x509' registered
+May  9 21:21:30 localhost kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+May  9 21:21:30 localhost kernel: io scheduler mq-deadline registered
+May  9 21:21:30 localhost kernel: io scheduler kyber registered
+May  9 21:21:30 localhost kernel: io scheduler bfq registered
+May  9 21:21:30 localhost kernel: atomic64_test: passed for x86-64 platform with CX8 and with SSE
+May  9 21:21:30 localhost kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+May  9 21:21:30 localhost kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+May  9 21:21:30 localhost kernel: ACPI: Power Button [PWRF]
+May  9 21:21:30 localhost kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+May  9 21:21:30 localhost kernel: 00:03: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+May  9 21:21:30 localhost kernel: 00:04: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+May  9 21:21:30 localhost kernel: Non-volatile memory driver v1.3
+May  9 21:21:30 localhost kernel: rdac: device handler registered
+May  9 21:21:30 localhost kernel: hp_sw: device handler registered
+May  9 21:21:30 localhost kernel: emc: device handler registered
+May  9 21:21:30 localhost kernel: alua: device handler registered
+May  9 21:21:30 localhost kernel: libphy: Fixed MDIO Bus: probed
+May  9 21:21:30 localhost kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+May  9 21:21:30 localhost kernel: ehci-pci: EHCI PCI platform driver
+May  9 21:21:30 localhost kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+May  9 21:21:30 localhost kernel: ohci-pci: OHCI PCI platform driver
+May  9 21:21:30 localhost kernel: uhci_hcd: USB Universal Host Controller Interface driver
+May  9 21:21:30 localhost kernel: usbcore: registered new interface driver usbserial_generic
+May  9 21:21:30 localhost kernel: usbserial: USB Serial support registered for generic
+May  9 21:21:30 localhost kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+May  9 21:21:30 localhost kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+May  9 21:21:30 localhost kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+May  9 21:21:30 localhost kernel: mousedev: PS/2 mouse device common for all mice
+May  9 21:21:30 localhost kernel: rtc_cmos 00:00: RTC can wake from S4
+May  9 21:21:30 localhost kernel: rtc_cmos 00:00: registered as rtc0
+May  9 21:21:30 localhost kernel: rtc_cmos 00:00: alarms up to one month, 114 bytes nvram
+May  9 21:21:30 localhost kernel: intel_pstate: CPU model not supported
+May  9 21:21:30 localhost kernel: hidraw: raw HID events driver (C) Jiri Kosina
+May  9 21:21:30 localhost kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+May  9 21:21:30 localhost kernel: usbcore: registered new interface driver usbhid
+May  9 21:21:30 localhost kernel: usbhid: USB HID core driver
+May  9 21:21:30 localhost kernel: drop_monitor: Initializing network drop monitor service
+May  9 21:21:30 localhost kernel: Initializing XFRM netlink socket
+May  9 21:21:30 localhost kernel: NET: Registered protocol family 10
+May  9 21:21:30 localhost kernel: Segment Routing with IPv6
+May  9 21:21:30 localhost kernel: NET: Registered protocol family 17
+May  9 21:21:30 localhost kernel: mpls_gso: MPLS GSO support
+May  9 21:21:30 localhost kernel: core: Using 1 MCE banks
+May  9 21:21:30 localhost kernel: AVX2 version of gcm_enc/dec engaged.
+May  9 21:21:30 localhost kernel: AES CTR mode by8 optimization enabled
+May  9 21:21:30 localhost kernel: registered taskstats version 1
+May  9 21:21:30 localhost kernel: Loading compiled-in X.509 certificates
+May  9 21:21:30 localhost kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kernel signing key: f597a17b4041dae84c6a4fa1b04623b12b2b4d10'
+May  9 21:21:30 localhost kernel: Loaded X.509 cert 'Red Hat Enterprise Linux Driver Update Program (key 3): bf57f3e87362bc7229d9f465321773dfd1f77a80'
+May  9 21:21:30 localhost kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kpatch signing key: 4d38fd864ebe18c5f0b72e3852e2014c3a676fc8'
+May  9 21:21:30 localhost kernel: zswap: loaded using pool lzo/zbud
+May  9 21:21:30 localhost kernel: Key type big_key registered
+May  9 21:21:30 localhost kernel: Key type encrypted registered
+May  9 21:21:30 localhost kernel: ima: No TPM chip found, activating TPM-bypass!
+May  9 21:21:30 localhost kernel: ima: Allocated hash algorithm: sha1
+May  9 21:21:30 localhost kernel: evm: Initialising EVM extended attributes:
+May  9 21:21:30 localhost kernel: evm: security.selinux
+May  9 21:21:30 localhost kernel: evm: security.ima
+May  9 21:21:30 localhost kernel: evm: security.capability
+May  9 21:21:30 localhost kernel: evm: HMAC attrs: 0x1
+May  9 21:21:30 localhost kernel: rtc_cmos 00:00: setting system clock to 2020-05-09 13:21:29 UTC (1589030489)
+May  9 21:21:30 localhost kernel: Unstable clock detected, switching default tracing clock to "global"#012If you want to keep using the local clock, then add:#012  "trace_clock=local"#012on the kernel command line
+May  9 21:21:30 localhost kernel: random: fast init done
+May  9 21:21:30 localhost kernel: Freeing unused decrypted memory: 2040K
+May  9 21:21:30 localhost kernel: Freeing unused kernel memory: 2404K
+May  9 21:21:30 localhost kernel: Write protecting the kernel read-only data: 18432k
+May  9 21:21:30 localhost kernel: Freeing unused kernel memory: 2020K
+May  9 21:21:30 localhost kernel: Freeing unused kernel memory: 248K
+May  9 21:21:30 localhost systemd[1]: systemd 239 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+May  9 21:21:30 localhost systemd[1]: Detected virtualization microsoft.
+May  9 21:21:30 localhost systemd[1]: Detected architecture x86-64.
+May  9 21:21:30 localhost systemd[1]: Running in initial RAM disk.
+May  9 21:21:30 localhost systemd[1]: Set hostname to <walaautopre220928>.
+May  9 21:21:30 localhost kernel: random: systemd: uninitialized urandom read (16 bytes read)
+May  9 21:21:30 localhost systemd[1]: Reached target Swap.
+May  9 21:21:30 localhost kernel: random: systemd: uninitialized urandom read (16 bytes read)
+May  9 21:21:30 localhost systemd[1]: Listening on Journal Socket.
+May  9 21:21:30 localhost kernel: random: systemd: uninitialized urandom read (16 bytes read)
+May  9 21:21:30 localhost systemd[1]: Starting Create list of required static device nodes for the current kernel...
+May  9 21:21:30 localhost kernel: psmouse serio1: trackpoint: failed to get extended button data, assuming 3 buttons
+May  9 21:21:30 localhost systemd[1]: Listening on udev Control Socket.
+May  9 21:21:30 localhost systemd[1]: Starting Setup Virtual Console...
+May  9 21:21:30 localhost systemd-journald[265]: Journal started
+May  9 21:21:30 localhost systemd-journald[265]: Runtime journal (/run/log/journal/bb014835d31248a2afdcd257f3f8ce28) is 8.0M, max 162.4M, 154.4M free.
+May  9 21:21:32 localhost rngd[271]: Initializing available sources
+May  9 21:21:32 localhost rngd[271]: Failed to init entropy source hwrng
+May  9 21:21:32 localhost rngd[271]: Enabling RDSEED rng support
+May  9 21:21:32 localhost rngd[271]: Initializing entropy source rdrand
+May  9 21:21:32 localhost systemd[1]: Started Create list of required static device nodes for the current kernel.
+May  9 21:21:32 localhost systemd[1]: Started Create Volatile Files and Directories.
+May  9 21:21:32 localhost systemd[1]: Started Apply Kernel Variables.
+May  9 21:21:32 localhost systemd[1]: Starting Create Static Device Nodes in /dev...
+May  9 21:21:32 localhost systemd[1]: Started Create Static Device Nodes in /dev.
+May  9 21:21:33 localhost kernel: psmouse serio1: trackpoint: IBM TrackPoint firmware: 0x01, buttons: 3/3
+May  9 21:21:33 localhost kernel: input: TPPS/2 IBM TrackPoint as /devices/platform/i8042/serio1/input/input3
+May  9 21:21:36 localhost rngd[271]: Initializing AES buffer
+May  9 21:21:36 localhost rngd[271]: Enabling JITTER rng support
+May  9 21:21:36 localhost rngd[271]: Initializing entropy source jitter
+May  9 21:21:36 localhost kernel: random: crng init done
+May  9 21:21:36 localhost kernel: random: 7 urandom warning(s) missed due to ratelimiting
+May  9 21:21:40 localhost systemd[1]: Started Setup Virtual Console.
+May  9 21:21:40 localhost systemd[1]: Starting dracut cmdline hook...
+May  9 21:21:40 localhost dracut-cmdline[279]: dracut-8.2 (Ootpa) dracut-049-70.git20200228.el8
+May  9 21:21:40 localhost dracut-cmdline[279]: Using kernel command line parameters: BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-193.el8.x86_64 root=UUID=14fe6e47-67ec-4806-b44b-815251485e39 ro console=tty1 console=ttyS0 earlyprintk=ttyS0 rootdelay=300 crashkernel=auto
+May  9 21:21:40 localhost systemd[1]: Started dracut cmdline hook.
+May  9 21:21:40 localhost systemd[1]: Starting dracut pre-udev hook...
+May  9 21:21:40 localhost systemd[1]: Started dracut pre-udev hook.
+May  9 21:21:40 localhost systemd[1]: Starting udev Kernel Device Manager...
+May  9 21:21:40 localhost systemd[1]: Started udev Kernel Device Manager.
+May  9 21:21:40 localhost systemd[1]: Starting udev Coldplug all Devices...
+May  9 21:21:41 localhost systemd[1]: Mounting Kernel Configuration File System...
+May  9 21:21:41 localhost systemd[1]: Mounted Kernel Configuration File System.
+May  9 21:21:41 localhost systemd[1]: Started udev Coldplug all Devices.
+May  9 21:21:41 localhost systemd[1]: Starting Show Plymouth Boot Screen...
+May  9 21:21:41 localhost systemd[1]: Starting dracut initqueue hook...
+May  9 21:21:41 localhost systemd[1]: Reached target System Initialization.
+May  9 21:21:41 localhost kernel: hv_vmbus: Vmbus version:4.0
+May  9 21:21:41 localhost systemd[1]: Started Show Plymouth Boot Screen.
+May  9 21:21:41 localhost systemd[1]: Received SIGRTMIN+20 from PID 398 (plymouthd).
+May  9 21:21:41 localhost kernel: hv_vmbus: registering driver hyperv_fb
+May  9 21:21:41 localhost systemd[1]: Reached target Paths.
+May  9 21:21:41 localhost systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+May  9 21:21:41 localhost systemd[1]: Reached target Basic System.
+May  9 21:21:41 localhost systemd-udevd[388]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+May  9 21:21:41 localhost kernel: hyperv_fb: Screen resolution: 1152x864, Color depth: 32
+May  9 21:21:41 localhost kernel: ata_piix 0000:00:07.1: Hyper-V Virtual Machine detected, ATA device ignore set
+May  9 21:21:41 localhost kernel: hv_vmbus: registering driver hid_hyperv
+May  9 21:21:41 localhost kernel: hv_vmbus: registering driver hyperv_keyboard
+May  9 21:21:41 localhost kernel: hv_vmbus: registering driver hv_storvsc
+May  9 21:21:41 localhost kernel: Console: switching to colour frame buffer device 144x54
+May  9 21:21:41 localhost kernel: scsi host0: storvsc_host_t
+May  9 21:21:41 localhost kernel: scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+May  9 21:21:41 localhost kernel: scsi host1: storvsc_host_t
+May  9 21:21:41 localhost kernel: scsi 1:0:1:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+May  9 21:21:41 localhost kernel: scsi host2: storvsc_host_t
+May  9 21:21:41 localhost kernel: hv_vmbus: registering driver hv_netvsc
+May  9 21:21:41 localhost kernel: input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input4
+May  9 21:21:41 localhost kernel: hid-generic 0006:045E:0621.0001: input: <UNKNOWN> HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+May  9 21:21:41 localhost kernel: scsi host3: storvsc_host_t
+May  9 21:21:41 localhost kernel: input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/device:07/VMBUS:01/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio2/input/input5
+May  9 21:21:41 localhost kernel: scsi host4: ata_piix
+May  9 21:21:41 localhost kernel: scsi 0:0:0:0: Attached scsi generic sg0 type 0
+May  9 21:21:41 localhost kernel: scsi 1:0:1:0: Attached scsi generic sg1 type 0
+May  9 21:21:41 localhost kernel: sd 0:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
+May  9 21:21:41 localhost kernel: sd 0:0:0:0: [sda] 4096-byte physical blocks
+May  9 21:21:41 localhost kernel: sd 0:0:0:0: [sda] Write Protect is off
+May  9 21:21:41 localhost kernel: sd 1:0:1:0: [sdb] 14680064 512-byte logical blocks: (7.52 GB/7.00 GiB)
+May  9 21:21:41 localhost kernel: sd 1:0:1:0: [sdb] 4096-byte physical blocks
+May  9 21:21:41 localhost kernel: sd 1:0:1:0: [sdb] Write Protect is off
+May  9 21:21:41 localhost kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, supports DPO and FUA
+May  9 21:21:41 localhost kernel: sd 1:0:1:0: [sdb] Write cache: disabled, read cache: enabled, supports DPO and FUA
+May  9 21:21:41 localhost kernel: scsi host5: ata_piix
+May  9 21:21:41 localhost kernel: ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xffa0 irq 14
+May  9 21:21:41 localhost kernel: ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xffa8 irq 15
+May  9 21:21:41 localhost kernel: sdb: sdb1
+May  9 21:21:41 localhost kernel: sd 1:0:1:0: [sdb] Attached SCSI disk
+May  9 21:21:41 localhost systemd-udevd[393]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+May  9 21:21:41 localhost kernel: sda: sda1 sda2 sda3 sda4
+May  9 21:21:41 localhost kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+May  9 21:21:42 localhost kernel: ata2.00: ATAPI: Virtual CD, , max MWDMA2
+May  9 21:21:42 localhost systemd[1]: Found device Virtual_Disk 4.
+May  9 21:21:42 localhost systemd[1]: Reached target Initrd Root Device.
+May  9 21:21:42 localhost kernel: scsi 5:0:0:0: CD-ROM            Msft     Virtual CD/ROM   1.0  PQ: 0 ANSI: 5
+May  9 21:21:42 localhost kernel: scsi 5:0:0:0: Attached scsi generic sg2 type 5
+May  9 21:21:42 localhost kernel: sr 5:0:0:0: [sr0] scsi3-mmc drive: 0x/0x tray
+May  9 21:21:42 localhost kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+May  9 21:21:42 localhost systemd[1]: Started dracut initqueue hook.
+May  9 21:21:42 localhost systemd[1]: Reached target Remote File Systems (Pre).
+May  9 21:21:42 localhost systemd[1]: Reached target Remote File Systems.
+May  9 21:21:42 localhost systemd[1]: Starting File System Check on /dev/disk/by-uuid/14fe6e47-67ec-4806-b44b-815251485e39...
+May  9 21:21:42 localhost systemd-fsck[452]: /dev/sda4: clean, 86037/593344 files, 564859/2371584 blocks
+May  9 21:21:42 localhost systemd[1]: Started File System Check on /dev/disk/by-uuid/14fe6e47-67ec-4806-b44b-815251485e39.
+May  9 21:21:42 localhost systemd[1]: Mounting /sysroot...
+May  9 21:21:43 localhost kernel: EXT4-fs (sda4): mounted filesystem with ordered data mode. Opts: (null)
+May  9 21:21:43 localhost systemd[1]: Mounted /sysroot.
+May  9 21:21:43 localhost systemd[1]: Reached target Initrd Root File System.
+May  9 21:21:43 localhost systemd[1]: Starting Reload Configuration from the Real Root...
+May  9 21:21:43 localhost systemd[1]: Reloading.
+May  9 21:21:43 localhost systemd[1]: Started Reload Configuration from the Real Root.
+May  9 21:21:43 localhost systemd[1]: Reached target Initrd File Systems.
+May  9 21:21:43 localhost systemd[1]: Reached target Initrd Default Target.
+May  9 21:21:43 localhost systemd[1]: Starting dracut pre-pivot and cleanup hook...
+May  9 21:21:43 localhost systemd[1]: Started dracut pre-pivot and cleanup hook.
+May  9 21:21:43 localhost systemd[1]: Starting Cleaning Up and Shutting Down Daemons...
+May  9 21:21:43 localhost systemd[1]: Starting Setup Virtual Console...
+May  9 21:21:43 localhost systemd[1]: Starting Plymouth switch root service...
+May  9 21:21:43 localhost systemd[1]: Stopped dracut pre-pivot and cleanup hook.
+May  9 21:21:43 localhost systemd[1]: Stopped target Initrd Default Target.
+May  9 21:21:43 localhost systemd[1]: Stopped target Basic System.
+May  9 21:21:43 localhost systemd[1]: Stopped target Slices.
+May  9 21:21:43 localhost systemd[1]: Stopped target System Initialization.
+May  9 21:21:43 localhost systemd[1]: Stopped Create Volatile Files and Directories.
+May  9 21:21:43 localhost systemd[1]: Stopped target Local File Systems.
+May  9 21:21:43 localhost systemd[1]: Stopped target Swap.
+May  9 21:21:43 localhost systemd[1]: Stopped Apply Kernel Variables.
+May  9 21:21:43 localhost systemd[1]: Stopping udev Kernel Device Manager...
+May  9 21:21:43 localhost systemd[1]: Stopped target Paths.
+May  9 21:21:43 localhost systemd[1]: Stopped target Initrd Root Device.
+May  9 21:21:43 localhost systemd[1]: Stopped target Remote File Systems.
+May  9 21:21:43 localhost systemd[1]: Stopped target Remote File Systems (Pre).
+May  9 21:21:43 localhost systemd[1]: Stopped dracut initqueue hook.
+May  9 21:21:43 localhost systemd[1]: Stopped udev Coldplug all Devices.
+May  9 21:21:43 localhost systemd[1]: Stopped target Timers.
+May  9 21:21:43 localhost systemd[1]: Stopped target Sockets.
+May  9 21:21:43 localhost systemd[1]: Stopped udev Kernel Device Manager.
+May  9 21:21:43 localhost systemd[1]: Stopped Create Static Device Nodes in /dev.
+May  9 21:21:43 localhost systemd[1]: Stopped Create list of required static device nodes for the current kernel.
+May  9 21:21:43 localhost systemd[1]: Stopping Hardware RNG Entropy Gatherer Daemon...
+May  9 21:21:43 localhost systemd[1]: Stopped dracut pre-udev hook.
+May  9 21:21:43 localhost systemd[1]: Stopped dracut cmdline hook.
+May  9 21:21:43 localhost systemd[1]: Closed udev Control Socket.
+May  9 21:21:43 localhost systemd[1]: Closed udev Kernel Socket.
+May  9 21:21:43 localhost systemd[1]: Starting Cleanup udevd DB...
+May  9 21:21:43 localhost systemd[1]: Stopped Hardware RNG Entropy Gatherer Daemon.
+May  9 21:21:43 localhost systemd[1]: Started Cleaning Up and Shutting Down Daemons.
+May  9 21:21:43 localhost systemd[1]: Started Cleanup udevd DB.
+May  9 21:21:43 localhost systemd[1]: Started Setup Virtual Console.
+May  9 21:21:43 localhost systemd[1]: Reached target Switch Root.
+May  9 21:21:43 localhost systemd[1]: Started Plymouth switch root service.
+May  9 21:21:43 localhost systemd[1]: Starting Switch Root...
+May  9 21:21:43 localhost systemd[1]: Switching root.
+May  9 21:21:43 localhost systemd-journald[265]: Journal stopped
+May  9 21:21:50 localhost systemd-journald[265]: Received SIGTERM from PID 1 (systemd).
+May  9 21:21:50 localhost kernel: printk: systemd: 11 output lines suppressed due to ratelimiting
+May  9 21:21:50 localhost kernel: audit: type=1404 audit(1589030506.119:2): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+May  9 21:21:50 localhost kernel: SELinux:  policy capability network_peer_controls=1
+May  9 21:21:50 localhost kernel: SELinux:  policy capability open_perms=1
+May  9 21:21:50 localhost kernel: SELinux:  policy capability extended_socket_class=1
+May  9 21:21:50 localhost kernel: SELinux:  policy capability always_check_network=0
+May  9 21:21:50 localhost kernel: SELinux:  policy capability cgroup_seclabel=1
+May  9 21:21:50 localhost kernel: SELinux:  policy capability nnp_nosuid_transition=1
+May  9 21:21:50 localhost kernel: audit: type=1403 audit(1589030507.255:3): auid=4294967295 ses=4294967295 lsm=selinux res=1
+May  9 21:21:50 localhost systemd[1]: Successfully loaded SELinux policy in 1.172657s.
+May  9 21:21:50 localhost systemd[1]: Relabelled /dev, /run and /sys/fs/cgroup in 18.708ms.
+May  9 21:21:50 localhost systemd[1]: systemd 239 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+May  9 21:21:50 localhost systemd[1]: Detected virtualization microsoft.
+May  9 21:21:50 localhost systemd[1]: Detected architecture x86-64.
+May  9 21:21:50 localhost systemd[1]: Set hostname to <localhost.localdomain>.
+May  9 21:21:50 localhost systemd[1]: Stopped Switch Root.
+May  9 21:21:50 localhost systemd[1]: systemd-journald.service: Service has no hold-off time (RestartSec=0), scheduling restart.
+May  9 21:21:50 localhost systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+May  9 21:21:50 localhost systemd[1]: Stopped Journal Service.
+May  9 21:21:50 localhost systemd[1]: Starting Journal Service...
+May  9 21:21:50 localhost systemd[1]: Created slice system-sshd\x2dkeygen.slice.
+May  9 21:21:50 localhost kernel: EXT4-fs (sda4): re-mounted. Opts: (null)
+May  9 21:21:50 localhost systemd-journald[566]: Journal started
+May  9 21:21:50 localhost systemd-journald[566]: Runtime journal (/run/log/journal/bb014835d31248a2afdcd257f3f8ce28) is 8.0M, max 162.4M, 154.4M free.
+May  9 21:21:50 localhost systemd-tmpfiles[586]: [/usr/lib/tmpfiles.d/subscription-manager.conf:1] Line references path below legacy directory /var/run/, updating /var/run/rhsm → /run/rhsm; please update the tmpfiles.d/ drop-in file accordingly.
+May  9 21:21:50 localhost systemd[1]: Starting Flush Journal to Persistent Storage...
+May  9 21:21:50 localhost systemd[1]: Started Create Static Device Nodes in /dev.
+May  9 21:21:50 localhost systemd[1]: Starting udev Kernel Device Manager...
+May  9 21:21:50 localhost systemd[1]: Reached target Local File Systems (Pre).
+May  9 21:21:50 localhost systemd[1]: Starting File System Check on /dev/disk/by-uuid/A849-7B8A...
+May  9 21:21:50 localhost systemd[1]: Starting File System Check on /dev/disk/by-uuid/8b7e3e2d-9a23-4c57-bca1-e2a894ab38a3...
+May  9 21:21:50 localhost systemd-journald[566]: Runtime journal (/run/log/journal/bb014835d31248a2afdcd257f3f8ce28) is 8.0M, max 162.4M, 154.4M free.
+May  9 21:21:50 localhost systemd[1]: Started Flush Journal to Persistent Storage.
+May  9 21:21:50 localhost systemd-fsck[594]: /dev/sda2: clean, 321/124928 files, 281319/499712 blocks
+May  9 21:21:50 localhost systemd[1]: Started File System Check on /dev/disk/by-uuid/8b7e3e2d-9a23-4c57-bca1-e2a894ab38a3.
+May  9 21:21:50 localhost systemd[1]: Mounting /boot...
+May  9 21:21:50 localhost kernel: EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+May  9 21:21:50 localhost systemd[1]: Mounted /boot.
+May  9 21:21:50 localhost systemd-fsck[593]: fsck.fat 4.1 (2017-01-24)
+May  9 21:21:50 localhost systemd-fsck[593]: /dev/sda1: 14 files, 867/60895 clusters
+May  9 21:21:50 localhost systemd[1]: Started File System Check on /dev/disk/by-uuid/A849-7B8A.
+May  9 21:21:51 localhost systemd[1]: Mounting /boot/efi...
+May  9 21:21:51 localhost systemd[1]: Mounted /boot/efi.
+May  9 21:21:51 localhost systemd[1]: Reached target Local File Systems.
+May  9 21:21:51 localhost systemd[1]: Starting Import network configuration from initramfs...
+May  9 21:21:51 localhost systemd[1]: Starting Restore /run/initramfs on shutdown...
+May  9 21:21:51 localhost systemd[1]: Started Restore /run/initramfs on shutdown.
+May  9 21:21:51 localhost systemd[1]: Started Import network configuration from initramfs.
+May  9 21:21:51 localhost systemd[1]: Starting Create Volatile Files and Directories...
+May  9 21:21:51 localhost systemd-tmpfiles[626]: [/usr/lib/tmpfiles.d/subscription-manager.conf:1] Line references path below legacy directory /var/run/, updating /var/run/rhsm → /run/rhsm; please update the tmpfiles.d/ drop-in file accordingly.
+May  9 21:21:51 localhost systemd[1]: Started udev Kernel Device Manager.
+May  9 21:21:51 localhost systemd[1]: Started Create Volatile Files and Directories.
+May  9 21:21:51 localhost systemd[1]: Mounting RPC Pipe File System...
+May  9 21:21:51 localhost systemd[1]: Starting RPC Bind...
+May  9 21:21:51 localhost systemd[1]: Starting Security Auditing Service...
+May  9 21:21:51 localhost kernel: piix4_smbus 0000:00:07.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+May  9 21:21:51 localhost auditd[644]: No plugins found, not dispatching events
+May  9 21:21:51 localhost kernel: hv_utils: Registering HyperV Utility Driver
+May  9 21:21:51 localhost kernel: hv_vmbus: registering driver hv_utils
+May  9 21:21:51 localhost kernel: hv_vmbus: registering driver hv_balloon
+May  9 21:21:51 localhost auditd[644]: Init complete, auditd 3.0 listening for events (startup state enable)
+May  9 21:21:51 localhost kernel: hv_balloon: Using Dynamic Memory protocol version 2.0
+May  9 21:21:51 localhost kernel: hv_utils: Heartbeat IC version 3.0
+May  9 21:21:51 localhost kernel: hv_utils: Shutdown IC version 3.0
+May  9 21:21:51 localhost kernel: hv_utils: TimeSync IC version 4.0
+May  9 21:21:52 localhost kernel: hv_utils: VSS IC version 5.0
+May  9 21:21:52 localhost systemd[1]: Started RPC Bind.
+May  9 21:21:52 localhost kernel: input: PC Speaker as /devices/platform/pcspkr/input/input6
+May  9 21:21:52 localhost kernel: RPC: Registered named UNIX socket transport module.
+May  9 21:21:52 localhost kernel: RPC: Registered udp transport module.
+May  9 21:21:52 localhost kernel: RPC: Registered tcp transport module.
+May  9 21:21:52 localhost kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+May  9 21:21:52 localhost systemd-udevd[631]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+May  9 21:21:52 localhost systemd[1]: Mounted RPC Pipe File System.
+May  9 21:21:52 localhost kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+May  9 21:21:52 localhost systemd[1]: Reached target rpc_pipefs.target.
+May  9 21:21:53 localhost augenrules[648]: /sbin/augenrules: No change
+May  9 21:21:53 localhost augenrules[648]: No rules
+May  9 21:21:53 localhost augenrules[648]: enabled 1
+May  9 21:21:53 localhost augenrules[648]: failure 1
+May  9 21:21:53 localhost augenrules[648]: pid 644
+May  9 21:21:53 localhost augenrules[648]: rate_limit 0
+May  9 21:21:53 localhost augenrules[648]: backlog_limit 8192
+May  9 21:21:53 localhost augenrules[648]: lost 0
+May  9 21:21:53 localhost augenrules[648]: backlog 1
+May  9 21:21:53 localhost augenrules[648]: backlog_wait_time 60000
+May  9 21:21:53 localhost augenrules[648]: enabled 1
+May  9 21:21:53 localhost augenrules[648]: failure 1
+May  9 21:21:53 localhost augenrules[648]: pid 644
+May  9 21:21:53 localhost augenrules[648]: rate_limit 0
+May  9 21:21:53 localhost augenrules[648]: backlog_limit 8192
+May  9 21:21:53 localhost augenrules[648]: lost 0
+May  9 21:21:53 localhost augenrules[648]: backlog 1
+May  9 21:21:53 localhost augenrules[648]: backlog_wait_time 60000
+May  9 21:21:53 localhost augenrules[648]: enabled 1
+May  9 21:21:53 localhost augenrules[648]: failure 1
+May  9 21:21:53 localhost augenrules[648]: pid 644
+May  9 21:21:53 localhost augenrules[648]: rate_limit 0
+May  9 21:21:53 localhost augenrules[648]: backlog_limit 8192
+May  9 21:21:53 localhost augenrules[648]: lost 0
+May  9 21:21:53 localhost augenrules[648]: backlog 1
+May  9 21:21:53 localhost augenrules[648]: backlog_wait_time 60000
+May  9 21:21:53 localhost systemd[1]: Started Security Auditing Service.
+May  9 21:21:53 localhost systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+May  9 21:21:53 localhost systemd[1]: Started Update UTMP about System Boot/Shutdown.
+May  9 21:21:53 localhost systemd[1]: Reached target System Initialization.
+May  9 21:21:53 localhost systemd[1]: Listening on SSSD Kerberos Cache Manager responder socket.
+May  9 21:21:53 localhost systemd[1]: Started dnf makecache --timer.
+May  9 21:21:53 localhost systemd[1]: Listening on D-Bus System Message Bus Socket.
+May  9 21:21:53 localhost systemd[1]: Reached target Sockets.
+May  9 21:21:53 localhost systemd[1]: Reached target Basic System.
+May  9 21:21:53 localhost systemd-udevd[628]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+May  9 21:21:53 localhost systemd[1]: Starting NTP client/server...
+May  9 21:21:53 localhost systemd[1]: Starting Hardware RNG Entropy Gatherer Wake threshold service...
+May  9 21:21:53 localhost systemd[1]: Started irqbalance daemon.
+May  9 21:21:53 localhost systemd[1]: Starting GSSAPI Proxy Daemon...
+May  9 21:21:53 localhost systemd[1]: Started D-Bus System Message Bus.
+May  9 21:21:53 localhost systemd[1]: Starting System Security Services Daemon...
+May  9 21:21:53 localhost systemd[1]: Starting Network Manager...
+May  9 21:21:53 localhost systemd[1]: Starting Authorization Manager...
+May  9 21:21:53 localhost chronyd[730]: chronyd version 3.5 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +SECHASH +IPV6 +DEBUG)
+May  9 21:21:53 localhost /usr/sbin/irqbalance[718]: Balancing is ineffective on systems with a single cpu.  Shutting down
+May  9 21:21:53 localhost systemd[1]: Reached target sshd-keygen.target.
+May  9 21:21:53 localhost systemd[1]: Started Daily Cleanup of Temporary Directories.
+May  9 21:21:53 localhost chronyd[730]: Frequency 3.137 +/- 24.971 ppm read from /var/lib/chrony/drift
+May  9 21:21:53 localhost systemd[1]: Started daily update of the root trust anchor for DNSSEC.
+May  9 21:21:53 localhost chronyd[730]: Using right/UTC timezone to obtain leap second data
+May  9 21:21:53 localhost systemd[1]: Reached target Timers.
+May  9 21:21:53 localhost systemd[1]: Started Hardware RNG Entropy Gatherer Wake threshold service.
+May  9 21:21:53 localhost systemd[1]: Starting update of the root trust anchor for DNSSEC validation in unbound...
+May  9 21:21:53 localhost systemd[1]: Started Hardware RNG Entropy Gatherer Daemon.
+May  9 21:21:53 localhost systemd[1]: Started NTP client/server.
+May  9 21:21:54 localhost systemd[1]: Started GSSAPI Proxy Daemon.
+May  9 21:21:54 localhost systemd[1]: Reached target NFS client services.
+May  9 21:21:54 localhost systemd[1]: Reached target Remote File Systems (Pre).
+May  9 21:21:54 localhost systemd[1]: Reached target Remote File Systems.
+May  9 21:21:54 localhost polkitd[729]: Started polkitd version 0.115
+May  9 21:21:54 localhost rngd[736]: Initializing available sources
+May  9 21:21:54 localhost rngd[736]: Failed to init entropy source hwrng
+May  9 21:21:54 localhost rngd[736]: Enabling RDSEED rng support
+May  9 21:21:54 localhost rngd[736]: Initializing entropy source rdrand
+May  9 21:21:54 localhost NetworkManager[727]: <info>  [1589030514.3147] NetworkManager (version 1.22.8-4.el8) is starting... (for the first time)
+May  9 21:21:54 localhost NetworkManager[727]: <info>  [1589030514.3419] Read config: /etc/NetworkManager/NetworkManager.conf
+May  9 21:21:54 localhost systemd[1]: Started Network Manager.
+May  9 21:21:54 localhost systemd[1]: Reached target Network.
+May  9 21:21:54 localhost systemd[1]: Starting Dynamic System Tuning Daemon...
+May  9 21:21:54 localhost NetworkManager[727]: <info>  [1589030514.4039] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+May  9 21:21:54 localhost systemd[1]: Starting Enable periodic update of entitlement certificates....
+May  9 21:21:54 localhost NetworkManager[727]: <info>  [1589030514.4980] manager[0x5588818f8070]: monitoring kernel firmware directory '/lib/firmware'.
+May  9 21:21:54 localhost dbus-daemon[720]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.4' (uid=0 pid=727 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+May  9 21:21:54 localhost systemd[1]: Starting OpenSSH server daemon...
+May  9 21:21:54 localhost systemd[1]: Starting Network Manager Wait Online...
+May  9 21:21:54 localhost systemd[1]: Started Enable periodic update of entitlement certificates..
+May  9 21:21:54 localhost systemd[1]: Starting Hostname Service...
+May  9 21:21:54 localhost systemd[1]: Started update of the root trust anchor for DNSSEC validation in unbound.
+May  9 21:21:54 localhost systemd[1]: Started OpenSSH server daemon.
+May  9 21:21:55 localhost sssd[726]: Starting up
+May  9 21:21:55 localhost systemd[1]: Started Authorization Manager.
+May  9 21:21:55 localhost sssd[be[implicit_files]][768]: Starting up
+May  9 21:21:55 localhost dbus-daemon[720]: [system] Successfully activated service 'org.freedesktop.hostname1'
+May  9 21:21:55 localhost systemd[1]: Started Hostname Service.
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.5415] hostname: hostname: using hostnamed
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.5416] hostname: hostname changed from (none) to "localhost.localdomain"
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.5419] dns-mgr[0x5588818dd250]: init: dns=default,systemd-resolved rc-manager=symlink
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.7508] Loaded device plugin: NMTeamFactory (/usr/lib64/NetworkManager/1.22.8-4.el8/libnm-device-plugin-team.so)
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.7512] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.7529] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.7534] manager: Networking is enabled by state file
+May  9 21:21:55 localhost dbus-daemon[720]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.4' (uid=0 pid=727 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.7549] dhcp-init: Using DHCP client 'internal'
+May  9 21:21:55 localhost systemd[1]: Starting Network Manager Script Dispatcher Service...
+May  9 21:21:55 localhost dbus-daemon[720]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May  9 21:21:55 localhost systemd[1]: Started Network Manager Script Dispatcher Service.
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.8188] settings: Loaded settings plugin: ifcfg-rh ("/usr/lib64/NetworkManager/1.22.8-4.el8/libnm-settings-plugin-ifcfg-rh.so")
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.8189] settings: Loaded settings plugin: keyfile (internal)
+May  9 21:21:55 localhost sssd[nss][769]: Starting up
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.9110] device (lo): carrier: link connected
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.9113] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.9137] manager: (eth0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.9164] device (eth0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+May  9 21:21:55 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+May  9 21:21:55 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+May  9 21:21:55 localhost kernel: IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+May  9 21:21:55 localhost NetworkManager[727]: <info>  [1589030515.9946] device (eth0): carrier: link connected
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.0252] device (eth0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.0292] policy: auto-activating connection 'System eth0' (5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03)
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.0333] device (eth0): Activation: starting connection 'System eth0' (5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03)
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.0343] device (eth0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.0365] manager: NetworkManager state is now CONNECTING
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.0391] device (eth0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.0413] device (eth0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.0432] dhcp4 (eth0): activation: beginning transaction (timeout in 45 seconds)
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.0952] dhcp4 (eth0): state changed unknown -> expire
+May  9 21:21:56 localhost systemd[1]: Started System Security Services Daemon.
+May  9 21:21:56 localhost systemd[1]: Reached target User and Group Name Lookups.
+May  9 21:21:56 localhost systemd[1]: Starting Permit User Sessions...
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2997] dhcp4 (eth0): option dhcp_lease_time      => '4294967295'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option domain_name          => 'f5fmozg5bdkevijtdw15xswnca.cx.internal.cloudapp.net'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option domain_name_servers  => '168.63.129.16'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option ip_address           => '10.0.0.4'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option next_server          => '168.63.129.16'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option private_245          => 'a8:3f:81:10'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option requested_broadcast_address => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option requested_domain_name => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option requested_domain_name_servers => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option requested_domain_search => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2998] dhcp4 (eth0): option requested_host_name  => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_interface_mtu => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_ms_classless_static_routes => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_nis_domain => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_nis_servers => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_ntp_servers => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_rfc3442_classless_static_routes => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_root_path  => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_routers    => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_static_routes => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_subnet_mask => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_time_offset => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option requested_wpad       => '1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option rfc3442_classless_static_routes => '0.0.0.0/0 10.0.0.1 168.63.129.16/32 10.0.0.1 169.254.169.254/32 10.0.0.1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option routers              => '10.0.0.1'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): option subnet_mask          => '255.255.255.0'
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.2999] dhcp4 (eth0): state changed expire -> bound
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.3040] device (eth0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.3092] device (eth0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.3102] device (eth0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.3115] manager: NetworkManager state is now CONNECTED_LOCAL
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.3144] manager: NetworkManager state is now CONNECTED_SITE
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.3148] policy: set 'System eth0' (eth0) as default for IPv4 routing and DNS
+May  9 21:21:56 localhost dbus-daemon[720]: [system] Activating via systemd: service name='org.freedesktop.resolve1' unit='dbus-org.freedesktop.resolve1.service' requested by ':1.4' (uid=0 pid=727 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+May  9 21:21:56 localhost systemd[1]: Starting Login Service...
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.3384] device (eth0): Activation: successful, device activated.
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.3390] manager: NetworkManager state is now CONNECTED_GLOBAL
+May  9 21:21:56 localhost NetworkManager[727]: <info>  [1589030516.3420] manager: startup complete
+May  9 21:21:56 localhost systemd[1]: Started Network Manager Wait Online.
+May  9 21:21:56 localhost systemd[1]: Started Permit User Sessions.
+May  9 21:21:56 localhost systemd[1]: Starting Network Name Resolution...
+May  9 21:21:56 localhost systemd[1]: Started Command Scheduler.
+May  9 21:21:56 localhost systemd[1]: Started Getty on tty1.
+May  9 21:21:56 localhost systemd[1]: Started Serial Getty on ttyS0.
+May  9 21:21:56 localhost systemd[1]: Reached target Login Prompts.
+May  9 21:21:56 localhost systemd[1]: Reached target Network is Online.
+May  9 21:21:56 localhost systemd[1]: Starting System Logging Service...
+May  9 21:21:56 localhost systemd[1]: Starting Crash recovery kernel arming...
+May  9 21:21:56 localhost systemd[1]: Started Azure Linux Agent.
+May  9 21:21:56 localhost rsyslogd[795]: [origin software="rsyslogd" swVersion="8.1911.0-3.el8" x-pid="795" x-info="https://www.rsyslog.com"] start
+May  9 21:21:56 localhost systemd[1]: Started System Logging Service.
+May  9 21:21:57 localhost rsyslogd[795]: imjournal: journal files changed, reloading...  [v8.1911.0-3.el8 try https://www.rsyslog.com/e/0 ]
+May  9 21:21:57 localhost kdumpctl[796]: Detected change(s) in the following file(s):
+May  9 21:21:57 localhost kdumpctl[796]:  
+May  9 21:21:57 localhost kdumpctl[796]:  /etc/fstab
+May  9 21:21:57 localhost kdumpctl[796]: Rebuilding /boot/initramfs-4.18.0-193.el8.x86_64kdump.img
+May  9 21:21:58 localhost systemd-logind[778]: New seat seat0.
+May  9 21:21:58 localhost systemd-logind[778]: Watching system buttons on /dev/input/event0 (Power Button)
+May  9 21:21:58 localhost systemd-logind[778]: Watching system buttons on /dev/input/event4 (AT Translated Set 2 keyboard)
+May  9 21:21:58 localhost systemd-logind[778]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+May  9 21:21:58 localhost systemd[1]: Started Login Service.
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.332316 INFO Daemon Azure Linux Agent Version:2.2.38
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.366763 INFO Daemon OS: redhat 8.2
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.386226 INFO Daemon Python: 3.6.8
+May  9 21:21:58 localhost dracut[1080]: dracut-049-70.git20200228.el8
+May  9 21:21:58 localhost systemd-resolved[787]: Positive Trust Anchors:
+May  9 21:21:58 localhost systemd-resolved[787]: . IN DS 19036 8 2 49aac11d7b6f6446702e54a1607371607a1a41855200fd2ce1cdde32f24e8fb5
+May  9 21:21:58 localhost systemd-resolved[787]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+May  9 21:21:58 localhost systemd-resolved[787]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+May  9 21:21:58 localhost systemd-resolved[787]: Defaulting to hostname 'linux'.
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.418636 INFO Daemon Creating cgroup directory /sys/fs/cgroup/cpu/WALinuxAgent/WALinuxAgent
+May  9 21:21:58 localhost systemd[1]: Started Network Name Resolution.
+May  9 21:21:58 localhost dbus-daemon[720]: [system] Successfully activated service 'org.freedesktop.resolve1'
+May  9 21:21:58 localhost systemd-resolved[787]: request_name_destroy_callback n_ref=1
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.486711 INFO Daemon Creating cgroup directory /sys/fs/cgroup/memory/WALinuxAgent/WALinuxAgent
+May  9 21:21:58 localhost systemd[1]: Reached target Host and Network Name Lookups.
+May  9 21:21:58 localhost systemd[1]: Starting Notify NFS peers of a restart...
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.553450 INFO Daemon Add daemon process pid 797 to WALinuxAgent cgroup
+May  9 21:21:58 localhost sm-notify[1112]: Version 2.3.3 starting
+May  9 21:21:58 localhost systemd[1]: Started Notify NFS peers of a restart.
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.610571 INFO Daemon CGroups: ok
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.615207 INFO Daemon Run daemon
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.625182 INFO Daemon No RDMA handler exists for distro='Red Hat Enterprise Linux' version='8.2'
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.677275 INFO Daemon Activate resource disk
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.739280 INFO Daemon Examining partition table
+May  9 21:21:58 localhost python3.6[797]: 2020/05/09 21:21:58.953437 INFO Daemon GPT not detected, determining filesystem
+May  9 21:21:59 localhost python3.6[797]: 2020/05/09 21:21:59.077685 INFO Daemon sfdisk --part-type -f /dev/sdb 1 -n succeeded
+May  9 21:21:59 localhost python3.6[797]: 2020/05/09 21:21:59.083263 INFO Daemon The partition is formatted with ntfs, updating partition type to 83
+May  9 21:21:59 localhost dracut[1084]: Executing: /usr/bin/dracut --quiet --hostonly --hostonly-cmdline --hostonly-i18n --hostonly-mode strict -o "plymouth dash resume ifcfg earlykdump" --mount "/dev/disk/by-uuid/14fe6e47-67ec-4806-b44b-815251485e39 /sysroot ext4 defaults,noauto" --no-hostonly-default-device -f /boot/initramfs-4.18.0-193.el8.x86_64kdump.img 4.18.0-193.el8.x86_64
+May  9 21:21:59 localhost systemd[1]: Started Dynamic System Tuning Daemon.
+May  9 21:21:59 localhost systemd[1]: Reached target Multi-User System.
+May  9 21:21:59 localhost systemd[1]: Starting Update UTMP about System Runlevel Changes...
+May  9 21:21:59 localhost systemd[1]: Started Update UTMP about System Runlevel Changes.
+May  9 21:21:59 localhost rngd[736]: Initializing AES buffer
+May  9 21:22:00 localhost rngd[736]: Enabling JITTER rng support
+May  9 21:22:00 localhost dracut[1084]: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+May  9 21:22:00 localhost kernel: sdb: sdb1
+May  9 21:22:00 localhost python3.6[797]: 2020/05/09 21:22:00.960506 INFO Daemon sfdisk --part-type  /dev/sdb 1 83 succeeded
+May  9 21:22:00 localhost kernel: sdb: sdb1
+May  9 21:22:01 localhost kernel: sdb: sdb1
+May  9 21:22:01 localhost python3.6[797]: 2020/05/09 21:22:01.110346 INFO Daemon Format partition [mkfs.ext4 -F /dev/sdb1]
+May  9 21:22:01 localhost rngd[736]: Initializing entropy source jitter
+May  9 21:22:01 localhost dracut[1084]: dracut module 'ifcfg' will not be installed, because it's in the list to be omitted!
+May  9 21:22:01 localhost dracut[1084]: dracut module 'plymouth' will not be installed, because it's in the list to be omitted!
+May  9 21:22:01 localhost chronyd[730]: Selected source 199.102.46.77
+May  9 21:22:01 localhost chronyd[730]: System clock TAI offset set to 37 seconds
+May  9 21:22:02 localhost dracut[1084]: dracut module 'lvmmerge' will not be installed, because command 'lvm' could not be found!
+May  9 21:22:02 localhost dracut[1084]: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+May  9 21:22:02 localhost dracut[1084]: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+May  9 21:22:02 localhost dracut[1084]: dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+May  9 21:22:02 localhost dracut[1084]: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+May  9 21:22:03 localhost dracut[1084]: dracut module 'stratis' will not be installed, because command 'stratisd-init' could not be found!
+May  9 21:22:03 localhost dracut[1084]: dracut module 'stratis' will not be installed, because command 'thin_check' could not be found!
+May  9 21:22:03 localhost dracut[1084]: dracut module 'stratis' will not be installed, because command 'thin_repair' could not be found!
+May  9 21:22:03 localhost dracut[1084]: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+May  9 21:22:03 localhost dracut[1084]: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+May  9 21:22:03 localhost dracut[1084]: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+May  9 21:22:03 localhost dracut[1084]: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+May  9 21:22:03 localhost dracut[1084]: dracut module 'resume' will not be installed, because it's in the list to be omitted!
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.337853 INFO Daemon Mount resource disk [mount /dev/sdb1 /mnt/resource]
+May  9 21:22:03 localhost kernel: EXT4-fs (sdb1): mounted filesystem with ordered data mode. Opts: (null)
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.399488 INFO Daemon Resource disk /dev/sdb is mounted at /mnt/resource with ext4
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.409739 INFO Daemon Enable swap
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.440652 INFO Daemon Create swap file
+May  9 21:22:03 localhost kernel: Adding 2097148k swap on /mnt/resource/swapfile.  Priority:-2 extents:6 across:2326524k FS
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.541420 INFO Daemon Enabled 2097152KB of swap at /mnt/resource/swapfile
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.547823 INFO Daemon Clean protocol
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.551039 INFO Daemon Running default provisioning handler
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.560500 INFO Daemon Copying ovf-env.xml
+May  9 21:22:03 localhost dracut[1084]: dracut module 'earlykdump' will not be installed, because it's in the list to be omitted!
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.710468 INFO Daemon Successfully mounted dvd
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.816736 INFO Daemon Detect protocol endpoints
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.821456 INFO Daemon Clean protocol
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.825847 INFO Daemon WireServer endpoint is not found. Rerun dhcp handler
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.831823 INFO Daemon Test for route to 168.63.129.16
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.837035 INFO Daemon Route to 168.63.129.16 exists
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.841350 INFO Daemon Wire server endpoint:168.63.129.16
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.938211 INFO Daemon Fabric preferred wire protocol version:2015-04-05
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.943465 INFO Daemon Wire protocol version:2012-11-30
+May  9 21:22:03 localhost python3.6[797]: 2020/05/09 21:22:03.947448 INFO Daemon Server preferred version:2015-04-05
+May  9 21:22:03 localhost dracut[1084]: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+May  9 21:22:04 localhost python3.6[797]: 2020/05/09 21:22:04.133724 INFO Daemon Starting provisioning
+May  9 21:22:04 localhost python3.6[797]: 2020/05/09 21:22:04.138451 INFO Daemon Handle ovf-env.xml.
+May  9 21:22:04 localhost python3.6[797]: 2020/05/09 21:22:04.142601 INFO Daemon Set hostname [LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0]
+May  9 21:22:04 localhost dracut[1084]: dracut module 'lvmmerge' will not be installed, because command 'lvm' could not be found!
+May  9 21:22:04 localhost dracut[1084]: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+May  9 21:22:04 localhost systemd-hostnamed[758]: Changed static host name to 'LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0'
+May  9 21:22:04 localhost systemd-resolved[787]: System hostname changed to 'LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0'.
+May  9 21:22:04 localhost NetworkManager[727]: <info>  [1589030524.1872] hostname: hostname changed from "localhost.localdomain" to "LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0"
+May  9 21:22:04 localhost NetworkManager[727]: <info>  [1589030524.1874] policy: set-hostname: set hostname to 'LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0' (from system configuration)
+May  9 21:22:04 localhost systemd-hostnamed[758]: Changed host name to 'LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0'
+May  9 21:22:04 localhost python3.6[797]: 2020/05/09 21:22:04.190198 INFO Daemon Publish hostname [LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0]
+May  9 21:22:04 localhost dracut[1084]: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+May  9 21:22:04 localhost dracut[1084]: dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+May  9 21:22:04 localhost dracut[1084]: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+May  9 21:22:04 localhost systemd[1]: Stopped Network Manager Wait Online.
+May  9 21:22:04 localhost systemd[1]: Stopping Network Manager Wait Online...
+May  9 21:22:04 localhost systemd[1]: Stopping Network Manager...
+May  9 21:22:04 localhost NetworkManager[727]: <info>  [1589030524.2605] caught SIGTERM, shutting down normally.
+May  9 21:22:04 localhost NetworkManager[727]: <info>  [1589030524.2615] dhcp4 (eth0): canceled DHCP transaction
+May  9 21:22:04 localhost NetworkManager[727]: <info>  [1589030524.2615] dhcp4 (eth0): state changed bound -> done
+May  9 21:22:04 localhost NetworkManager[727]: <info>  [1589030524.2615] device (eth0): DHCPv4: trying to acquire a new lease within 90 seconds
+May  9 21:22:04 localhost NetworkManager[727]: <info>  [1589030524.2618] manager: NetworkManager state is now CONNECTED_SITE
+May  9 21:22:04 localhost NetworkManager[727]: <info>  [1589030524.2908] exiting (success)
+May  9 21:22:04 localhost dracut[1084]: dracut module 'stratis' will not be installed, because command 'stratisd-init' could not be found!
+May  9 21:22:04 localhost systemd[1]: Stopped Network Manager.
+May  9 21:22:04 localhost systemd[1]: Starting Network Manager...
+May  9 21:22:04 localhost dracut[1084]: dracut module 'stratis' will not be installed, because command 'thin_check' could not be found!
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3196] NetworkManager (version 1.22.8-4.el8) is starting... (after a restart)
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3197] Read config: /etc/NetworkManager/NetworkManager.conf
+May  9 21:22:04 localhost systemd[1]: Started Network Manager.
+May  9 21:22:04 localhost systemd[1]: Starting Network Manager Wait Online...
+May  9 21:22:04 localhost python3.6[797]: 2020/05/09 21:22:04.324980 INFO Daemon Examine /proc/net/route for primary interface
+May  9 21:22:04 localhost python3.6[797]: 2020/05/09 21:22:04.330134 INFO Daemon Primary interface is [eth0]
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3364] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3388] manager[0x5646ea70b070]: monitoring kernel firmware directory '/lib/firmware'.
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3398] hostname: hostname: using hostnamed
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3398] hostname: hostname changed from (none) to "LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0"
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3400] dns-mgr[0x5646ea6f0250]: init: dns=default,systemd-resolved rc-manager=symlink
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3419] Loaded device plugin: NMTeamFactory (/usr/lib64/NetworkManager/1.22.8-4.el8/libnm-device-plugin-team.so)
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3419] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3419] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3420] manager: Networking is enabled by state file
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3420] dhcp-init: Using DHCP client 'internal'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3423] settings: Loaded settings plugin: ifcfg-rh ("/usr/lib64/NetworkManager/1.22.8-4.el8/libnm-settings-plugin-ifcfg-rh.so")
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3423] settings: Loaded settings plugin: keyfile (internal)
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3440] device (lo): carrier: link connected
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3442] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3446] device (eth0): carrier: link connected
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3450] manager: (eth0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3459] manager: (eth0): assume: will attempt to assume matching connection 'System eth0' (5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03) (indicated)
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3460] device (eth0): state change: unmanaged -> unavailable (reason 'connection-assumed', sys-iface-state: 'assume')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3467] device (eth0): state change: unavailable -> disconnected (reason 'connection-assumed', sys-iface-state: 'assume')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3474] device (eth0): Activation: starting connection 'System eth0' (5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03)
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3483] device (eth0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'assume')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3486] device (eth0): state change: prepare -> config (reason 'none', sys-iface-state: 'assume')
+May  9 21:22:04 localhost dracut[1084]: dracut module 'stratis' will not be installed, because command 'thin_repair' could not be found!
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3538] device (eth0): state change: config -> ip-config (reason 'none', sys-iface-state: 'assume')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.3541] dhcp4 (eth0): activation: beginning transaction (timeout in 45 seconds)
+May  9 21:22:04 localhost dracut[1084]: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+May  9 21:22:04 localhost dracut[1084]: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+May  9 21:22:04 localhost dracut[1084]: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+May  9 21:22:04 localhost dracut[1084]: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5395] dhcp4 (eth0): option dhcp_lease_time      => '4294967295'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5395] dhcp4 (eth0): option domain_name          => 'f5fmozg5bdkevijtdw15xswnca.cx.internal.cloudapp.net'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option domain_name_servers  => '168.63.129.16'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option ip_address           => '10.0.0.4'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option next_server          => '168.63.129.16'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option private_245          => 'a8:3f:81:10'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_broadcast_address => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_domain_name => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_domain_name_servers => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_domain_search => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_host_name  => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_interface_mtu => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_ms_classless_static_routes => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_nis_domain => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_nis_servers => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_ntp_servers => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_rfc3442_classless_static_routes => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_root_path  => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_routers    => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_static_routes => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_subnet_mask => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_time_offset => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5396] dhcp4 (eth0): option requested_wpad       => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5397] dhcp4 (eth0): option rfc3442_classless_static_routes => '0.0.0.0/0 10.0.0.1 168.63.129.16/32 10.0.0.1 169.254.169.254/32 10.0.0.1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5397] dhcp4 (eth0): option routers              => '10.0.0.1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5397] dhcp4 (eth0): option subnet_mask          => '255.255.255.0'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5397] dhcp4 (eth0): state changed unknown -> bound
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5404] device (eth0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'assume')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5468] device (eth0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'assume')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5470] device (eth0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'assume')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5474] manager: NetworkManager state is now CONNECTED_LOCAL
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5481] manager: NetworkManager state is now CONNECTED_SITE
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5482] policy: set 'System eth0' (eth0) as default for IPv4 routing and DNS
+May  9 21:22:04 localhost python3.6[797]: 2020/05/09 21:22:04.566538 INFO Daemon Examine /proc/net/route for primary interface
+May  9 21:22:04 localhost python3.6[797]: 2020/05/09 21:22:04.572515 INFO Daemon Primary interface is [eth0]
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5860] device (eth0): Activation: successful, device activated.
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5865] manager: NetworkManager state is now CONNECTED_GLOBAL
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.5869] manager: startup complete
+May  9 21:22:04 localhost systemd[1]: Started Network Manager Wait Online.
+May  9 21:22:04 localhost dracut[1084]: *** Including module: bash ***
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.6569] audit: op="connections-load" args="/etc/sysconfig/network-scripts/ifcfg-eth0" pid=2429 uid=0 result="success"
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.6751] device (eth0): state change: activated -> deactivating (reason 'user-requested', sys-iface-state: 'managed')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.6753] manager: NetworkManager state is now DISCONNECTING
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.6761] audit: op="connection-deactivate" uuid="5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03" name="System eth0" pid=2426 uid=0 result="success"
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.6829] device (eth0): state change: deactivating -> disconnected (reason 'user-requested', sys-iface-state: 'managed')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.6833] dhcp4 (eth0): canceled DHCP transaction
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.6833] dhcp4 (eth0): state changed bound -> done
+May  9 21:22:04 localhost dracut[1084]: *** Including module: systemd ***
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7034] manager: NetworkManager state is now DISCONNECTED
+May  9 21:22:04 localhost chronyd[730]: Source 173.0.48.220 offline
+May  9 21:22:04 localhost chronyd[730]: Source 45.76.244.193 offline
+May  9 21:22:04 localhost chronyd[730]: Source 171.66.97.126 offline
+May  9 21:22:04 localhost chronyd[730]: Source 199.102.46.77 offline
+May  9 21:22:04 localhost chronyd[730]: Can't synchronise: no selectable sources
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7531] audit: op="connections-load" args="/etc/sysconfig/network-scripts/ifcfg-eth0" pid=2490 uid=0 result="success"
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7675] agent-manager: agent[96865e7bd124b53c,:1.23/nmcli-connect/0]: agent registered
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7686] device (eth0): Activation: starting connection 'System eth0' (5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03)
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7686] audit: op="connection-activate" uuid="5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03" name="System eth0" pid=2424 uid=0 result="success"
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7687] device (eth0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7689] manager: NetworkManager state is now CONNECTING
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7691] device (eth0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7701] device (eth0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.7703] dhcp4 (eth0): activation: beginning transaction (timeout in 45 seconds)
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8631] dhcp4 (eth0): option dhcp_lease_time      => '4294967295'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8631] dhcp4 (eth0): option domain_name          => 'f5fmozg5bdkevijtdw15xswnca.cx.internal.cloudapp.net'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8631] dhcp4 (eth0): option domain_name_servers  => '168.63.129.16'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8631] dhcp4 (eth0): option ip_address           => '10.0.0.4'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8631] dhcp4 (eth0): option next_server          => '168.63.129.16'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8631] dhcp4 (eth0): option private_245          => 'a8:3f:81:10'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8631] dhcp4 (eth0): option requested_broadcast_address => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8631] dhcp4 (eth0): option requested_domain_name => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_domain_name_servers => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_domain_search => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_host_name  => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_interface_mtu => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_ms_classless_static_routes => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_nis_domain => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_nis_servers => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_ntp_servers => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_rfc3442_classless_static_routes => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_root_path  => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_routers    => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_static_routes => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_subnet_mask => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_time_offset => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option requested_wpad       => '1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option rfc3442_classless_static_routes => '0.0.0.0/0 10.0.0.1 168.63.129.16/32 10.0.0.1 169.254.169.254/32 10.0.0.1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option routers              => '10.0.0.1'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): option subnet_mask          => '255.255.255.0'
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8632] dhcp4 (eth0): state changed unknown -> bound
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8643] device (eth0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8708] device (eth0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8710] device (eth0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8713] manager: NetworkManager state is now CONNECTED_LOCAL
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8719] manager: NetworkManager state is now CONNECTED_SITE
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8720] policy: set 'System eth0' (eth0) as default for IPv4 routing and DNS
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8888] device (eth0): Activation: successful, device activated.
+May  9 21:22:04 localhost NetworkManager[2224]: <info>  [1589030524.8892] manager: NetworkManager state is now CONNECTED_GLOBAL
+May  9 21:22:04 localhost python3.6[797]: 2020/05/09 21:22:04.891990 INFO Daemon Create user account if not exists
+May  9 21:22:04 localhost chronyd[730]: Source 173.0.48.220 online
+May  9 21:22:04 localhost chronyd[730]: Source 199.102.46.77 online
+May  9 21:22:04 localhost chronyd[730]: Source 45.76.244.193 online
+May  9 21:22:04 localhost chronyd[730]: Source 171.66.97.126 online
+May  9 21:22:05 localhost dracut[1084]: *** Including module: systemd-initrd ***
+May  9 21:22:05 localhost dracut[1084]: *** Including module: rngd ***
+May  9 21:22:05 localhost dracut[1084]: *** Including module: i18n ***
+May  9 21:22:05 localhost dracut[1084]: *** Including module: drm ***
+May  9 21:22:05 localhost python3.6[797]: 2020/05/09 21:22:05.942869 INFO Daemon Set user password.
+May  9 21:22:05 localhost dracut[1084]: *** Including module: prefixdevname ***
+May  9 21:22:05 localhost dracut[1084]: *** Including module: kernel-modules ***
+May  9 21:22:06 localhost python3.6[797]: 2020/05/09 21:22:06.559065 INFO Daemon Configure sudoer
+May  9 21:22:06 localhost python3.6[797]: 2020/05/09 21:22:06.564321 INFO Daemon Configure sshd
+May  9 21:22:06 localhost python3.6[797]: 2020/05/09 21:22:06.568926 INFO Daemon Enabled SSH password-based authentication methods.
+May  9 21:22:06 localhost python3.6[797]: 2020/05/09 21:22:06.575050 INFO Daemon Configured SSH client probing to keep connections alive.
+May  9 21:22:07 localhost systemd[1]: Stopping OpenSSH server daemon...
+May  9 21:22:07 localhost systemd[1]: Stopped OpenSSH server daemon.
+May  9 21:22:07 localhost systemd[1]: Stopped target sshd-keygen.target.
+May  9 21:22:07 localhost systemd[1]: Stopping sshd-keygen.target.
+May  9 21:22:07 localhost systemd[1]: Starting OpenSSH ed25519 Server Key Generation...
+May  9 21:22:07 localhost systemd[1]: Starting OpenSSH ecdsa Server Key Generation...
+May  9 21:22:07 localhost systemd[1]: Started OpenSSH ecdsa Server Key Generation.
+May  9 21:22:07 localhost systemd[1]: Started OpenSSH ed25519 Server Key Generation.
+May  9 21:22:07 localhost systemd[1]: Reached target sshd-keygen.target.
+May  9 21:22:07 localhost systemd[1]: Starting OpenSSH server daemon...
+May  9 21:22:07 localhost systemd[1]: Started OpenSSH server daemon.
+May  9 21:22:07 localhost dracut[1084]: *** Including module: kernel-modules-extra ***
+May  9 21:22:07 localhost dracut[1084]: *** Including module: fstab-sys ***
+May  9 21:22:07 localhost dracut[1084]: *** Including module: rootfs-block ***
+May  9 21:22:07 localhost dracut[1084]: *** Including module: terminfo ***
+May  9 21:22:07 localhost dracut[1084]: *** Including module: udev-rules ***
+May  9 21:22:08 localhost dracut[1084]: Skipping udev rule: 91-permissions.rules
+May  9 21:22:08 localhost dracut[1084]: Skipping udev rule: 80-drivers-modprobe.rules
+May  9 21:22:08 localhost dracut[1084]: *** Including module: biosdevname ***
+May  9 21:22:08 localhost dracut[1084]: *** Including module: dracut-systemd ***
+May  9 21:22:08 localhost dracut[1084]: *** Including module: usrmount ***
+May  9 21:22:08 localhost dracut[1084]: *** Including module: base ***
+May  9 21:22:08 localhost dracut[1084]: *** Including module: fs-lib ***
+May  9 21:22:08 localhost dracut[1084]: *** Including module: kdumpbase ***
+May  9 21:22:08 localhost dracut[1084]: *** Including module: microcode_ctl-fw_dir_override ***
+May  9 21:22:08 localhost dracut[1084]:  microcode_ctl module: mangling fw_dir
+May  9 21:22:08 localhost dracut[1084]:    microcode_ctl: reset fw_dir to "/lib/firmware/updates /lib/firmware"
+May  9 21:22:08 localhost dracut[1084]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel"...
+May  9 21:22:08 localhost dracut[1084]:    microcode_ctl: intel: Host-Only mode is enabled and "intel-ucode/06-55-04" matches "intel-ucode/*"
+May  9 21:22:08 localhost dracut[1084]:      microcode_ctl: intel: caveats check for kernel version "4.18.0-193.el8.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel" to fw_dir variable
+May  9 21:22:08 localhost dracut[1084]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-2d-07"...
+May  9 21:22:08 localhost dracut[1084]:    microcode_ctl: kernel version "4.18.0-193.el8.x86_64" failed early load check for "intel-06-2d-07", skipping
+May  9 21:22:08 localhost dracut[1084]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-4f-01"...
+May  9 21:22:08 localhost dracut[1084]:    microcode_ctl: kernel version "4.18.0-193.el8.x86_64" failed early load check for "intel-06-4f-01", skipping
+May  9 21:22:08 localhost dracut[1084]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-55-04"...
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.039286 INFO Daemon Provisioning complete
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.044033 INFO Daemon RDMA capabilities are not enabled, skipping
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.049905 INFO Daemon Installed Agent WALinuxAgent-2.2.38 is the most current agent
+May  9 21:22:09 localhost dracut[1084]:    microcode_ctl: kernel version "4.18.0-193.el8.x86_64" failed early load check for "intel-06-55-04", skipping
+May  9 21:22:09 localhost dracut[1084]:    microcode_ctl: final fw_dir: "/usr/share/microcode_ctl/ucode_with_caveats/intel /lib/firmware/updates /lib/firmware"
+May  9 21:22:09 localhost dracut[1084]: *** Including module: shutdown ***
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.204333 INFO ExtHandler Agent WALinuxAgent-2.2.38 is running as the goal state agent
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.244010 INFO ExtHandler Wire server endpoint:168.63.129.16
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.268199 INFO ExtHandler Start env monitor service.
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.274300 INFO ExtHandler Configure routes
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.277905 INFO ExtHandler Gateway:None
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.281257 INFO ExtHandler Routes:None
+May  9 21:22:09 localhost dracut[1084]: *** Including module: squash ***
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.351935 INFO ExtHandler Wire server endpoint:168.63.129.16
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.380936 INFO ExtHandler WALinuxAgent-2.2.38 running as process 3663
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.388234 INFO ExtHandler Wire server endpoint:168.63.129.16
+May  9 21:22:09 localhost dracut[1084]: *** Including modules done ***
+May  9 21:22:09 localhost dracut[1084]: *** Installing kernel module dependencies ***
+May  9 21:22:09 localhost dracut[1084]: *** Installing kernel module dependencies done ***
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.790019 INFO ExtHandler Route table: [{"Iface": "eth0", "Destination": "0.0.0.0", "Gateway": "10.0.0.1", "Mask": "0.0.0.0", "Flags": "0x0003", "Metric": "100"},{"Iface": "eth0", "Destination": "10.0.0.0", "Gateway": "0.0.0.0", "Mask": "255.255.255.0", "Flags": "0x0001", "Metric": "100"},{"Iface": "eth0", "Destination": "168.63.129.16", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"},{"Iface": "eth0", "Destination": "169.254.169.254", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"}]
+May  9 21:22:09 localhost python3.6[797]: 2020/05/09 21:22:09.977683 INFO ExtHandler Initial NIC state: [{ "name": "lo", "link": "<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00" }, { "name": "eth0", "link": "<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 00:0d:3a:0d:97:e9 brd ff:ff:ff:ff:ff:ff" }]
+May  9 21:22:10 localhost dracut[1084]: *** Resolving executable dependencies ***
+May  9 21:22:10 localhost python3.6[797]: 2020/05/09 21:22:10.021010 INFO ExtHandler Agent WALinuxAgent-2.2.38 discovered update WALinuxAgent-2.2.46 -- exiting
+May  9 21:22:10 localhost python3.6[797]: 2020/05/09 21:22:10.074765 INFO Daemon Agent WALinuxAgent-2.2.38 launched with command '/usr/bin/python3.6 -u /usr/sbin/waagent -run-exthandlers' is successfully running
+May  9 21:22:10 localhost python3.6[797]: 2020/05/09 21:22:10.087760 INFO Daemon Determined Agent WALinuxAgent-2.2.46 to be the latest agent
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.433382Z INFO ExtHandler Agent WALinuxAgent-2.2.46 is running as the goal state agent
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.440140Z INFO ExtHandler Distro info: redhat 8.2, osutil class being used: RedhatOSUtil, agent service name: waagent
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.461818Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.467289Z INFO ExtHandler Wire server endpoint:168.63.129.16
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.485681Z INFO ExtHandler Start env monitor service.
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.490650Z INFO ExtHandler Configure routes
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.494678Z INFO ExtHandler Gateway:None
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.498420Z INFO ExtHandler Routes:None
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.510771Z WARNING ExtHandler Dhcp client is not running.
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.515370Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.527912Z INFO ExtHandler WALinuxAgent-2.2.46 running as process 3829
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.530126Z INFO ExtHandler Wire server endpoint:168.63.129.16
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.558047Z INFO ExtHandler CGroups Status: The cgroup filesystem is ready to use
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.565764Z INFO ExtHandler Started tracking new cgroup: walinuxagent.service, path: /sys/fs/cgroup/cpu/system.slice/waagent.service
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.573578Z INFO ExtHandler Started tracking new cgroup: walinuxagent.service, path: /sys/fs/cgroup/memory/system.slice/waagent.service
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.581777Z INFO ExtHandler Found legacy cgroup /sys/fs/cgroup/cpu/WALinuxAgent/WALinuxAgent
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.592977Z INFO ExtHandler Found legacy cgroup /sys/fs/cgroup/memory/WALinuxAgent/WALinuxAgent
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.602456Z INFO ExtHandler Removing /sys/fs/cgroup/cpu/WALinuxAgent/WALinuxAgent
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.610558Z INFO ExtHandler Removing /sys/fs/cgroup/memory/WALinuxAgent/WALinuxAgent
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.616711Z WARNING ExtHandler Failed to process legacy cgroups. Collection of resource usage data will be disabled. Error: [CGroupsException] The daemon's PID (797) was already added to the legacy cgroup; this invalidates resource usage data.
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.638307Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.643813Z INFO ExtHandler Wire server endpoint:168.63.129.16
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.662115Z INFO ExtHandler Route table: [{"Iface": "eth0", "Destination": "0.0.0.0", "Gateway": "10.0.0.1", "Mask": "0.0.0.0", "Flags": "0x0003", "Metric": "100"},{"Iface": "eth0", "Destination": "10.0.0.0", "Gateway": "0.0.0.0", "Mask": "255.255.255.0", "Flags": "0x0001", "Metric": "100"},{"Iface": "eth0", "Destination": "168.63.129.16", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"},{"Iface": "eth0", "Destination": "169.254.169.254", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"}]
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.737618Z INFO ExtHandler Initial NIC state: [{ "name": "lo", "link": "<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00" }, { "name": "eth0", "link": "<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 00:0d:3a:0d:97:e9 brd ff:ff:ff:ff:ff:ff" }]
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.783478Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.792177Z INFO ExtHandler Wire server endpoint:168.63.129.16
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.835652Z INFO ExtHandler Successfully added Azure fabric firewall rules
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.845779Z INFO ExtHandler Firewall rules:
+May  9 21:22:10 localhost python3.6[797]: Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+May  9 21:22:10 localhost python3.6[797]:    pkts      bytes target     prot opt in     out     source               destination
+May  9 21:22:10 localhost python3.6[797]: Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+May  9 21:22:10 localhost python3.6[797]:    pkts      bytes target     prot opt in     out     source               destination
+May  9 21:22:10 localhost python3.6[797]: Chain OUTPUT (policy ACCEPT 35 packets, 4727 bytes)
+May  9 21:22:10 localhost python3.6[797]:    pkts      bytes target     prot opt in     out     source               destination
+May  9 21:22:10 localhost python3.6[797]:      20     2411 ACCEPT     tcp  --  *      *       0.0.0.0/0            168.63.129.16        owner UID match 0
+May  9 21:22:10 localhost python3.6[797]:       0        0 DROP       tcp  --  *      *       0.0.0.0/0            168.63.129.16        ctstate INVALID,NEW
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.886668Z INFO ExtHandler Set block dev timeout: sdb with timeout: 300
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.891877Z INFO ExtHandler Set block dev timeout: sda with timeout: 300
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.959501Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.965434Z INFO ExtHandler Wire server endpoint:168.63.129.16
+May  9 21:22:10 localhost sssd[nss][769]: Enumeration requested but not enabled
+May  9 21:22:10 localhost python3.6[797]: 2020-05-09T13:22:10.973798Z INFO ExtHandler ProcessGoalState completed [incarnation 1; 190 ms]
+May  9 21:22:12 localhost dracut[1084]: *** Resolving executable dependencies done***
+May  9 21:22:12 localhost dracut[1084]: *** Hardlinking files ***
+May  9 21:22:12 localhost dracut[1084]: *** Hardlinking files done ***
+May  9 21:22:12 localhost dracut[1084]: Could not find 'strip'. Not stripping the initramfs.
+May  9 21:22:12 localhost dracut[1084]: *** Generating early-microcode cpio image ***
+May  9 21:22:12 localhost dracut[1084]: *** Constructing GenuineIntel.bin ****
+May  9 21:22:12 localhost dracut[1084]: *** Constructing GenuineIntel.bin ****
+May  9 21:22:12 localhost dracut[1084]: *** Store current command line parameters ***
+May  9 21:22:12 localhost dracut[1084]: Stored kernel commandline:
+May  9 21:22:12 localhost dracut[1084]: No dracut internal kernel commandline stored in the initramfs
+May  9 21:22:12 localhost dracut[1084]: *** Creating image file '/boot/initramfs-4.18.0-193.el8.x86_64kdump.img' ***
+May  9 21:22:25 localhost dracut[1084]: *** Creating initramfs image file '/boot/initramfs-4.18.0-193.el8.x86_64kdump.img' done ***
+May  9 21:22:29 localhost kdumpctl[796]: kexec: loaded kdump kernel
+May  9 21:22:29 localhost kdumpctl[796]: Starting kdump: [OK]
+May  9 21:22:29 localhost systemd[1]: Started Crash recovery kernel arming.
+May  9 21:22:29 localhost systemd[1]: Startup finished in 1.823s (kernel) + 16.415s (initrd) + 42.594s (userspace) = 1min 833ms.
+May  9 21:22:40 localhost kernel: hv_balloon: Max. dynamic memory size: 3584 MB
+May  9 21:23:02 localhost systemd[1]: Created slice system-user\x2druntime\x2ddir.slice.
+May  9 21:23:02 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:23:02 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:23:02 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:23:02 localhost systemd[1]: Started Session 1 of user azureuser.
+May  9 21:23:02 localhost systemd-logind[778]: New session 1 of user azureuser.
+May  9 21:23:03 localhost systemd[4958]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:03 localhost systemd[4958]: Reached target Timers.
+May  9 21:23:03 localhost systemd[4958]: Reached target Paths.
+May  9 21:23:03 localhost systemd[4958]: Starting D-Bus User Message Bus Socket.
+May  9 21:23:03 localhost systemd[4958]: Listening on D-Bus User Message Bus Socket.
+May  9 21:23:03 localhost systemd[4958]: Reached target Sockets.
+May  9 21:23:03 localhost systemd[4958]: Reached target Basic System.
+May  9 21:23:03 localhost systemd[4958]: Reached target Default.
+May  9 21:23:03 localhost systemd[4958]: Startup finished in 76ms.
+May  9 21:23:03 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:23:04 localhost systemd-logind[778]: Session 1 logged out. Waiting for processes to exit.
+May  9 21:23:04 localhost systemd-logind[778]: Removed session 1.
+May  9 21:23:04 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:04 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:23:04 localhost systemd[4958]: Stopped target Default.
+May  9 21:23:04 localhost systemd[4958]: Stopped target Basic System.
+May  9 21:23:04 localhost systemd[4958]: Stopped target Sockets.
+May  9 21:23:04 localhost systemd[4958]: Stopped target Paths.
+May  9 21:23:04 localhost systemd[4958]: Stopped target Timers.
+May  9 21:23:04 localhost systemd[4958]: Closed D-Bus User Message Bus Socket.
+May  9 21:23:04 localhost systemd[4958]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:04 localhost systemd[4958]: Reached target Shutdown.
+May  9 21:23:04 localhost systemd[4958]: Starting Exit the Session...
+May  9 21:23:04 localhost systemd[1]: user@1001.service: Killing process 4984 (systemctl) with signal SIGKILL.
+May  9 21:23:04 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:04 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:23:04 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:04 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:23:04 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:23:04 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:23:07 localhost chronyd[730]: Selected source 199.102.46.77
+May  9 21:23:13 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:23:13 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:23:13 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:23:13 localhost systemd[1]: Started Session 3 of user azureuser.
+May  9 21:23:13 localhost systemd-logind[778]: New session 3 of user azureuser.
+May  9 21:23:13 localhost systemd[5009]: Starting D-Bus User Message Bus Socket.
+May  9 21:23:13 localhost systemd[5009]: Reached target Paths.
+May  9 21:23:13 localhost systemd[5009]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:13 localhost systemd[5009]: Reached target Timers.
+May  9 21:23:13 localhost systemd[5009]: Listening on D-Bus User Message Bus Socket.
+May  9 21:23:13 localhost systemd[5009]: Reached target Sockets.
+May  9 21:23:13 localhost systemd[5009]: Reached target Basic System.
+May  9 21:23:13 localhost systemd[5009]: Reached target Default.
+May  9 21:23:13 localhost systemd[5009]: Startup finished in 36ms.
+May  9 21:23:13 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:23:15 localhost systemd-logind[778]: Session 3 logged out. Waiting for processes to exit.
+May  9 21:23:15 localhost systemd-logind[778]: Removed session 3.
+May  9 21:23:15 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:15 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:23:15 localhost systemd[5009]: Stopped target Default.
+May  9 21:23:15 localhost systemd[5009]: Stopped target Basic System.
+May  9 21:23:15 localhost systemd[5009]: Stopped target Timers.
+May  9 21:23:15 localhost systemd[5009]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:15 localhost systemd[5009]: Stopped target Paths.
+May  9 21:23:15 localhost systemd[5009]: Stopped target Sockets.
+May  9 21:23:15 localhost systemd[5009]: Closed D-Bus User Message Bus Socket.
+May  9 21:23:15 localhost systemd[5009]: Reached target Shutdown.
+May  9 21:23:15 localhost systemd[5009]: Starting Exit the Session...
+May  9 21:23:15 localhost systemd[1]: user@1001.service: Killing process 5034 (systemctl) with signal SIGKILL.
+May  9 21:23:15 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:15 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:23:15 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:15 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:23:15 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:23:15 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:23:20 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:23:20 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:23:20 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:23:20 localhost systemd[1]: Started Session 5 of user azureuser.
+May  9 21:23:20 localhost systemd-logind[778]: New session 5 of user azureuser.
+May  9 21:23:20 localhost systemd[5053]: Starting D-Bus User Message Bus Socket.
+May  9 21:23:20 localhost systemd[5053]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:20 localhost systemd[5053]: Reached target Paths.
+May  9 21:23:20 localhost systemd[5053]: Reached target Timers.
+May  9 21:23:20 localhost systemd[5053]: Listening on D-Bus User Message Bus Socket.
+May  9 21:23:20 localhost systemd[5053]: Reached target Sockets.
+May  9 21:23:20 localhost systemd[5053]: Reached target Basic System.
+May  9 21:23:20 localhost systemd[5053]: Reached target Default.
+May  9 21:23:20 localhost systemd[5053]: Startup finished in 38ms.
+May  9 21:23:20 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:23:21 localhost systemd-logind[778]: Session 5 logged out. Waiting for processes to exit.
+May  9 21:23:21 localhost systemd-logind[778]: Removed session 5.
+May  9 21:23:21 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:21 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:23:21 localhost systemd[5053]: Stopped target Default.
+May  9 21:23:21 localhost systemd[5053]: Stopped target Basic System.
+May  9 21:23:21 localhost systemd[5053]: Stopped target Timers.
+May  9 21:23:21 localhost systemd[5053]: Stopped target Sockets.
+May  9 21:23:21 localhost systemd[5053]: Closed D-Bus User Message Bus Socket.
+May  9 21:23:21 localhost systemd[5053]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:21 localhost systemd[5053]: Stopped target Paths.
+May  9 21:23:21 localhost systemd[5053]: Reached target Shutdown.
+May  9 21:23:21 localhost systemd[5053]: Starting Exit the Session...
+May  9 21:23:21 localhost systemd[1]: user@1001.service: Killing process 5089 (systemctl) with signal SIGKILL.
+May  9 21:23:21 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:21 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:23:21 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:21 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:23:21 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:23:21 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:23:25 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:23:25 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:23:25 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:23:25 localhost systemd[1]: Started Session 7 of user azureuser.
+May  9 21:23:25 localhost systemd-logind[778]: New session 7 of user azureuser.
+May  9 21:23:25 localhost systemd[5105]: Starting D-Bus User Message Bus Socket.
+May  9 21:23:25 localhost systemd[5105]: Reached target Paths.
+May  9 21:23:25 localhost systemd[5105]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:25 localhost systemd[5105]: Reached target Timers.
+May  9 21:23:25 localhost systemd[5105]: Listening on D-Bus User Message Bus Socket.
+May  9 21:23:25 localhost systemd[5105]: Reached target Sockets.
+May  9 21:23:25 localhost systemd[5105]: Reached target Basic System.
+May  9 21:23:25 localhost systemd[5105]: Reached target Default.
+May  9 21:23:25 localhost systemd[5105]: Startup finished in 37ms.
+May  9 21:23:25 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:23:28 localhost systemd-logind[778]: Session 7 logged out. Waiting for processes to exit.
+May  9 21:23:28 localhost systemd-logind[778]: Removed session 7.
+May  9 21:23:28 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:28 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:23:28 localhost systemd[5105]: Stopped target Default.
+May  9 21:23:28 localhost systemd[5105]: Stopped target Basic System.
+May  9 21:23:28 localhost systemd[5105]: Stopped target Paths.
+May  9 21:23:28 localhost systemd[5105]: Stopped target Sockets.
+May  9 21:23:28 localhost systemd[5105]: Closed D-Bus User Message Bus Socket.
+May  9 21:23:28 localhost systemd[5105]: Stopped target Timers.
+May  9 21:23:28 localhost systemd[5105]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:28 localhost systemd[5105]: Reached target Shutdown.
+May  9 21:23:28 localhost systemd[5105]: Starting Exit the Session...
+May  9 21:23:28 localhost systemd[1]: user@1001.service: Killing process 5133 (systemctl) with signal SIGKILL.
+May  9 21:23:28 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:28 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:23:28 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:28 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:23:28 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:23:28 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:23:32 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:23:32 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:23:32 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:23:32 localhost systemd[1]: Started Session 9 of user azureuser.
+May  9 21:23:32 localhost systemd-logind[778]: New session 9 of user azureuser.
+May  9 21:23:32 localhost systemd[5151]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:32 localhost systemd[5151]: Reached target Timers.
+May  9 21:23:32 localhost systemd[5151]: Starting D-Bus User Message Bus Socket.
+May  9 21:23:32 localhost systemd[5151]: Reached target Paths.
+May  9 21:23:32 localhost systemd[5151]: Listening on D-Bus User Message Bus Socket.
+May  9 21:23:32 localhost systemd[5151]: Reached target Sockets.
+May  9 21:23:32 localhost systemd[5151]: Reached target Basic System.
+May  9 21:23:32 localhost systemd[5151]: Reached target Default.
+May  9 21:23:32 localhost systemd[5151]: Startup finished in 40ms.
+May  9 21:23:32 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:23:34 localhost systemd-logind[778]: Session 9 logged out. Waiting for processes to exit.
+May  9 21:23:34 localhost systemd-logind[778]: Removed session 9.
+May  9 21:23:34 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:34 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:23:34 localhost systemd[5151]: Stopped target Default.
+May  9 21:23:34 localhost systemd[5151]: Stopped target Basic System.
+May  9 21:23:34 localhost systemd[5151]: Stopped target Paths.
+May  9 21:23:34 localhost systemd[5151]: Stopped target Timers.
+May  9 21:23:34 localhost systemd[5151]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:34 localhost systemd[5151]: Stopped target Sockets.
+May  9 21:23:34 localhost systemd[5151]: Closed D-Bus User Message Bus Socket.
+May  9 21:23:34 localhost systemd[5151]: Reached target Shutdown.
+May  9 21:23:34 localhost systemd[5151]: Starting Exit the Session...
+May  9 21:23:34 localhost systemd[1]: user@1001.service: Killing process 5176 (systemctl) with signal SIGKILL.
+May  9 21:23:34 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:34 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:23:34 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:34 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:23:34 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:23:34 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:23:38 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:23:38 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:23:38 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:23:38 localhost systemd[1]: Started Session 11 of user azureuser.
+May  9 21:23:38 localhost systemd-logind[778]: New session 11 of user azureuser.
+May  9 21:23:38 localhost systemd[5194]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:38 localhost systemd[5194]: Reached target Paths.
+May  9 21:23:38 localhost systemd[5194]: Starting D-Bus User Message Bus Socket.
+May  9 21:23:38 localhost systemd[5194]: Reached target Timers.
+May  9 21:23:38 localhost systemd[5194]: Listening on D-Bus User Message Bus Socket.
+May  9 21:23:38 localhost systemd[5194]: Reached target Sockets.
+May  9 21:23:38 localhost systemd[5194]: Reached target Basic System.
+May  9 21:23:38 localhost systemd[5194]: Reached target Default.
+May  9 21:23:38 localhost systemd[5194]: Startup finished in 35ms.
+May  9 21:23:38 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:23:39 localhost systemd-logind[778]: Session 11 logged out. Waiting for processes to exit.
+May  9 21:23:39 localhost systemd-logind[778]: Removed session 11.
+May  9 21:23:39 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:39 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:23:39 localhost systemd[5194]: Stopped target Default.
+May  9 21:23:39 localhost systemd[5194]: Stopped target Basic System.
+May  9 21:23:39 localhost systemd[5194]: Stopped target Paths.
+May  9 21:23:39 localhost systemd[5194]: Stopped target Timers.
+May  9 21:23:39 localhost systemd[5194]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:39 localhost systemd[5194]: Stopped target Sockets.
+May  9 21:23:39 localhost systemd[5194]: Closed D-Bus User Message Bus Socket.
+May  9 21:23:39 localhost systemd[5194]: Reached target Shutdown.
+May  9 21:23:39 localhost systemd[5194]: Starting Exit the Session...
+May  9 21:23:39 localhost systemd[1]: user@1001.service: Killing process 5233 (systemctl) with signal SIGKILL.
+May  9 21:23:39 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:39 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:23:39 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:39 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:23:39 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:23:39 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:23:42 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:23:42 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:23:42 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:23:42 localhost systemd[1]: Started Session 13 of user azureuser.
+May  9 21:23:42 localhost systemd-logind[778]: New session 13 of user azureuser.
+May  9 21:23:42 localhost systemd[5251]: Starting D-Bus User Message Bus Socket.
+May  9 21:23:42 localhost systemd[5251]: Reached target Paths.
+May  9 21:23:42 localhost systemd[5251]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:42 localhost systemd[5251]: Reached target Timers.
+May  9 21:23:42 localhost systemd[5251]: Listening on D-Bus User Message Bus Socket.
+May  9 21:23:42 localhost systemd[5251]: Reached target Sockets.
+May  9 21:23:42 localhost systemd[5251]: Reached target Basic System.
+May  9 21:23:42 localhost systemd[5251]: Reached target Default.
+May  9 21:23:42 localhost systemd[5251]: Startup finished in 34ms.
+May  9 21:23:42 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:23:45 localhost systemd-logind[778]: Session 13 logged out. Waiting for processes to exit.
+May  9 21:23:45 localhost systemd-logind[778]: Removed session 13.
+May  9 21:23:45 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:45 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:23:45 localhost systemd[5251]: Stopped target Default.
+May  9 21:23:45 localhost systemd[5251]: Stopped target Basic System.
+May  9 21:23:45 localhost systemd[5251]: Stopped target Paths.
+May  9 21:23:45 localhost systemd[5251]: Stopped target Sockets.
+May  9 21:23:45 localhost systemd[5251]: Closed D-Bus User Message Bus Socket.
+May  9 21:23:45 localhost systemd[5251]: Stopped target Timers.
+May  9 21:23:45 localhost systemd[5251]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:45 localhost systemd[5251]: Reached target Shutdown.
+May  9 21:23:45 localhost systemd[5251]: Starting Exit the Session...
+May  9 21:23:45 localhost systemd[1]: user@1001.service: Killing process 5276 (systemctl) with signal SIGKILL.
+May  9 21:23:45 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:45 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:23:45 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:45 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:23:45 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:23:45 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:23:49 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:23:49 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:23:49 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:23:49 localhost systemd[1]: Started Session 15 of user azureuser.
+May  9 21:23:49 localhost systemd-logind[778]: New session 15 of user azureuser.
+May  9 21:23:49 localhost systemd[5294]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:49 localhost systemd[5294]: Starting D-Bus User Message Bus Socket.
+May  9 21:23:49 localhost systemd[5294]: Reached target Paths.
+May  9 21:23:49 localhost systemd[5294]: Reached target Timers.
+May  9 21:23:49 localhost systemd[5294]: Listening on D-Bus User Message Bus Socket.
+May  9 21:23:49 localhost systemd[5294]: Reached target Sockets.
+May  9 21:23:49 localhost systemd[5294]: Reached target Basic System.
+May  9 21:23:49 localhost systemd[5294]: Reached target Default.
+May  9 21:23:49 localhost systemd[5294]: Startup finished in 44ms.
+May  9 21:23:49 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:23:50 localhost systemd-logind[778]: Session 15 logged out. Waiting for processes to exit.
+May  9 21:23:50 localhost systemd-logind[778]: Removed session 15.
+May  9 21:23:50 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:50 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:23:50 localhost systemd[5294]: Stopped target Default.
+May  9 21:23:50 localhost systemd[5294]: Stopped target Basic System.
+May  9 21:23:50 localhost systemd[5294]: Stopped target Timers.
+May  9 21:23:50 localhost systemd[5294]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:50 localhost systemd[5294]: Stopped target Paths.
+May  9 21:23:50 localhost systemd[5294]: Stopped target Sockets.
+May  9 21:23:50 localhost systemd[5294]: Closed D-Bus User Message Bus Socket.
+May  9 21:23:50 localhost systemd[5294]: Reached target Shutdown.
+May  9 21:23:50 localhost systemd[5294]: Starting Exit the Session...
+May  9 21:23:50 localhost systemd[1]: user@1001.service: Killing process 5336 (systemctl) with signal SIGKILL.
+May  9 21:23:50 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:50 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:23:50 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:50 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:23:50 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:23:50 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:23:53 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:23:53 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:23:53 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:23:53 localhost systemd[1]: Started Session 17 of user azureuser.
+May  9 21:23:53 localhost systemd-logind[778]: New session 17 of user azureuser.
+May  9 21:23:54 localhost systemd[5354]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:54 localhost systemd[5354]: Reached target Paths.
+May  9 21:23:54 localhost systemd[5354]: Reached target Timers.
+May  9 21:23:54 localhost systemd[5354]: Starting D-Bus User Message Bus Socket.
+May  9 21:23:54 localhost systemd[5354]: Listening on D-Bus User Message Bus Socket.
+May  9 21:23:54 localhost systemd[5354]: Reached target Sockets.
+May  9 21:23:54 localhost systemd[5354]: Reached target Basic System.
+May  9 21:23:54 localhost systemd[5354]: Reached target Default.
+May  9 21:23:54 localhost systemd[5354]: Startup finished in 41ms.
+May  9 21:23:54 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:23:56 localhost systemd-logind[778]: Session 17 logged out. Waiting for processes to exit.
+May  9 21:23:56 localhost systemd-logind[778]: Removed session 17.
+May  9 21:23:56 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:56 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:23:56 localhost systemd[5354]: Stopped target Default.
+May  9 21:23:56 localhost systemd[5354]: Stopped target Basic System.
+May  9 21:23:56 localhost systemd[5354]: Stopped target Paths.
+May  9 21:23:56 localhost systemd[5354]: Stopped target Sockets.
+May  9 21:23:56 localhost systemd[5354]: Stopped target Timers.
+May  9 21:23:56 localhost systemd[5354]: Closed D-Bus User Message Bus Socket.
+May  9 21:23:56 localhost systemd[5354]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:23:56 localhost systemd[5354]: Reached target Shutdown.
+May  9 21:23:56 localhost systemd[5354]: Starting Exit the Session...
+May  9 21:23:56 localhost systemd[1]: user@1001.service: Killing process 5382 (systemctl) with signal SIGKILL.
+May  9 21:23:56 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:56 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:23:56 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:23:56 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:23:56 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:23:56 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:00 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:00 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:00 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:00 localhost systemd[1]: Started Session 19 of user azureuser.
+May  9 21:24:00 localhost systemd-logind[778]: New session 19 of user azureuser.
+May  9 21:24:00 localhost systemd[5397]: Reached target Paths.
+May  9 21:24:00 localhost systemd[5397]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:00 localhost systemd[5397]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:00 localhost systemd[5397]: Reached target Timers.
+May  9 21:24:00 localhost systemd[5397]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:00 localhost systemd[5397]: Reached target Sockets.
+May  9 21:24:00 localhost systemd[5397]: Reached target Basic System.
+May  9 21:24:00 localhost systemd[5397]: Reached target Default.
+May  9 21:24:00 localhost systemd[5397]: Startup finished in 40ms.
+May  9 21:24:00 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:01 localhost systemd-logind[778]: Session 19 logged out. Waiting for processes to exit.
+May  9 21:24:01 localhost systemd-logind[778]: Removed session 19.
+May  9 21:24:01 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:01 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:01 localhost systemd[5397]: Stopped target Default.
+May  9 21:24:01 localhost systemd[5397]: Stopped target Basic System.
+May  9 21:24:01 localhost systemd[5397]: Stopped target Sockets.
+May  9 21:24:01 localhost systemd[5397]: Stopped target Timers.
+May  9 21:24:01 localhost systemd[5397]: Stopped target Paths.
+May  9 21:24:01 localhost systemd[5397]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:01 localhost systemd[5397]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:01 localhost systemd[5397]: Reached target Shutdown.
+May  9 21:24:01 localhost systemd[5397]: Starting Exit the Session...
+May  9 21:24:01 localhost systemd[1]: user@1001.service: Killing process 5439 (systemctl) with signal SIGKILL.
+May  9 21:24:01 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:01 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:01 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:01 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:01 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:01 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:06 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:06 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:06 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:06 localhost systemd[1]: Started Session 21 of user azureuser.
+May  9 21:24:06 localhost systemd-logind[778]: New session 21 of user azureuser.
+May  9 21:24:06 localhost systemd[5454]: Reached target Paths.
+May  9 21:24:06 localhost systemd[5454]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:06 localhost systemd[5454]: Reached target Timers.
+May  9 21:24:06 localhost systemd[5454]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:06 localhost systemd[5454]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:06 localhost systemd[5454]: Reached target Sockets.
+May  9 21:24:06 localhost systemd[5454]: Reached target Basic System.
+May  9 21:24:06 localhost systemd[5454]: Reached target Default.
+May  9 21:24:06 localhost systemd[5454]: Startup finished in 41ms.
+May  9 21:24:06 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:09 localhost systemd-logind[778]: Session 21 logged out. Waiting for processes to exit.
+May  9 21:24:09 localhost systemd-logind[778]: Removed session 21.
+May  9 21:24:09 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:09 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:09 localhost systemd[5454]: Stopped target Default.
+May  9 21:24:09 localhost systemd[5454]: Stopped target Basic System.
+May  9 21:24:09 localhost systemd[5454]: Stopped target Sockets.
+May  9 21:24:09 localhost systemd[5454]: Stopped target Paths.
+May  9 21:24:09 localhost systemd[5454]: Stopped target Timers.
+May  9 21:24:09 localhost systemd[5454]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:09 localhost systemd[5454]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:09 localhost systemd[5454]: Reached target Shutdown.
+May  9 21:24:09 localhost systemd[5454]: Starting Exit the Session...
+May  9 21:24:09 localhost systemd[1]: user@1001.service: Killing process 5482 (systemctl) with signal SIGKILL.
+May  9 21:24:09 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:09 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:09 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:09 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:09 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:09 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:15 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:15 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:15 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:15 localhost systemd[1]: Started Session 23 of user azureuser.
+May  9 21:24:15 localhost systemd-logind[778]: New session 23 of user azureuser.
+May  9 21:24:15 localhost systemd[5503]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:15 localhost systemd[5503]: Reached target Paths.
+May  9 21:24:15 localhost systemd[5503]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:15 localhost systemd[5503]: Reached target Timers.
+May  9 21:24:15 localhost systemd[5503]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:15 localhost systemd[5503]: Reached target Sockets.
+May  9 21:24:15 localhost systemd[5503]: Reached target Basic System.
+May  9 21:24:15 localhost systemd[5503]: Reached target Default.
+May  9 21:24:15 localhost systemd[5503]: Startup finished in 34ms.
+May  9 21:24:15 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:18 localhost systemd-logind[778]: Session 23 logged out. Waiting for processes to exit.
+May  9 21:24:18 localhost systemd-logind[778]: Removed session 23.
+May  9 21:24:18 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:18 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:18 localhost systemd[5503]: Stopped target Default.
+May  9 21:24:18 localhost systemd[5503]: Stopped target Basic System.
+May  9 21:24:18 localhost systemd[5503]: Stopped target Timers.
+May  9 21:24:18 localhost systemd[5503]: Stopped target Paths.
+May  9 21:24:18 localhost systemd[5503]: Stopped target Sockets.
+May  9 21:24:18 localhost systemd[5503]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:18 localhost systemd[5503]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:18 localhost systemd[5503]: Reached target Shutdown.
+May  9 21:24:18 localhost systemd[5503]: Starting Exit the Session...
+May  9 21:24:18 localhost systemd[1]: user@1001.service: Killing process 5531 (systemctl) with signal SIGKILL.
+May  9 21:24:18 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:18 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:18 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:18 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:18 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:18 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:22 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:22 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:22 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:22 localhost systemd[1]: Started Session 25 of user azureuser.
+May  9 21:24:22 localhost systemd-logind[778]: New session 25 of user azureuser.
+May  9 21:24:22 localhost systemd[5549]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:22 localhost systemd[5549]: Reached target Timers.
+May  9 21:24:22 localhost systemd[5549]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:22 localhost systemd[5549]: Reached target Paths.
+May  9 21:24:22 localhost systemd[5549]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:22 localhost systemd[5549]: Reached target Sockets.
+May  9 21:24:22 localhost systemd[5549]: Reached target Basic System.
+May  9 21:24:22 localhost systemd[5549]: Reached target Default.
+May  9 21:24:22 localhost systemd[5549]: Startup finished in 39ms.
+May  9 21:24:22 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:25 localhost systemd-logind[778]: Session 25 logged out. Waiting for processes to exit.
+May  9 21:24:25 localhost systemd-logind[778]: Removed session 25.
+May  9 21:24:25 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:25 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:25 localhost systemd[5549]: Stopped target Default.
+May  9 21:24:25 localhost systemd[5549]: Stopped target Basic System.
+May  9 21:24:25 localhost systemd[5549]: Stopped target Paths.
+May  9 21:24:25 localhost systemd[5549]: Stopped target Sockets.
+May  9 21:24:25 localhost systemd[5549]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:25 localhost systemd[5549]: Stopped target Timers.
+May  9 21:24:25 localhost systemd[5549]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:25 localhost systemd[5549]: Reached target Shutdown.
+May  9 21:24:25 localhost systemd[5549]: Starting Exit the Session...
+May  9 21:24:25 localhost systemd[1]: user@1001.service: Killing process 5574 (systemctl) with signal SIGKILL.
+May  9 21:24:25 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:25 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:25 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:25 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:25 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:25 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:28 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:28 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:28 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:28 localhost systemd[1]: Started Session 27 of user azureuser.
+May  9 21:24:28 localhost systemd-logind[778]: New session 27 of user azureuser.
+May  9 21:24:29 localhost systemd[5592]: Reached target Paths.
+May  9 21:24:29 localhost systemd[5592]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:29 localhost systemd[5592]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:29 localhost systemd[5592]: Reached target Timers.
+May  9 21:24:29 localhost systemd[5592]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:29 localhost systemd[5592]: Reached target Sockets.
+May  9 21:24:29 localhost systemd[5592]: Reached target Basic System.
+May  9 21:24:29 localhost systemd[5592]: Reached target Default.
+May  9 21:24:29 localhost systemd[5592]: Startup finished in 41ms.
+May  9 21:24:29 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:30 localhost systemd-logind[778]: Session 27 logged out. Waiting for processes to exit.
+May  9 21:24:30 localhost systemd-logind[778]: Removed session 27.
+May  9 21:24:30 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:30 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:30 localhost systemd[5592]: Stopped target Default.
+May  9 21:24:30 localhost systemd[5592]: Stopped target Basic System.
+May  9 21:24:30 localhost systemd[5592]: Stopped target Paths.
+May  9 21:24:30 localhost systemd[5592]: Stopped target Timers.
+May  9 21:24:30 localhost systemd[5592]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:30 localhost systemd[5592]: Stopped target Sockets.
+May  9 21:24:30 localhost systemd[5592]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:30 localhost systemd[5592]: Reached target Shutdown.
+May  9 21:24:30 localhost systemd[5592]: Starting Exit the Session...
+May  9 21:24:30 localhost systemd[1]: user@1001.service: Killing process 5631 (systemctl) with signal SIGKILL.
+May  9 21:24:30 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:30 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:30 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:30 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:30 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:30 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:33 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:33 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:33 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:33 localhost systemd[1]: Started Session 29 of user azureuser.
+May  9 21:24:33 localhost systemd-logind[778]: New session 29 of user azureuser.
+May  9 21:24:33 localhost systemd[5649]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:33 localhost systemd[5649]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:33 localhost systemd[5649]: Reached target Timers.
+May  9 21:24:33 localhost systemd[5649]: Reached target Paths.
+May  9 21:24:33 localhost systemd[5649]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:33 localhost systemd[5649]: Reached target Sockets.
+May  9 21:24:33 localhost systemd[5649]: Reached target Basic System.
+May  9 21:24:33 localhost systemd[5649]: Reached target Default.
+May  9 21:24:33 localhost systemd[5649]: Startup finished in 37ms.
+May  9 21:24:33 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:35 localhost systemd-logind[778]: Session 29 logged out. Waiting for processes to exit.
+May  9 21:24:35 localhost systemd-logind[778]: Removed session 29.
+May  9 21:24:35 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:35 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:35 localhost systemd[5649]: Stopped target Default.
+May  9 21:24:35 localhost systemd[5649]: Stopped target Basic System.
+May  9 21:24:35 localhost systemd[5649]: Stopped target Sockets.
+May  9 21:24:35 localhost systemd[5649]: Stopped target Timers.
+May  9 21:24:35 localhost systemd[5649]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:35 localhost systemd[5649]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:35 localhost systemd[5649]: Stopped target Paths.
+May  9 21:24:35 localhost systemd[5649]: Reached target Shutdown.
+May  9 21:24:35 localhost systemd[5649]: Starting Exit the Session...
+May  9 21:24:35 localhost systemd[1]: user@1001.service: Killing process 5674 (systemctl) with signal SIGKILL.
+May  9 21:24:35 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:35 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:35 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:35 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:35 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:35 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:39 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:39 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:39 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:39 localhost systemd[1]: Started Session 31 of user azureuser.
+May  9 21:24:39 localhost systemd-logind[778]: New session 31 of user azureuser.
+May  9 21:24:40 localhost systemd[5692]: Reached target Paths.
+May  9 21:24:40 localhost systemd[5692]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:40 localhost systemd[5692]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:40 localhost systemd[5692]: Reached target Timers.
+May  9 21:24:40 localhost systemd[5692]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:40 localhost systemd[5692]: Reached target Sockets.
+May  9 21:24:40 localhost systemd[5692]: Reached target Basic System.
+May  9 21:24:40 localhost systemd[5692]: Reached target Default.
+May  9 21:24:40 localhost systemd[5692]: Startup finished in 42ms.
+May  9 21:24:40 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:42 localhost systemd-logind[778]: Session 31 logged out. Waiting for processes to exit.
+May  9 21:24:42 localhost systemd-logind[778]: Removed session 31.
+May  9 21:24:42 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:42 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:42 localhost systemd[5692]: Stopped target Default.
+May  9 21:24:42 localhost systemd[5692]: Stopped target Basic System.
+May  9 21:24:42 localhost systemd[5692]: Stopped target Sockets.
+May  9 21:24:42 localhost systemd[5692]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:42 localhost systemd[5692]: Stopped target Paths.
+May  9 21:24:42 localhost systemd[5692]: Stopped target Timers.
+May  9 21:24:42 localhost systemd[5692]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:42 localhost systemd[5692]: Reached target Shutdown.
+May  9 21:24:42 localhost systemd[5692]: Starting Exit the Session...
+May  9 21:24:42 localhost systemd[1]: user@1001.service: Killing process 5720 (systemctl) with signal SIGKILL.
+May  9 21:24:42 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:42 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:42 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:42 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:42 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:42 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:46 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:46 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:46 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:46 localhost systemd[1]: Started Session 33 of user azureuser.
+May  9 21:24:46 localhost systemd-logind[778]: New session 33 of user azureuser.
+May  9 21:24:46 localhost systemd[5737]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:46 localhost systemd[5737]: Reached target Timers.
+May  9 21:24:46 localhost systemd[5737]: Reached target Paths.
+May  9 21:24:46 localhost systemd[5737]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:46 localhost systemd[5737]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:46 localhost systemd[5737]: Reached target Sockets.
+May  9 21:24:46 localhost systemd[5737]: Reached target Basic System.
+May  9 21:24:46 localhost systemd[5737]: Reached target Default.
+May  9 21:24:46 localhost systemd[5737]: Startup finished in 39ms.
+May  9 21:24:46 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:47 localhost systemd-logind[778]: Session 33 logged out. Waiting for processes to exit.
+May  9 21:24:47 localhost systemd-logind[778]: Removed session 33.
+May  9 21:24:47 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:47 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:47 localhost systemd[5737]: Stopped target Default.
+May  9 21:24:47 localhost systemd[5737]: Stopped target Basic System.
+May  9 21:24:47 localhost systemd[5737]: Stopped target Sockets.
+May  9 21:24:47 localhost systemd[5737]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:47 localhost systemd[5737]: Stopped target Timers.
+May  9 21:24:47 localhost systemd[5737]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:47 localhost systemd[5737]: Stopped target Paths.
+May  9 21:24:47 localhost systemd[5737]: Reached target Shutdown.
+May  9 21:24:47 localhost systemd[5737]: Starting Exit the Session...
+May  9 21:24:47 localhost systemd[1]: user@1001.service: Killing process 5780 (systemctl) with signal SIGKILL.
+May  9 21:24:47 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:47 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:47 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:47 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:47 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:47 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:51 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:51 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:51 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:51 localhost systemd[1]: Started Session 35 of user azureuser.
+May  9 21:24:51 localhost systemd-logind[778]: New session 35 of user azureuser.
+May  9 21:24:51 localhost systemd[5795]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:51 localhost systemd[5795]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:51 localhost systemd[5795]: Reached target Timers.
+May  9 21:24:51 localhost systemd[5795]: Reached target Paths.
+May  9 21:24:51 localhost systemd[5795]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:51 localhost systemd[5795]: Reached target Sockets.
+May  9 21:24:51 localhost systemd[5795]: Reached target Basic System.
+May  9 21:24:51 localhost systemd[5795]: Reached target Default.
+May  9 21:24:51 localhost systemd[5795]: Startup finished in 39ms.
+May  9 21:24:51 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:54 localhost systemd-logind[778]: Session 35 logged out. Waiting for processes to exit.
+May  9 21:24:54 localhost systemd-logind[778]: Removed session 35.
+May  9 21:24:54 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:54 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:54 localhost systemd[5795]: Stopped target Default.
+May  9 21:24:54 localhost systemd[5795]: Stopped target Basic System.
+May  9 21:24:54 localhost systemd[5795]: Stopped target Paths.
+May  9 21:24:54 localhost systemd[5795]: Stopped target Sockets.
+May  9 21:24:54 localhost systemd[5795]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:54 localhost systemd[5795]: Stopped target Timers.
+May  9 21:24:54 localhost systemd[5795]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:54 localhost systemd[5795]: Reached target Shutdown.
+May  9 21:24:54 localhost systemd[5795]: Starting Exit the Session...
+May  9 21:24:54 localhost systemd[1]: user@1001.service: Killing process 5823 (systemctl) with signal SIGKILL.
+May  9 21:24:54 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:54 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:54 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:54 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:54 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:54 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:24:57 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:24:57 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:24:57 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:24:57 localhost systemd[1]: Started Session 37 of user azureuser.
+May  9 21:24:57 localhost systemd-logind[778]: New session 37 of user azureuser.
+May  9 21:24:57 localhost systemd[5841]: Starting D-Bus User Message Bus Socket.
+May  9 21:24:57 localhost systemd[5841]: Reached target Paths.
+May  9 21:24:57 localhost systemd[5841]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:57 localhost systemd[5841]: Reached target Timers.
+May  9 21:24:57 localhost systemd[5841]: Listening on D-Bus User Message Bus Socket.
+May  9 21:24:57 localhost systemd[5841]: Reached target Sockets.
+May  9 21:24:57 localhost systemd[5841]: Reached target Basic System.
+May  9 21:24:57 localhost systemd[5841]: Reached target Default.
+May  9 21:24:57 localhost systemd[5841]: Startup finished in 42ms.
+May  9 21:24:57 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:24:58 localhost systemd-logind[778]: Session 37 logged out. Waiting for processes to exit.
+May  9 21:24:58 localhost systemd-logind[778]: Removed session 37.
+May  9 21:24:58 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:58 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:24:58 localhost systemd[5841]: Stopped target Default.
+May  9 21:24:58 localhost systemd[5841]: Stopped target Basic System.
+May  9 21:24:58 localhost systemd[5841]: Stopped target Sockets.
+May  9 21:24:58 localhost systemd[5841]: Closed D-Bus User Message Bus Socket.
+May  9 21:24:58 localhost systemd[5841]: Stopped target Timers.
+May  9 21:24:58 localhost systemd[5841]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:24:58 localhost systemd[5841]: Stopped target Paths.
+May  9 21:24:58 localhost systemd[5841]: Reached target Shutdown.
+May  9 21:24:58 localhost systemd[5841]: Starting Exit the Session...
+May  9 21:24:58 localhost systemd[1]: user@1001.service: Killing process 5880 (systemctl) with signal SIGKILL.
+May  9 21:24:58 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:58 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:24:58 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:24:58 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:24:58 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:24:58 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:25:02 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:25:02 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:25:02 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:25:02 localhost systemd[1]: Started Session 39 of user azureuser.
+May  9 21:25:02 localhost systemd-logind[778]: New session 39 of user azureuser.
+May  9 21:25:02 localhost systemd[5898]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:25:02 localhost systemd[5898]: Reached target Timers.
+May  9 21:25:02 localhost systemd[5898]: Starting D-Bus User Message Bus Socket.
+May  9 21:25:02 localhost systemd[5898]: Reached target Paths.
+May  9 21:25:02 localhost systemd[5898]: Listening on D-Bus User Message Bus Socket.
+May  9 21:25:02 localhost systemd[5898]: Reached target Sockets.
+May  9 21:25:02 localhost systemd[5898]: Reached target Basic System.
+May  9 21:25:02 localhost systemd[5898]: Reached target Default.
+May  9 21:25:02 localhost systemd[5898]: Startup finished in 38ms.
+May  9 21:25:02 localhost systemd[1]: Started User Manager for UID 1001.
+May  9 21:25:05 localhost systemd-logind[778]: Session 39 logged out. Waiting for processes to exit.
+May  9 21:25:05 localhost systemd-logind[778]: Removed session 39.
+May  9 21:25:05 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:25:05 localhost systemd[1]: Stopping User Manager for UID 1001...
+May  9 21:25:05 localhost systemd[5898]: Stopped target Default.
+May  9 21:25:05 localhost systemd[5898]: Stopped target Basic System.
+May  9 21:25:05 localhost systemd[5898]: Stopped target Paths.
+May  9 21:25:05 localhost systemd[5898]: Stopped target Timers.
+May  9 21:25:05 localhost systemd[5898]: Stopped Mark boot as successful after the user session has run 2 minutes.
+May  9 21:25:05 localhost systemd[5898]: Stopped target Sockets.
+May  9 21:25:05 localhost systemd[5898]: Closed D-Bus User Message Bus Socket.
+May  9 21:25:05 localhost systemd[5898]: Reached target Shutdown.
+May  9 21:25:05 localhost systemd[5898]: Starting Exit the Session...
+May  9 21:25:05 localhost systemd[1]: user@1001.service: Killing process 5923 (systemctl) with signal SIGKILL.
+May  9 21:25:05 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:25:05 localhost systemd[1]: Stopped User Manager for UID 1001.
+May  9 21:25:05 localhost systemd[1]: user-runtime-dir@1001.service: Unit not needed anymore. Stopping.
+May  9 21:25:05 localhost systemd[1]: Stopping /run/user/1001 mount wrapper...
+May  9 21:25:05 localhost systemd[1]: Removed slice User Slice of UID 1001.
+May  9 21:25:05 localhost systemd[1]: Stopped /run/user/1001 mount wrapper.
+May  9 21:25:09 localhost systemd[1]: Started /run/user/1001 mount wrapper.
+May  9 21:25:09 localhost systemd[1]: Created slice User Slice of UID 1001.
+May  9 21:25:09 localhost systemd[1]: Starting User Manager for UID 1001...
+May  9 21:25:09 localhost systemd[1]: Started Session 41 of user azureuser.
+May  9 21:25:09 localhost systemd-logind[778]: New session 41 of user azureuser.
+May  9 21:25:09 localhost systemd[5941]: Starting D-Bus User Message Bus Socket.
+May  9 21:25:09 localhost systemd[5941]: Started Mark boot as successful after the user session has run 2 minutes.
+May  9 21:25:09 localhost systemd[5941]: Reached target Timers.
+May  9 21:25:09 localhost systemd[5941]: Reached target Paths.
+May  9 21:25:09 localhost systemd[5941]: Listening on D-Bus User Message Bus Socket.
+May  9 21:25:09 localhost systemd[5941]: Reached target Sockets.
+May  9 21:25:09 localhost systemd[5941]: Reached target Basic System.
+May  9 21:25:09 localhost systemd[5941]: Reached target Default.
+May  9 21:25:09 localhost systemd[5941]: Startup finished in 39ms.
+May  9 21:25:09 localhost systemd[1]: Started User Manager for UID 1001.

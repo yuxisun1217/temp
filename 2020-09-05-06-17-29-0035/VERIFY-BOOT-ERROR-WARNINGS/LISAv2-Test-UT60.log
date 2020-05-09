@@ -1,0 +1,107 @@
+05/09/2020 13:23:50 : [INFO ] ==> Run test setup script if defined.
+05/09/2020 13:23:50 : [DEBUG] Set $fdisk > fdisk for REDHAT
+05/09/2020 13:23:50 : [INFO ] ==> Check the target machine kernel log.
+05/09/2020 13:23:50 : [INFO ] Collecting LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0 VM Kernel Initial Logs ...
+05/09/2020 13:23:50 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-09-05-06-17-29-0035/VERIFY-BOOT-ERROR-WARNINGS/runtest.sh to Unix format...
+05/09/2020 13:23:50 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\runtest.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:23:57 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:23:57 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.140.216 "echo ****** | sudo -S dmesg > ./InitialBootLogs.txt"
+05/09/2020 13:24:02 : [DEBUG] dmesg > ./InitialBootLogs.txt executed successfully in 5.58 seconds.
+05/09/2020 13:24:02 : [DEBUG] Downloading ./InitialBootLogs.txt from azureuser @ 52.167.140.216 : 22 to E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0 using password authentication
+05/09/2020 13:24:10 : [DEBUG] Download command returned exit code 0
+05/09/2020 13:24:10 : [DEBUG] Download successful after 1 attempt
+05/09/2020 13:24:10 : [INFO ] LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0: Initial kernel log, InitialBootLogs.txt, collected successfully.
+05/09/2020 13:24:10 : [INFO ] Checking for call traces in kernel logs..
+05/09/2020 13:24:10 : [INFO ] No kernel call traces found in the kernel log
+05/09/2020 13:24:10 : [INFO ] ==> Upload test files to target machine LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0 if any.
+05/09/2020 13:24:10 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/azuremodules.py to Unix format...
+05/09/2020 13:24:10 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/VERIFY-BOOT-ERROR-WARNINGS.py to Unix format...
+05/09/2020 13:24:10 : [DEBUG] Compressing .\Testscripts\Linux\azuremodules.py and adding to 52-167-140-216@22.tar
+05/09/2020 13:24:11 : [DEBUG] Compressing .\Testscripts\Linux\VERIFY-BOOT-ERROR-WARNINGS.py and adding to 52-167-140-216@22.tar
+05/09/2020 13:24:11 : [DEBUG] Compressing .\XML\Other\ignorable-boot-errors.xml and adding to 52-167-140-216@22.tar
+05/09/2020 13:24:12 : [DEBUG] Compressing .\XML\Other\ignorable-walalog-errors.xml and adding to 52-167-140-216@22.tar
+05/09/2020 13:24:12 : [DEBUG] Uploading 52-167-140-216@22.tar to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:24:18 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:24:18 : [DEBUG] Removing compressed file : 52-167-140-216@22.tar
+05/09/2020 13:24:18 : [DEBUG] Decompressing files in VM ...
+05/09/2020 13:24:19 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-09-05-06-17-29-0035/VERIFY-BOOT-ERROR-WARNINGS/runtest.sh to Unix format...
+05/09/2020 13:24:19 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\runtest.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:24:25 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:24:25 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.140.216 "echo ****** | sudo -S tar -xf 52-167-140-216@22.tar"
+05/09/2020 13:24:30 : [DEBUG] tar -xf 52-167-140-216@22.tar executed successfully in 4.39 seconds.
+05/09/2020 13:24:30 : [INFO ] ==> Run test script on the target machine.
+05/09/2020 13:24:30 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/constants.sh to Unix format...
+05/09/2020 13:24:30 : [DEBUG] Uploading E:\yuxisun\LISAv2\constants.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:24:36 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:24:36 : [INFO ] Constants file uploaded to: LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0
+05/09/2020 13:24:36 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-09-05-06-17-29-0035/VERIFY-BOOT-ERROR-WARNINGS/runtest.sh to Unix format...
+05/09/2020 13:24:36 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\runtest.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:24:43 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:24:43 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.140.216 "echo ****** | sudo -S which python 2> /dev/null || which python2 2> /dev/null || which python3 2> /dev/null || (which /usr/libexec/platform-python && ln -s /usr/libexec/platform-python /sbin/python)"
+05/09/2020 13:24:48 : [DEBUG] which python 2> /dev/null || which python2 2> /dev/null || which python3 2> /dev/null || (which /usr/libexec/platform-python && ln -s /usr/libexec/platform-python /sbin/python) executed successfully in 4.75 seconds.
+05/09/2020 13:24:48 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-09-05-06-17-29-0035/VERIFY-BOOT-ERROR-WARNINGS/runtest.sh to Unix format...
+05/09/2020 13:24:48 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\runtest.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:24:54 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:24:54 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.140.216 "echo ****** | sudo -S ln -s /bin/python3 /bin/python"
+05/09/2020 13:24:59 : [DEBUG] ln -s /bin/python3 /bin/python executed successfully in 4.57 seconds.
+05/09/2020 13:24:59 : [INFO ] Test script: VERIFY-BOOT-ERROR-WARNINGS.py started.
+05/09/2020 13:24:59 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-09-05-06-17-29-0035/VERIFY-BOOT-ERROR-WARNINGS/runtest.sh to Unix format...
+05/09/2020 13:24:59 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\runtest.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:25:05 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:25:05 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.140.216 "echo ****** | sudo -S python VERIFY-BOOT-ERROR-WARNINGS.py"
+05/09/2020 13:25:10 : [DEBUG] python VERIFY-BOOT-ERROR-WARNINGS.py executed successfully in 4.81 seconds.
+05/09/2020 13:25:10 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-09-05-06-17-29-0035/VERIFY-BOOT-ERROR-WARNINGS/runtest.sh to Unix format...
+05/09/2020 13:25:10 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\runtest.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:25:17 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:25:17 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.140.216 "echo ****** | sudo -S mv Runtime.log VERIFY-BOOT-ERROR-WARNINGS_summary.log"
+05/09/2020 13:25:21 : [DEBUG] mv Runtime.log VERIFY-BOOT-ERROR-WARNINGS_summary.log executed successfully in 4.81 seconds.
+05/09/2020 13:25:22 : [DEBUG] Downloading ./state.txt from azureuser @ 52.167.140.216 : 22 to E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS using password authentication
+05/09/2020 13:25:28 : [DEBUG] Download command returned exit code 0
+05/09/2020 13:25:28 : [DEBUG] Download successful after 1 attempt
+05/09/2020 13:25:28 : [DEBUG] Downloading ./Summary.log from azureuser @ 52.167.140.216 : 22 to E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS using password authentication
+05/09/2020 13:25:35 : [DEBUG] Download command returned exit code 0
+05/09/2020 13:25:35 : [DEBUG] Download successful after 1 attempt
+05/09/2020 13:25:35 : [DEBUG] Downloading ./VERIFY-BOOT-ERROR-WARNINGS_summary.log from azureuser @ 52.167.140.216 : 22 to E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS using password authentication
+05/09/2020 13:25:42 : [DEBUG] Download command returned exit code 0
+05/09/2020 13:25:42 : [DEBUG] Download successful after 1 attempt
+05/09/2020 13:25:42 : [INFO ] TEST SCRIPT SUMMARY ~~~~~~~~~~~~~~~
+05/09/2020 13:25:42 : [INFO ] END OF TEST SCRIPT SUMMARY ~~~~~~~~~~~~~~~
+05/09/2020 13:25:42 : [INFO ] ==> Upload test results to database.
+05/09/2020 13:25:42 : [INFO ] ==> Check if the test target machines are still running.
+05/09/2020 13:25:42 : [INFO ] Trying to connect to deployed VMs.
+05/09/2020 13:25:43 : [INFO ] Connecting to 52.167.140.216 : 22 succeeded.
+05/09/2020 13:25:43 : [INFO ] The SSH ports for all VMs are open.
+05/09/2020 13:25:43 : [INFO ] Collecting LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0 VM Kernel Final Logs ...
+05/09/2020 13:25:43 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-09-05-06-17-29-0035/VERIFY-BOOT-ERROR-WARNINGS/runtest.sh to Unix format...
+05/09/2020 13:25:43 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\runtest.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:25:49 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:25:49 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.140.216 "echo ****** | sudo -S dmesg > ./FinalBootLogs.txt"
+05/09/2020 13:25:53 : [DEBUG] dmesg > ./FinalBootLogs.txt executed successfully in 4.26 seconds.
+05/09/2020 13:25:53 : [DEBUG] Downloading ./FinalBootLogs.txt from azureuser @ 52.167.140.216 : 22 to E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0 using password authentication
+05/09/2020 13:26:01 : [DEBUG] Download command returned exit code 0
+05/09/2020 13:26:01 : [DEBUG] Download successful after 1 attempt
+05/09/2020 13:26:01 : [INFO ] LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0: Final kernel log, FinalBootLogs.txt, collected successfully.
+05/09/2020 13:26:01 : [INFO ] Checking for call traces in kernel logs..
+05/09/2020 13:26:01 : [INFO ] No kernel call traces found in the kernel log
+05/09/2020 13:26:01 : [INFO ] Initial and Final Logs have same content
+05/09/2020 13:26:01 : [INFO ] LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0: Final Kernel logs collected and compared successfully
+05/09/2020 13:26:01 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/CollectLogFile.sh to Unix format...
+05/09/2020 13:26:01 : [DEBUG] Uploading .\Testscripts\Linux\CollectLogFile.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:26:07 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:26:08 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-09-05-06-17-29-0035/VERIFY-BOOT-ERROR-WARNINGS/runtest.sh to Unix format...
+05/09/2020 13:26:08 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS\runtest.sh to azureuser @ 52.167.140.216 : 22 using password authentication
+05/09/2020 13:26:15 : [DEBUG] Upload successful after 1 attempt
+05/09/2020 13:26:15 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.167.140.216 "echo ****** | sudo -S bash CollectLogFile.sh -hostname LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0"
+05/09/2020 13:26:23 : [DEBUG] bash CollectLogFile.sh -hostname LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0 executed successfully in 7.97 seconds.
+05/09/2020 13:26:23 : [DEBUG] Downloading LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0-*.txt from azureuser @ 52.167.140.216 : 22 to E:\yuxisun\LISAv2\TestResults\2020-09-05-06-17-29-0035\VERIFY-BOOT-ERROR-WARNINGS using password authentication
+05/09/2020 13:26:43 : [DEBUG] Download command returned exit code 0
+05/09/2020 13:26:43 : [DEBUG] Download successful after 1 attempt
+05/09/2020 13:26:43 : [INFO ] ==> Run test cleanup script if defined.
+05/09/2020 13:26:43 : [INFO ] Start to do cleanup for case VERIFY-BOOT-ERROR-WARNINGS
+05/09/2020 13:26:43 : [INFO ] End of testing: VERIFY-BOOT-ERROR-WARNINGS , result: PASS
+05/09/2020 13:26:43 : [INFO ] PASS    - 1
+05/09/2020 13:26:43 : [INFO ] SKIPPED - 0
+05/09/2020 13:26:43 : [INFO ] FAIL    - 0
+05/09/2020 13:26:43 : [INFO ] ABORTED - 0
+05/09/2020 13:26:43 : [INFO ] PENDING - 0 
+

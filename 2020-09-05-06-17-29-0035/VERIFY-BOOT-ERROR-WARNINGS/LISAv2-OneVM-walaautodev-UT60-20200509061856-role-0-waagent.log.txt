@@ -1,0 +1,109 @@
+2020/05/09 21:21:58.332316 INFO Daemon Azure Linux Agent Version:2.2.38
+2020/05/09 21:21:58.366763 INFO Daemon OS: redhat 8.2
+2020/05/09 21:21:58.386226 INFO Daemon Python: 3.6.8
+2020/05/09 21:21:58.418636 INFO Daemon Creating cgroup directory /sys/fs/cgroup/cpu/WALinuxAgent/WALinuxAgent
+2020/05/09 21:21:58.486711 INFO Daemon Creating cgroup directory /sys/fs/cgroup/memory/WALinuxAgent/WALinuxAgent
+2020/05/09 21:21:58.553450 INFO Daemon Add daemon process pid 797 to WALinuxAgent cgroup
+2020/05/09 21:21:58.610571 INFO Daemon CGroups: ok
+2020/05/09 21:21:58.615207 INFO Daemon Run daemon
+2020/05/09 21:21:58.625182 INFO Daemon No RDMA handler exists for distro='Red Hat Enterprise Linux' version='8.2'
+2020/05/09 21:21:58.677275 INFO Daemon Activate resource disk
+2020/05/09 21:21:58.739280 INFO Daemon Examining partition table
+2020/05/09 21:21:58.953437 INFO Daemon GPT not detected, determining filesystem
+2020/05/09 21:21:59.077685 INFO Daemon sfdisk --part-type -f /dev/sdb 1 -n succeeded
+2020/05/09 21:21:59.083263 INFO Daemon The partition is formatted with ntfs, updating partition type to 83
+2020/05/09 21:22:00.960506 INFO Daemon sfdisk --part-type  /dev/sdb 1 83 succeeded
+2020/05/09 21:22:01.110346 INFO Daemon Format partition [mkfs.ext4 -F /dev/sdb1]
+2020/05/09 21:22:03.337853 INFO Daemon Mount resource disk [mount /dev/sdb1 /mnt/resource]
+2020/05/09 21:22:03.399488 INFO Daemon Resource disk /dev/sdb is mounted at /mnt/resource with ext4
+2020/05/09 21:22:03.409739 INFO Daemon Enable swap
+2020/05/09 21:22:03.440652 INFO Daemon Create swap file
+2020/05/09 21:22:03.541420 INFO Daemon Enabled 2097152KB of swap at /mnt/resource/swapfile
+2020/05/09 21:22:03.547823 INFO Daemon Clean protocol
+2020/05/09 21:22:03.551039 INFO Daemon Running default provisioning handler
+2020/05/09 21:22:03.560500 INFO Daemon Copying ovf-env.xml
+2020/05/09 21:22:03.710468 INFO Daemon Successfully mounted dvd
+2020/05/09 21:22:03.816736 INFO Daemon Detect protocol endpoints
+2020/05/09 21:22:03.821456 INFO Daemon Clean protocol
+2020/05/09 21:22:03.825847 INFO Daemon WireServer endpoint is not found. Rerun dhcp handler
+2020/05/09 21:22:03.831823 INFO Daemon Test for route to 168.63.129.16
+2020/05/09 21:22:03.837035 INFO Daemon Route to 168.63.129.16 exists
+2020/05/09 21:22:03.841350 INFO Daemon Wire server endpoint:168.63.129.16
+2020/05/09 21:22:03.938211 INFO Daemon Fabric preferred wire protocol version:2015-04-05
+2020/05/09 21:22:03.943465 INFO Daemon Wire protocol version:2012-11-30
+2020/05/09 21:22:03.947448 INFO Daemon Server preferred version:2015-04-05
+2020/05/09 21:22:04.133724 INFO Daemon Starting provisioning
+2020/05/09 21:22:04.138451 INFO Daemon Handle ovf-env.xml.
+2020/05/09 21:22:04.142601 INFO Daemon Set hostname [LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0]
+2020/05/09 21:22:04.190198 INFO Daemon Publish hostname [LISAv2-OneVM-walaautodev-UT60-20200509061856-role-0]
+2020/05/09 21:22:04.324980 INFO Daemon Examine /proc/net/route for primary interface
+2020/05/09 21:22:04.330134 INFO Daemon Primary interface is [eth0]
+2020/05/09 21:22:04.566538 INFO Daemon Examine /proc/net/route for primary interface
+2020/05/09 21:22:04.572515 INFO Daemon Primary interface is [eth0]
+2020/05/09 21:22:04.891990 INFO Daemon Create user account if not exists
+2020/05/09 21:22:05.942869 INFO Daemon Set user password.
+2020/05/09 21:22:06.559065 INFO Daemon Configure sudoer
+2020/05/09 21:22:06.564321 INFO Daemon Configure sshd
+2020/05/09 21:22:06.568926 INFO Daemon Enabled SSH password-based authentication methods.
+2020/05/09 21:22:06.575050 INFO Daemon Configured SSH client probing to keep connections alive.
+2020/05/09 21:22:09.039286 INFO Daemon Provisioning complete
+2020/05/09 21:22:09.044033 INFO Daemon RDMA capabilities are not enabled, skipping
+2020/05/09 21:22:09.049905 INFO Daemon Installed Agent WALinuxAgent-2.2.38 is the most current agent
+2020/05/09 21:22:09.204333 INFO ExtHandler Agent WALinuxAgent-2.2.38 is running as the goal state agent
+2020/05/09 21:22:09.244010 INFO ExtHandler Wire server endpoint:168.63.129.16
+2020/05/09 21:22:09.268199 INFO ExtHandler Start env monitor service.
+2020/05/09 21:22:09.274300 INFO ExtHandler Configure routes
+2020/05/09 21:22:09.277905 INFO ExtHandler Gateway:None
+2020/05/09 21:22:09.281257 INFO ExtHandler Routes:None
+2020/05/09 21:22:09.351935 INFO ExtHandler Wire server endpoint:168.63.129.16
+2020/05/09 21:22:09.380936 INFO ExtHandler WALinuxAgent-2.2.38 running as process 3663
+2020/05/09 21:22:09.388234 INFO ExtHandler Wire server endpoint:168.63.129.16
+2020/05/09 21:22:09.790019 INFO ExtHandler Route table: [{"Iface": "eth0", "Destination": "0.0.0.0", "Gateway": "10.0.0.1", "Mask": "0.0.0.0", "Flags": "0x0003", "Metric": "100"},{"Iface": "eth0", "Destination": "10.0.0.0", "Gateway": "0.0.0.0", "Mask": "255.255.255.0", "Flags": "0x0001", "Metric": "100"},{"Iface": "eth0", "Destination": "168.63.129.16", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"},{"Iface": "eth0", "Destination": "169.254.169.254", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"}]
+2020/05/09 21:22:09.977683 INFO ExtHandler Initial NIC state: [{ "name": "lo", "link": "<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00" }, { "name": "eth0", "link": "<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 00:0d:3a:0d:97:e9 brd ff:ff:ff:ff:ff:ff" }]
+2020/05/09 21:22:10.021010 INFO ExtHandler Agent WALinuxAgent-2.2.38 discovered update WALinuxAgent-2.2.46 -- exiting
+2020/05/09 21:22:10.074765 INFO Daemon Agent WALinuxAgent-2.2.38 launched with command '/usr/bin/python3.6 -u /usr/sbin/waagent -run-exthandlers' is successfully running
+2020/05/09 21:22:10.087760 INFO Daemon Determined Agent WALinuxAgent-2.2.46 to be the latest agent
+2020-05-09T13:22:10.433382Z INFO ExtHandler Agent WALinuxAgent-2.2.46 is running as the goal state agent
+2020-05-09T13:22:10.440140Z INFO ExtHandler Distro info: redhat 8.2, osutil class being used: RedhatOSUtil, agent service name: waagent
+2020-05-09T13:22:10.461818Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+2020-05-09T13:22:10.467289Z INFO ExtHandler Wire server endpoint:168.63.129.16
+2020-05-09T13:22:10.485681Z INFO ExtHandler Start env monitor service.
+2020-05-09T13:22:10.490650Z INFO ExtHandler Configure routes
+2020-05-09T13:22:10.494678Z INFO ExtHandler Gateway:None
+2020-05-09T13:22:10.498420Z INFO ExtHandler Routes:None
+2020-05-09T13:22:10.510771Z WARNING ExtHandler Dhcp client is not running.
+2020-05-09T13:22:10.515370Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+2020-05-09T13:22:10.527912Z INFO ExtHandler WALinuxAgent-2.2.46 running as process 3829
+2020-05-09T13:22:10.530126Z INFO ExtHandler Wire server endpoint:168.63.129.16
+2020-05-09T13:22:10.558047Z INFO ExtHandler CGroups Status: The cgroup filesystem is ready to use
+2020-05-09T13:22:10.565764Z INFO ExtHandler Started tracking new cgroup: walinuxagent.service, path: /sys/fs/cgroup/cpu/system.slice/waagent.service
+2020-05-09T13:22:10.573578Z INFO ExtHandler Started tracking new cgroup: walinuxagent.service, path: /sys/fs/cgroup/memory/system.slice/waagent.service
+2020-05-09T13:22:10.581777Z INFO ExtHandler Found legacy cgroup /sys/fs/cgroup/cpu/WALinuxAgent/WALinuxAgent
+2020-05-09T13:22:10.592977Z INFO ExtHandler Found legacy cgroup /sys/fs/cgroup/memory/WALinuxAgent/WALinuxAgent
+2020-05-09T13:22:10.602456Z INFO ExtHandler Removing /sys/fs/cgroup/cpu/WALinuxAgent/WALinuxAgent
+2020-05-09T13:22:10.610558Z INFO ExtHandler Removing /sys/fs/cgroup/memory/WALinuxAgent/WALinuxAgent
+2020-05-09T13:22:10.616711Z WARNING ExtHandler Failed to process legacy cgroups. Collection of resource usage data will be disabled. Error: [CGroupsException] The daemon's PID (797) was already added to the legacy cgroup; this invalidates resource usage data.
+2020-05-09T13:22:10.638307Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+2020-05-09T13:22:10.643813Z INFO ExtHandler Wire server endpoint:168.63.129.16
+2020-05-09T13:22:10.662115Z INFO ExtHandler Route table: [{"Iface": "eth0", "Destination": "0.0.0.0", "Gateway": "10.0.0.1", "Mask": "0.0.0.0", "Flags": "0x0003", "Metric": "100"},{"Iface": "eth0", "Destination": "10.0.0.0", "Gateway": "0.0.0.0", "Mask": "255.255.255.0", "Flags": "0x0001", "Metric": "100"},{"Iface": "eth0", "Destination": "168.63.129.16", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"},{"Iface": "eth0", "Destination": "169.254.169.254", "Gateway": "10.0.0.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"}]
+2020-05-09T13:22:10.737618Z INFO ExtHandler Initial NIC state: [{ "name": "lo", "link": "<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00" }, { "name": "eth0", "link": "<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 00:0d:3a:0d:97:e9 brd ff:ff:ff:ff:ff:ff" }]
+2020-05-09T13:22:10.783478Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+2020-05-09T13:22:10.792177Z INFO ExtHandler Wire server endpoint:168.63.129.16
+2020-05-09T13:22:10.835652Z INFO ExtHandler Successfully added Azure fabric firewall rules
+2020-05-09T13:22:10.845779Z INFO ExtHandler Firewall rules:
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 35 packets, 4727 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+      20     2411 ACCEPT     tcp  --  *      *       0.0.0.0/0            168.63.129.16        owner UID match 0
+       0        0 DROP       tcp  --  *      *       0.0.0.0/0            168.63.129.16        ctstate INVALID,NEW
+
+2020-05-09T13:22:10.886668Z INFO ExtHandler Set block dev timeout: sdb with timeout: 300
+2020-05-09T13:22:10.891877Z INFO ExtHandler Set block dev timeout: sda with timeout: 300
+2020-05-09T13:22:10.959501Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+2020-05-09T13:22:10.965434Z INFO ExtHandler Wire server endpoint:168.63.129.16
+2020-05-09T13:22:10.973798Z INFO ExtHandler ProcessGoalState completed [incarnation 1; 190 ms]
