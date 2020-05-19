@@ -1,0 +1,36 @@
+filename:       /lib/modules/4.18.0-193.el8.x86_64/kernel/drivers/net/hyperv/hv_netvsc.ko.xz
+description:    Microsoft Hyper-V network driver
+license:        GPL
+rhelversion:    8.2
+srcversion:     D58F932E887256B18986B0F
+alias:          vmbus:635161f83edfc546913ff2d2f965ed0e
+depends:        hv_vmbus
+intree:         Y
+name:           hv_netvsc
+vermagic:       4.18.0-193.el8.x86_64 SMP mod_unload modversions 
+sig_id:         PKCS#7
+signer:         Red Hat Enterprise Linux kernel signing key
+sig_key:        42:A4:B8:EB:D4:F1:21:1D:CA:0B:B6:66:62:38:61:FA:0B:90:31:59
+sig_hashalgo:   sha256
+signature:      3A:2C:6E:DE:6A:F5:B3:60:F5:4B:E8:BA:10:D2:AD:06:46:D0:0D:FE:
+		E0:7B:52:39:E0:3C:1F:25:89:78:C8:D2:2B:B3:46:FA:88:D9:B1:5A:
+		60:D8:B5:CA:02:44:31:82:CE:A5:53:B5:46:2A:D0:27:00:04:44:40:
+		EA:A3:CA:2A:82:41:F7:DD:9F:39:50:6A:DA:ED:37:DC:81:CF:15:5B:
+		06:0D:2E:94:C5:73:10:59:A9:49:D6:D5:9B:C7:9F:AE:BD:A7:8E:43:
+		16:BF:C6:6D:EA:3A:F5:58:9A:4A:20:5A:1E:75:07:1D:7B:16:91:19:
+		34:1E:55:23:8C:F7:BB:1D:89:2C:5D:E9:FE:FD:1C:F2:8C:A1:42:B2:
+		02:1A:96:D3:24:82:9D:A6:82:6C:AB:A3:4E:5C:EF:BA:5C:17:4C:77:
+		04:8C:9F:3B:C8:7A:BD:7D:A6:0F:71:F7:01:A2:25:0F:18:0A:CD:FA:
+		A6:A9:6E:56:A8:96:47:C1:76:03:49:B2:15:86:68:04:B0:8B:53:12:
+		79:09:02:29:2A:09:86:3F:0F:2A:2F:81:28:26:A2:AB:0C:E1:17:7C:
+		64:D5:98:17:38:0E:FC:39:50:15:BD:FE:53:3C:3F:91:D6:46:66:D7:
+		F0:96:05:CE:B5:A8:A7:96:58:29:82:E1:61:CD:3F:DE:64:0D:45:A5:
+		BB:AA:F8:BB:43:38:09:76:13:EB:51:28:F2:2F:B9:51:D2:76:DA:04:
+		52:79:58:D4:B4:CB:37:81:C1:99:46:D7:0A:A4:13:BB:28:B1:2E:8A:
+		35:CF:62:07:CC:D4:A2:D4:08:16:88:D0:EC:B4:8E:10:DA:F7:DC:04:
+		A0:78:81:1D:8C:A8:84:12:01:0B:6A:D9:4B:AD:20:0B:FF:38:30:0B:
+		99:5B:B4:08:A7:6C:53:16:59:90:47:D6:1D:B1:1E:AA:BA:37:96:04:
+		65:8B:20:70:68:51:E3:E1:CB:8A:95:D8:3D:A4:D8:16:F7:A8:8E:C6:
+		49:CE:82:C0
+parm:           ring_size:Ring buffer size (# of pages) (uint)
+parm:           debug:Debug level (0=none,...,16=all) (int)
