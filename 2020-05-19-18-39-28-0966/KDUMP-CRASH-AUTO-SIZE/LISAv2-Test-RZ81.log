@@ -1,0 +1,148 @@
+05/20/2020 01:45:41 : [INFO ] ==> Run test setup script if defined.
+05/20/2020 01:45:41 : [DEBUG] Set $fdisk > fdisk for REDHAT
+05/20/2020 01:45:41 : [INFO ] ==> Check the target machine kernel log.
+05/20/2020 01:45:41 : [INFO ] Collecting LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0 VM Kernel Initial Logs ...
+05/20/2020 01:45:41 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:45:41 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:45:47 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:45:47 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S dmesg > ./InitialBootLogs.txt"
+05/20/2020 01:45:53 : [DEBUG] dmesg > ./InitialBootLogs.txt executed successfully in 5.2 seconds.
+05/20/2020 01:45:53 : [DEBUG] Downloading ./InitialBootLogs.txt from azureuser @ 40.123.30.243 : 22 to E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0 using password authentication
+05/20/2020 01:46:01 : [DEBUG] Download command returned exit code 0
+05/20/2020 01:46:01 : [DEBUG] Download successful after 1 attempt
+05/20/2020 01:46:01 : [INFO ] LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0: Initial kernel log, InitialBootLogs.txt, collected successfully.
+05/20/2020 01:46:01 : [INFO ] Checking for call traces in kernel logs..
+05/20/2020 01:46:01 : [INFO ] No kernel call traces found in the kernel log
+05/20/2020 01:46:01 : [INFO ] ==> Upload test files to target machine LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0 if any.
+05/20/2020 01:46:01 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/KDUMP-Execute.sh to Unix format...
+05/20/2020 01:46:01 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/KDUMP-Config.sh to Unix format...
+05/20/2020 01:46:02 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/KDUMP-Results.sh to Unix format...
+05/20/2020 01:46:02 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/utils.sh to Unix format...
+05/20/2020 01:46:02 : [DEBUG] Compressing .\Testscripts\Linux\KDUMP-Execute.sh and adding to 40-123-30-243@22.tar
+05/20/2020 01:46:03 : [DEBUG] Compressing .\Testscripts\Linux\KDUMP-Config.sh and adding to 40-123-30-243@22.tar
+05/20/2020 01:46:03 : [DEBUG] Compressing .\Testscripts\Linux\KDUMP-Results.sh and adding to 40-123-30-243@22.tar
+05/20/2020 01:46:03 : [DEBUG] Compressing .\Testscripts\Linux\utils.sh and adding to 40-123-30-243@22.tar
+05/20/2020 01:46:03 : [DEBUG] Uploading 40-123-30-243@22.tar to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:46:11 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:46:11 : [DEBUG] Removing compressed file : 40-123-30-243@22.tar
+05/20/2020 01:46:11 : [DEBUG] Decompressing files in VM ...
+05/20/2020 01:46:11 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:46:11 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:46:17 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:46:17 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S tar -xf 40-123-30-243@22.tar"
+05/20/2020 01:46:22 : [DEBUG] tar -xf 40-123-30-243@22.tar executed successfully in 4.79 seconds.
+05/20/2020 01:46:22 : [INFO ] ==> Run test script on the target machine.
+05/20/2020 01:46:22 : [DEBUG] vmCpuNumber=2 added to constants.sh file
+05/20/2020 01:46:22 : [DEBUG] kexecVersion=2.0.18 added to constants.sh file
+05/20/2020 01:46:22 : [DEBUG] vmMemory=2GB added to constants.sh file
+05/20/2020 01:46:22 : [DEBUG] crashkernel=auto added to constants.sh file
+05/20/2020 01:46:22 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/constants.sh to Unix format...
+05/20/2020 01:46:22 : [DEBUG] Uploading E:\yuxisun\LISAv2\constants.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:46:35 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:46:35 : [INFO ] Constants file uploaded to: LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0
+05/20/2020 01:46:35 : [INFO ] Test script: KDUMP-TestScript.ps1 started.
+05/20/2020 01:46:35 : [INFO ] E:\yuxisun\LISAv2\Testscripts\Windows\KDUMP-TestScript.ps1 -TestParams ;vmCpuNumber=2;kexecVersion=2.0.18;vmMemory=2GB;crashkernel=auto -AllVmData @{ServiceName=; ResourceGroupName=LISAv2-OneVM-walaautodev-RZ81-20200519184125; Location=eastus2; RoleName=LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0; PublicIP=40.123.30.243; PublicIPv6=; InternalIP=10.0.0.4; SecondInternalIP=; URL=ica57863v4.eastus2.cloudapp.azure.com; URLv6=; Status=Succeeded; InstanceSize=Standard_DS1_v2; VMGeneration=1; SSHPort=22} -TestProvider AzureProvider -CurrentTestData System.Xml.XmlElement
+05/20/2020 01:46:35 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:46:35 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:46:41 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:46:41 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S export HOME=`pwd`;chmod u+x KDUMP-Config.sh && ./KDUMP-Config.sh"
+05/20/2020 01:49:20 : [DEBUG] export HOME=`pwd`;chmod u+x KDUMP-Config.sh && ./KDUMP-Config.sh executed successfully in 159.2 seconds.
+05/20/2020 01:49:20 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:49:20 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:49:30 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:49:30 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S cat state.txt"
+05/20/2020 01:49:34 : [DEBUG] cat state.txt executed successfully in 4.69 seconds.
+05/20/2020 01:49:34 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:49:34 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:49:43 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:49:43 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S sync; reboot"
+05/20/2020 01:49:50 : [ERROR] Failed to start process in background..
+05/20/2020 01:49:51 : [ERROR] Linux machine returned exit code : 
+05/20/2020 01:49:51 : [WARN ] Failed to execute : sync; reboot. Retrying...
+05/20/2020 01:50:15 : [ERROR] Failed to start process in background..
+05/20/2020 01:50:15 : [ERROR] Linux machine returned exit code : 
+05/20/2020 01:50:15 : [WARN ] Failed to execute : sync; reboot. Retrying...
+05/20/2020 01:50:23 : [DEBUG] sync; reboot is running in background with ID 780 ...
+05/20/2020 01:50:23 : [INFO ] Rebooting VM LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0 after kdump configuration...
+05/20/2020 01:50:50 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:50:50 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:51:00 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:51:00 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S export HOME=`pwd`;chmod u+x KDUMP-Execute.sh && ./KDUMP-Execute.sh"
+05/20/2020 01:52:06 : [DEBUG] export HOME=`pwd`;chmod u+x KDUMP-Execute.sh && ./KDUMP-Execute.sh executed successfully in 65.98 seconds.
+05/20/2020 01:52:06 : [INFO ] Executed KDUMP-Execute.sh in the VM
+05/20/2020 01:52:06 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:52:06 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:52:12 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:52:12 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S cat state.txt"
+05/20/2020 01:52:22 : [DEBUG] cat state.txt executed successfully in 9.3 seconds.
+05/20/2020 01:52:22 : [INFO ] Trigger the kernel panic...
+05/20/2020 01:52:22 : [INFO ] NMI does not support, so it triggers different method
+05/20/2020 01:52:22 : [INFO ] Set /proc/sysrq-trigger
+05/20/2020 01:52:22 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:52:22 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:52:30 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:52:30 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S sync; echo c > /proc/sysrq-trigger"
+05/20/2020 01:52:37 : [DEBUG] sync; echo c > /proc/sysrq-trigger is running in background with ID 792 ...
+05/20/2020 01:52:37 : [INFO ] Waiting 60 seconds to record the event...
+05/20/2020 01:53:37 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:53:37 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:53:47 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:53:47 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S export HOME=`pwd`;chmod u+x KDUMP-Results.sh && ./KDUMP-Results.sh "
+05/20/2020 01:53:52 : [DEBUG] export HOME=`pwd`;chmod u+x KDUMP-Results.sh && ./KDUMP-Results.sh  executed successfully in 4.85 seconds.
+05/20/2020 01:53:52 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:53:52 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:53:59 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:53:59 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S cat summary.log"
+05/20/2020 01:54:04 : [DEBUG] cat summary.log executed successfully in 5.05 seconds.
+05/20/2020 01:54:04 : [DEBUG] Result of executing KDUMP-Results.sh - Test Successful. Proper file was found..
+05/20/2020 01:54:04 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:54:04 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:54:10 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:54:10 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S cat state.txt"
+05/20/2020 01:54:15 : [DEBUG] cat state.txt executed successfully in 4.59 seconds.
+05/20/2020 01:54:15 : [INFO ] ==> Upload test results to database.
+05/20/2020 01:54:15 : [INFO ] ==> Check if the test target machines are still running.
+05/20/2020 01:54:15 : [INFO ] Trying to connect to deployed VMs.
+05/20/2020 01:54:15 : [INFO ] Connecting to 40.123.30.243 : 22 succeeded.
+05/20/2020 01:54:15 : [INFO ] The SSH ports for all VMs are open.
+05/20/2020 01:54:15 : [INFO ] Collecting LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0 VM Kernel Final Logs ...
+05/20/2020 01:54:15 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:54:15 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:54:21 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:54:21 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S dmesg > ./FinalBootLogs.txt"
+05/20/2020 01:54:26 : [DEBUG] dmesg > ./FinalBootLogs.txt executed successfully in 4.62 seconds.
+05/20/2020 01:54:26 : [DEBUG] Downloading ./FinalBootLogs.txt from azureuser @ 40.123.30.243 : 22 to E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0 using password authentication
+05/20/2020 01:54:33 : [DEBUG] Download command returned exit code 0
+05/20/2020 01:54:33 : [DEBUG] Download successful after 1 attempt
+05/20/2020 01:54:33 : [INFO ] LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0: Final kernel log, FinalBootLogs.txt, collected successfully.
+05/20/2020 01:54:33 : [INFO ] Checking for call traces in kernel logs..
+05/20/2020 01:54:33 : [INFO ] No kernel call traces found in the kernel log
+05/20/2020 01:54:35 : [WARN ] Following fail/error/warning messages were added in the logs during execution of test:
+05/20/2020 01:54:35 : [WARN ] [    0.187013] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+05/20/2020 01:54:35 : [WARN ] [    0.188010] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+05/20/2020 01:54:37 : [WARN ] [    1.184050] psmouse serio1: trackpoint: failed to get extended button data, assuming 3 buttons
+05/20/2020 01:54:38 : [WARN ] [   34.846647] warning: `turbostat' uses 32-bit capabilities (legacy support in use)
+05/20/2020 01:54:38 : [WARN ] Found 4 fail/error/warning messages in the logs during execution.
+05/20/2020 01:54:38 : [INFO ] LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0: Final Kernel logs collected and compared successfully
+05/20/2020 01:54:38 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/CollectLogFile.sh to Unix format...
+05/20/2020 01:54:38 : [DEBUG] Uploading .\Testscripts\Linux\CollectLogFile.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:54:44 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:54:45 : [DEBUG] dos2unix: converting file E:/yuxisun/LISAv2/TestResults/2020-05-19-18-39-28-0966/KDUMP-CRASH-AUTO-SIZE/runtest.sh to Unix format...
+05/20/2020 01:54:45 : [DEBUG] Uploading E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE\runtest.sh to azureuser @ 40.123.30.243 : 22 using password authentication
+05/20/2020 01:54:51 : [DEBUG] Upload successful after 1 attempt
+05/20/2020 01:54:51 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@40.123.30.243 "echo ****** | sudo -S bash CollectLogFile.sh -hostname LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0"
+05/20/2020 01:54:56 : [DEBUG] bash CollectLogFile.sh -hostname LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0 executed successfully in 4.94 seconds.
+05/20/2020 01:54:56 : [DEBUG] Downloading LISAv2-OneVM-walaautodev-RZ81-20200519184125-role-0-*.txt from azureuser @ 40.123.30.243 : 22 to E:\yuxisun\LISAv2\TestResults\2020-05-19-18-39-28-0966\KDUMP-CRASH-AUTO-SIZE using password authentication
+05/20/2020 01:55:12 : [DEBUG] Download command returned exit code 0
+05/20/2020 01:55:12 : [DEBUG] Download successful after 1 attempt
+05/20/2020 01:55:12 : [INFO ] ==> Run test cleanup script if defined.
+05/20/2020 01:55:12 : [INFO ] Start to do cleanup for case KDUMP-CRASH-AUTO-SIZE
+05/20/2020 01:55:12 : [INFO ] Removing Background Job 780...
+05/20/2020 01:55:12 : [INFO ] Removing Background Job 792...
+05/20/2020 01:55:12 : [INFO ] End of testing: KDUMP-CRASH-AUTO-SIZE , result: PASS
+05/20/2020 01:55:12 : [INFO ] PASS    - 1
+05/20/2020 01:55:12 : [INFO ] SKIPPED - 0
+05/20/2020 01:55:12 : [INFO ] FAIL    - 0
+05/20/2020 01:55:12 : [INFO ] ABORTED - 0
+05/20/2020 01:55:12 : [INFO ] PENDING - 0 
+
