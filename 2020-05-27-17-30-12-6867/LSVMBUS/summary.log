@@ -1,0 +1,3 @@
+Info: All VMBus device IDs have been found.
+Network driver is spread on all 8 cores as expected 8 cores.
+Storage driver is spread on all 8 cores as expected 8 cores.
