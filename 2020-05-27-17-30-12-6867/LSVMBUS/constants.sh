@@ -1,1 +1,0 @@
-VM_Size=Standard_L8s_v2

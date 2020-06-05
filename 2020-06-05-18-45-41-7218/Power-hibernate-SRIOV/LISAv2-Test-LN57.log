@@ -1,0 +1,349 @@
+06/05/2020 10:49:31 : [INFO ] ==> Run test setup script if defined.
+06/05/2020 10:49:31 : [DEBUG] Set $fdisk > fdisk for REDHAT
+06/05/2020 10:49:31 : [INFO ] ==> Check the target machine kernel log.
+06/05/2020 10:49:31 : [INFO ] Collecting LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0 VM Kernel Initial Logs ...
+06/05/2020 10:49:31 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 10:49:31 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:49:33 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:49:33 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "echo ****** | sudo -S dmesg > ./InitialBootLogs.txt"
+06/05/2020 10:49:35 : [DEBUG] dmesg > ./InitialBootLogs.txt executed successfully in 1.04 seconds.
+06/05/2020 10:49:35 : [DEBUG] Downloading ./InitialBootLogs.txt from azureuser @ 52.252.114.174 : 22 to D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0 using password authentication
+06/05/2020 10:49:37 : [DEBUG] Download command returned exit code 0
+06/05/2020 10:49:37 : [DEBUG] Download successful after 1 attempt
+06/05/2020 10:49:37 : [INFO ] LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0: Initial kernel log, InitialBootLogs.txt, collected successfully.
+06/05/2020 10:49:37 : [INFO ] Checking for call traces in kernel logs..
+06/05/2020 10:49:37 : [INFO ] No kernel call traces found in the kernel log
+06/05/2020 10:49:37 : [INFO ] ==> Upload test files to target machine LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0 if any.
+06/05/2020 10:49:37 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/utils.sh to Unix format...
+06/05/2020 10:49:37 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/SetupHbKernel.sh to Unix format...
+06/05/2020 10:49:37 : [DEBUG] Uploading .\Testscripts\Linux\utils.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:49:38 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:49:38 : [DEBUG] Uploading .\Testscripts\Linux\SetupHbKernel.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:49:39 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:49:39 : [INFO ] ==> Run test script on the target machine.
+06/05/2020 10:49:39 : [DEBUG] hb_branch=next-20200210 added to constants.sh file
+06/05/2020 10:49:39 : [DEBUG] hb_url='' added to constants.sh file
+06/05/2020 10:49:39 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/constants.sh to Unix format...
+06/05/2020 10:49:39 : [DEBUG] Uploading D:\LISAv2-yuxisun\constants.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:49:41 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:49:41 : [INFO ] Constants file uploaded to: LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0
+06/05/2020 10:49:41 : [INFO ] Test script: Power-Hibernate.ps1 started.
+06/05/2020 10:49:41 : [INFO ] D:\LISAv2-yuxisun\Testscripts\Windows\Power-Hibernate.ps1 -TestParams ;hb_branch=next-20200210;hb_url='' -AllVmData @{ServiceName=; ResourceGroupName=LISAv2-OneVMhb-walaautodev-LN57-20200605184629; Location=eastus2; RoleName=LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0; PublicIP=52.252.114.174; PublicIPv6=; InternalIP=10.0.0.4; SecondInternalIP=; URL=ica30872v4.eastus2.cloudapp.azure.com; URLv6=; Status=Succeeded; InstanceSize=Standard_DS4_v2; VMGeneration=1; SSHPort=22} -TestProvider AzureProvider -CurrentTestData System.Xml.XmlElement
+06/05/2020 10:49:41 : [DEBUG] Prepare swap space for VM LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0 in RG LISAv2-OneVMhb-walaautodev-LN57-20200605184629.
+06/05/2020 10:49:41 : [INFO ] Generating constants.sh ...
+06/05/2020 10:49:41 : [INFO ] hb_url='' added to constants.sh
+06/05/2020 10:49:41 : [INFO ] hb_branch=next-20200210 added to constants.sh
+06/05/2020 10:49:41 : [INFO ] constants.sh created successfully...
+06/05/2020 10:51:55 : [INFO ] Updated the VM with a new data disk
+06/05/2020 10:51:55 : [INFO ] Waiting for 30 seconds for configuration sync
+06/05/2020 10:52:25 : [INFO ] Successfully add a new disk to the Resource Group, LISAv2-OneVMhb-walaautodev-LN57-20200605184629
+06/05/2020 10:52:25 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/constants.sh to Unix format...
+06/05/2020 10:52:25 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/utils.sh to Unix format...
+06/05/2020 10:52:25 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/SetupHbKernel.sh to Unix format...
+06/05/2020 10:52:26 : [DEBUG] Compressing D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\constants.sh and adding to 52-252-114-174@22.tar
+06/05/2020 10:52:26 : [DEBUG] Compressing .\Testscripts\Linux\utils.sh and adding to 52-252-114-174@22.tar
+06/05/2020 10:52:26 : [DEBUG] Compressing .\Testscripts\Linux\SetupHbKernel.sh and adding to 52-252-114-174@22.tar
+06/05/2020 10:52:26 : [DEBUG] Uploading 52-252-114-174@22.tar to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:52:29 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:52:29 : [DEBUG] Removing compressed file : 52-252-114-174@22.tar
+06/05/2020 10:52:29 : [DEBUG] Decompressing files in VM ...
+06/05/2020 10:52:29 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 10:52:29 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:52:30 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:52:30 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "echo ****** | sudo -S tar -xf 52-252-114-174@22.tar"
+06/05/2020 10:52:31 : [DEBUG] tar -xf 52-252-114-174@22.tar executed successfully in 1.22 seconds.
+06/05/2020 10:52:31 : [INFO ] Copied the script files to the VM
+06/05/2020 10:52:31 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 10:52:31 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:52:33 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:52:33 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "echo ****** | sudo -S ./SetupHbKernel.sh"
+06/05/2020 10:52:36 : [DEBUG] ./SetupHbKernel.sh is running in background with ID 1877 ...
+06/05/2020 10:52:36 : [INFO ] Executed SetupHbKernel script inside VM
+06/05/2020 10:52:51 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 10:52:51 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:52:53 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:52:53 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "cat ~/state.txt"
+06/05/2020 10:52:55 : [DEBUG] cat ~/state.txt executed successfully in 2.02 seconds.
+06/05/2020 10:52:55 : [INFO ] SetupHbKernel.sh is still running in the VM!
+06/05/2020 10:53:11 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "cat ~/state.txt"
+06/05/2020 10:53:12 : [DEBUG] cat ~/state.txt executed successfully in 1.16 seconds.
+06/05/2020 10:53:12 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 10:53:12 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:53:13 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:53:13 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "cat ~/constants.sh | grep setup_completed=0"
+06/05/2020 10:53:14 : [DEBUG] cat ~/constants.sh | grep setup_completed=0 executed successfully in 1.08 seconds.
+06/05/2020 10:53:14 : [INFO ] SetupHbKernel.sh finished on LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0
+06/05/2020 10:53:14 : [INFO ] SetupHbKernel.sh is done
+06/05/2020 10:53:14 : [INFO ] Rebooting All VMs!
+06/05/2020 10:53:16 : [INFO ] Restarting LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0 from shell...
+06/05/2020 10:53:16 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 10:53:16 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:53:17 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:53:17 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "echo ****** | sudo -S sleep 2 && reboot"
+06/05/2020 10:53:20 : [DEBUG] sleep 2 && reboot is running in background with ID 1891 ...
+06/05/2020 10:53:25 : [INFO ] Restart-VMFromShell executes successfully.
+06/05/2020 10:53:26 : [INFO ] Trying to connect to deployed VMs.
+06/05/2020 10:53:47 : [WARN ] TCP test failed
+06/05/2020 10:53:47 : [INFO ] Connecting to 52.252.114.174 : 22 failed.
+06/05/2020 10:53:47 : [INFO ] 1 VM(s) still waiting for port 22 open.
+06/05/2020 10:53:47 : [INFO ] Retrying 1/50 in 3 seconds.
+06/05/2020 10:53:58 : [INFO ] Connecting to 52.252.114.174 : 22 succeeded.
+06/05/2020 10:53:58 : [INFO ] The SSH ports for all VMs are open.
+06/05/2020 10:53:59 : [INFO ] VM running: Verified successfully VM status is running before hibernation
+06/05/2020 10:53:59 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 10:53:59 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:54:03 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 10:54:03 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "echo ****** | sudo -S ./test.sh"
+06/05/2020 10:54:07 : [DEBUG] ./test.sh is running in background with ID 1895 ...
+06/05/2020 10:54:07 : [INFO ] Sent hibernate command to the VM and continue checking its status in every 15 seconds until 2 minutes timeout 
+06/05/2020 10:54:23 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:54:40 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:54:56 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:55:13 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:55:30 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:55:47 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:56:04 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:56:20 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:56:37 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:56:53 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:57:10 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:57:27 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:57:44 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:58:00 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:58:18 : [INFO ] VM status is not stopped. Wating for 15s...
+06/05/2020 10:58:35 : [INFO ] VM stopped: Verified successfully VM status is stopped after hibernation command sent
+06/05/2020 10:58:36 : [INFO ] Waked up the VM LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0 in Resource Group LISAv2-OneVMhb-walaautodev-LN57-20200605184629 and continue checking its status in every 15 seconds until 15 minutes timeout 
+06/05/2020 10:58:51 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 10:58:51 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 10:59:37 : [WARN ] Error in upload, attempt 1/10, retrying
+06/05/2020 10:59:48 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 11:00:32 : [WARN ] Error in upload, attempt 2/10, retrying
+06/05/2020 11:00:42 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 11:01:25 : [WARN ] Error in upload, attempt 3/10, retrying
+06/05/2020 11:01:36 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 11:01:46 : [DEBUG] Upload successful after 4 attempt
+06/05/2020 11:01:46 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:01:48 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 2.11 seconds.
+06/05/2020 11:01:48 : [INFO ] VM is still resuming!
+06/05/2020 11:02:03 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:02:06 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 2.26 seconds.
+06/05/2020 11:02:06 : [INFO ] VM is still resuming!
+06/05/2020 11:02:21 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:02:23 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.66 seconds.
+06/05/2020 11:02:23 : [INFO ] VM is still resuming!
+06/05/2020 11:02:38 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:02:39 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1 seconds.
+06/05/2020 11:02:39 : [INFO ] VM is still resuming!
+06/05/2020 11:02:54 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:02:55 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.97 seconds.
+06/05/2020 11:02:55 : [INFO ] VM is still resuming!
+06/05/2020 11:03:10 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:03:11 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.98 seconds.
+06/05/2020 11:03:11 : [INFO ] VM is still resuming!
+06/05/2020 11:03:26 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:03:27 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1 seconds.
+06/05/2020 11:03:27 : [INFO ] VM is still resuming!
+06/05/2020 11:03:43 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:03:44 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.95 seconds.
+06/05/2020 11:03:44 : [INFO ] VM is still resuming!
+06/05/2020 11:03:59 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:04:00 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.08 seconds.
+06/05/2020 11:04:00 : [INFO ] VM is still resuming!
+06/05/2020 11:04:15 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:04:16 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.06 seconds.
+06/05/2020 11:04:16 : [INFO ] VM is still resuming!
+06/05/2020 11:04:32 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:04:33 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.08 seconds.
+06/05/2020 11:04:33 : [INFO ] VM is still resuming!
+06/05/2020 11:04:48 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:04:49 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.99 seconds.
+06/05/2020 11:04:49 : [INFO ] VM is still resuming!
+06/05/2020 11:05:04 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:05:05 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.07 seconds.
+06/05/2020 11:05:05 : [INFO ] VM is still resuming!
+06/05/2020 11:05:20 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:05:22 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.01 seconds.
+06/05/2020 11:05:22 : [INFO ] VM is still resuming!
+06/05/2020 11:05:37 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:05:38 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.99 seconds.
+06/05/2020 11:05:38 : [INFO ] VM is still resuming!
+06/05/2020 11:05:53 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:05:54 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.98 seconds.
+06/05/2020 11:05:54 : [INFO ] VM is still resuming!
+06/05/2020 11:06:09 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:06:10 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.99 seconds.
+06/05/2020 11:06:10 : [INFO ] VM is still resuming!
+06/05/2020 11:06:25 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:06:26 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.98 seconds.
+06/05/2020 11:06:26 : [INFO ] VM is still resuming!
+06/05/2020 11:06:42 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:06:43 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.09 seconds.
+06/05/2020 11:06:43 : [INFO ] VM is still resuming!
+06/05/2020 11:06:58 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:06:59 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1 seconds.
+06/05/2020 11:06:59 : [INFO ] VM is still resuming!
+06/05/2020 11:07:14 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:07:15 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.97 seconds.
+06/05/2020 11:07:15 : [INFO ] VM is still resuming!
+06/05/2020 11:07:30 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:07:32 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1 seconds.
+06/05/2020 11:07:32 : [INFO ] VM is still resuming!
+06/05/2020 11:07:47 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:07:48 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.07 seconds.
+06/05/2020 11:07:48 : [INFO ] VM is still resuming!
+06/05/2020 11:08:03 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:08:04 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.06 seconds.
+06/05/2020 11:08:04 : [INFO ] VM is still resuming!
+06/05/2020 11:08:20 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:08:21 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.03 seconds.
+06/05/2020 11:08:21 : [INFO ] VM is still resuming!
+06/05/2020 11:08:36 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:08:37 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.96 seconds.
+06/05/2020 11:08:37 : [INFO ] VM is still resuming!
+06/05/2020 11:08:52 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:08:53 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.06 seconds.
+06/05/2020 11:08:53 : [INFO ] VM is still resuming!
+06/05/2020 11:09:09 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:09:10 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.04 seconds.
+06/05/2020 11:09:10 : [INFO ] VM is still resuming!
+06/05/2020 11:09:25 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:09:26 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.06 seconds.
+06/05/2020 11:09:26 : [INFO ] VM is still resuming!
+06/05/2020 11:09:41 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:09:42 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.06 seconds.
+06/05/2020 11:09:42 : [INFO ] VM is still resuming!
+06/05/2020 11:09:57 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:09:59 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.08 seconds.
+06/05/2020 11:09:59 : [INFO ] VM is still resuming!
+06/05/2020 11:10:14 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:10:15 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.06 seconds.
+06/05/2020 11:10:15 : [INFO ] VM is still resuming!
+06/05/2020 11:10:30 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:10:31 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 0.98 seconds.
+06/05/2020 11:10:31 : [INFO ] VM is still resuming!
+06/05/2020 11:10:46 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:10:47 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.1 seconds.
+06/05/2020 11:10:47 : [INFO ] VM is still resuming!
+06/05/2020 11:11:03 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:11:04 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.14 seconds.
+06/05/2020 11:11:04 : [INFO ] VM is still resuming!
+06/05/2020 11:11:19 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:11:20 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.25 seconds.
+06/05/2020 11:11:20 : [INFO ] VM is still resuming!
+06/05/2020 11:11:36 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:11:37 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.36 seconds.
+06/05/2020 11:11:37 : [INFO ] VM is still resuming!
+06/05/2020 11:11:52 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:11:53 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.13 seconds.
+06/05/2020 11:11:53 : [INFO ] VM is still resuming!
+06/05/2020 11:12:08 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:12:10 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.17 seconds.
+06/05/2020 11:12:10 : [INFO ] VM is still resuming!
+06/05/2020 11:12:25 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:12:26 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.14 seconds.
+06/05/2020 11:12:26 : [INFO ] VM is still resuming!
+06/05/2020 11:12:41 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:12:42 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.15 seconds.
+06/05/2020 11:12:42 : [INFO ] VM is still resuming!
+06/05/2020 11:12:58 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:12:59 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.22 seconds.
+06/05/2020 11:12:59 : [INFO ] VM is still resuming!
+06/05/2020 11:13:14 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:13:15 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.26 seconds.
+06/05/2020 11:13:15 : [INFO ] VM is still resuming!
+06/05/2020 11:13:31 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:13:32 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.25 seconds.
+06/05/2020 11:13:32 : [INFO ] VM is still resuming!
+06/05/2020 11:13:47 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:13:49 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.64 seconds.
+06/05/2020 11:13:49 : [INFO ] VM is still resuming!
+06/05/2020 11:13:49 : [INFO ] VM resume completed
+06/05/2020 11:13:53 : [INFO ] VM running: Verified successfully VM status is running after resuming
+06/05/2020 11:13:53 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 11:13:53 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 11:13:55 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 11:13:55 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'call trace'"
+06/05/2020 11:13:56 : [DEBUG] Command execution returned return code 1 Ignoring..
+06/05/2020 11:13:56 : [INFO ] Not found Call Trace in dmesg
+06/05/2020 11:13:56 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 11:13:56 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 11:13:57 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 11:13:57 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation entry'"
+06/05/2020 11:13:58 : [DEBUG] dmesg | grep -i 'hibernation entry' executed successfully in 1.07 seconds.
+06/05/2020 11:13:58 : [INFO ] Searching the keyword: hibernation entry
+06/05/2020 11:13:58 : [INFO ] Successfully found Power Management log in dmesg
+06/05/2020 11:13:58 : [INFO ] [   29.109819] PM: hibernation entry
+06/05/2020 11:13:58 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 11:13:58 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 11:13:59 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 11:13:59 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "dmesg | grep -i 'hibernation exit'"
+06/05/2020 11:14:01 : [DEBUG] dmesg | grep -i 'hibernation exit' executed successfully in 1.07 seconds.
+06/05/2020 11:14:01 : [INFO ] Searching the keyword: hibernation exit
+06/05/2020 11:14:01 : [INFO ] Successfully found Power Management log in dmesg
+06/05/2020 11:14:01 : [INFO ] [   30.263073] PM: hibernation exit
+06/05/2020 11:14:01 : [INFO ] ==> Upload test results to database.
+06/05/2020 11:14:01 : [INFO ] ==> Check if the test target machines are still running.
+06/05/2020 11:14:01 : [INFO ] Trying to connect to deployed VMs.
+06/05/2020 11:14:01 : [INFO ] Connecting to 52.252.114.174 : 22 succeeded.
+06/05/2020 11:14:01 : [INFO ] The SSH ports for all VMs are open.
+06/05/2020 11:14:01 : [INFO ] Collecting LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0 VM Kernel Final Logs ...
+06/05/2020 11:14:01 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 11:14:01 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 11:14:02 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 11:14:02 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "echo ****** | sudo -S dmesg > ./FinalBootLogs.txt"
+06/05/2020 11:14:03 : [DEBUG] dmesg > ./FinalBootLogs.txt executed successfully in 1.06 seconds.
+06/05/2020 11:14:03 : [DEBUG] Downloading ./FinalBootLogs.txt from azureuser @ 52.252.114.174 : 22 to D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0 using password authentication
+06/05/2020 11:14:05 : [DEBUG] Download command returned exit code 0
+06/05/2020 11:14:05 : [DEBUG] Download successful after 1 attempt
+06/05/2020 11:14:05 : [INFO ] LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0: Final kernel log, FinalBootLogs.txt, collected successfully.
+06/05/2020 11:14:05 : [INFO ] Checking for call traces in kernel logs..
+06/05/2020 11:14:05 : [INFO ] No kernel call traces found in the kernel log
+06/05/2020 11:14:06 : [WARN ] Following fail/error/warning messages were added in the logs during execution of test:
+06/05/2020 11:14:06 : [WARN ] [    0.384016] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+06/05/2020 11:14:07 : [WARN ] [    2.183111] psmouse serio1: trackpoint: failed to get extended button data, assuming 3 buttons
+06/05/2020 11:14:08 : [WARN ] [   21.476779] ib_srpt MAD registration failed for mlx5_0-1.
+06/05/2020 11:14:08 : [WARN ] [   21.484049] ib_srpt srpt_add_one(mlx5_0) failed.
+06/05/2020 11:14:08 : [WARN ] [   29.721561] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.726282] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.726282] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.731185] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.736280] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.736280] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.741072] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.741072] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.746460] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.746460] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.752770] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.752770] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.752770] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:08 : [WARN ] [   29.752770] hv_pci 562595e1-b747-459f-bec7-a1a1b938b525: hv_irq_unmask() failed: 0x5
+06/05/2020 11:14:09 : [WARN ] [   30.687043] mlx5_core b747:00:02.0: poll_health:695:(pid 0): Fatal error 3 detected
+06/05/2020 11:14:09 : [WARN ] [   30.711765] mlx5_core b747:00:02.0: mlx5_error_sw_reset:225:(pid 5246): start
+06/05/2020 11:14:09 : [WARN ] [   30.717171] mlx5_core b747:00:02.0: mlx5_error_sw_reset:258:(pid 5246): end
+06/05/2020 11:14:09 : [WARN ] [   34.653057] ib_srpt MAD registration failed for mlx5_0-1.
+06/05/2020 11:14:09 : [WARN ] [   34.659431] ib_srpt srpt_add_one(mlx5_0) failed.
+06/05/2020 11:14:09 : [WARN ] Found 23 fail/error/warning messages in the logs during execution.
+06/05/2020 11:14:09 : [INFO ] LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0: Final Kernel logs collected and compared successfully
+06/05/2020 11:14:09 : [DEBUG] dos2unix: converting file ./Testscripts/Linux/CollectLogFile.sh to Unix format...
+06/05/2020 11:14:09 : [DEBUG] Uploading .\Testscripts\Linux\CollectLogFile.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 11:14:10 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 11:14:10 : [DEBUG] dos2unix: converting file D:/LISAv2-yuxisun/TestResults/2020-06-05-18-45-41-7218/Power-hibernate-SRIOV/runtest.sh to Unix format...
+06/05/2020 11:14:10 : [DEBUG] Uploading D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV\runtest.sh to azureuser @ 52.252.114.174 : 22 using password authentication
+06/05/2020 11:14:11 : [DEBUG] Upload successful after 1 attempt
+06/05/2020 11:14:11 : [DEBUG] .\Tools\plink.exe -ssh -t -pw ****** -P 22 azureuser@52.252.114.174 "echo ****** | sudo -S bash CollectLogFile.sh -hostname LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0"
+06/05/2020 11:14:13 : [DEBUG] bash CollectLogFile.sh -hostname LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0 executed successfully in 1.18 seconds.
+06/05/2020 11:14:13 : [DEBUG] Downloading LISAv2-OneVMhb-walaautodev-LN57-20200605184629-role-0-*.txt from azureuser @ 52.252.114.174 : 22 to D:\LISAv2-yuxisun\TestResults\2020-06-05-18-45-41-7218\Power-hibernate-SRIOV using password authentication
+06/05/2020 11:14:15 : [DEBUG] Download command returned exit code 0
+06/05/2020 11:14:15 : [DEBUG] Download successful after 1 attempt
+06/05/2020 11:14:15 : [INFO ] ==> Run test cleanup script if defined.
+06/05/2020 11:14:15 : [INFO ] Start to do cleanup for case Power-hibernate-SRIOV
+06/05/2020 11:14:15 : [INFO ] Removing Background Job 1877...
+06/05/2020 11:14:15 : [INFO ] Removing Background Job 1891...
+06/05/2020 11:14:15 : [INFO ] Removing Background Job 1895...
+06/05/2020 11:14:16 : [INFO ] End of testing: Power-hibernate-SRIOV , result: PASS
+06/05/2020 11:14:16 : [INFO ] PASS    - 1
+06/05/2020 11:14:16 : [INFO ] SKIPPED - 0
+06/05/2020 11:14:16 : [INFO ] FAIL    - 0
+06/05/2020 11:14:16 : [INFO ] ABORTED - 0
+06/05/2020 11:14:16 : [INFO ] PENDING - 0 
+
